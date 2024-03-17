@@ -1,0 +1,144 @@
+﻿<Window x:Class="travel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:travel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800" 
+        >
+    <Grid Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Phần thông tin đặt phòng -->
+        <StackPanel Grid.Column="0" Margin="10" >
+
+            <TextBlock Text="Thông tin đặt phòng" FontSize="16" FontWeight="Bold" Margin="10" Foreground="#FF0194F3" FontFamily="Arial"/>
+            <!-- Thêm các điều khiển thông tin đặt phòng tại đây -->
+            <TextBlock Text="Ngày bắt đầu:" VerticalAlignment="Center" Foreground="#FF687176" Margin="10"/>
+            <DatePicker>
+                <DatePicker.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                        <!-- Đặt giá trị cỡ bo tròn -->
+                    </Style>
+                </DatePicker.Resources>
+                <DatePicker.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                        <GradientStop Color="#FFA3AEB9"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FFCDD0D1" Offset="1"/>
+                    </LinearGradientBrush>
+                </DatePicker.BorderBrush>
+            </DatePicker>
+
+            <TextBlock Text="Ngày kết thúc:" VerticalAlignment="Center" Foreground="#FF687176" Margin="10"/>
+            <DatePicker>
+                <DatePicker.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                        <!-- Đặt giá trị cỡ bo tròn -->
+                    </Style>
+                </DatePicker.Resources>
+                <DatePicker.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                        <GradientStop Color="#FFA3AEB9"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FFCDD0D1" Offset="1"/>
+                    </LinearGradientBrush>
+                </DatePicker.BorderBrush>
+            </DatePicker>
+
+
+            <TextBlock Text="Số lượng người:" VerticalAlignment="Center" Foreground="#FF687176" Margin="10"/>
+            <ComboBox Width="100" Margin="5">
+                <ComboBoxItem>1 người</ComboBoxItem>
+                <ComboBoxItem>2 người</ComboBoxItem>
+                <ComboBoxItem>4 người</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Chọn loại phòng:" Foreground="#FF687176" Margin="10"/>
+            <ListBox BorderBrush="#FF0E0701" Background="White">
+                <ListBoxItem Content="Phòng Đơn"/>
+                <ListBoxItem Content="Phòng Đôi"/>
+                <ListBoxItem Content="Suite"/>
+                <!-- Thêm các loại phòng khác nếu cần -->
+            </ListBox>
+            <Button Grid.Row="5" Content="Đặt phòng" Width="100" HorizontalAlignment="Center" Margin="0,20"/>
+
+            <Button Grid.Row="6" Content="Tìm phòng" Width="100" HorizontalAlignment="Center" Margin="0"/>
+
+        </StackPanel>
+
+        <!-- Danh sách phòng còn trống -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Danh sách phòng còn trống" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+            <ListBox x:Name="roomListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="431">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Width="556">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Column="0" BorderBrush="#1903121A" BorderThickness="1,1,1,1"/>
+
+                            <!-- Cột thứ hai -->
+                            <Border Grid.Column="1" BorderBrush="#1903121A" BorderThickness="1,1,1,1"/>
+
+                            <!-- Cột thứ ba -->
+                            <Border Grid.Column="2" BorderBrush="#1903121A" BorderThickness="1,1,1,1"/>
+
+                            <Image Grid.Column="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Width="200" Height="100" Stretch="Uniform" Margin="0" />
+
+                            <StackPanel Grid.Column="1" Margin="5">
+
+                                <TextBlock Text="Gold Plaza Hotel Da Nang" FontWeight="Bold"/>
+                                <WrapPanel>
+                                
+                                    <TextBlock Text="Khách sạn" FontStyle="Normal" Margin="0,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
+                                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
+
+                                </WrapPanel>
+
+                                <WrapPanel>
+                                    <TextBlock Text="Vị trí: " FontSize="10"/>
+                                    <TextBlock Text="Quận Hải Châu, Đà Nẵng" FontWeight="Bold" FontSize="10"/>
+                                </WrapPanel>
+                               
+                            </StackPanel>
+                            <StackPanel Grid.Column="2" Margin="5">
+                                <TextBlock   FontWeight="Bold" Text="Giá" HorizontalAlignment="Center" Height="16"/>
+                                <TextBlock Text="473.481  VND" HorizontalAlignment="Center"  FontWeight="Bold" Height="48" Padding="0,15,0,0" Foreground="#FFFF5E1F"/>
+
+                                <Button Content="Chọn phòng" Background="#FFFF5E1E" BorderBrush="#FFF7F3F3" Foreground="#FFF7F3F3" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                CornerRadius="5">
+                                                <!-- Đặt giá trị border radius ở đây -->
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+    </Grid>
+
+</Window>

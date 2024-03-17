@@ -1,0 +1,45 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "travel/1.0.0": {
+        "dependencies": {
+          "MahApps.Metro.IconPacks.Material": "4.11.0"
+        },
+        "runtime": {
+          "travel.dll": {}
+        }
+      },
+      "MahApps.Metro.IconPacks.Material/4.11.0": {
+        "runtime": {
+          "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.11.0.12"
+          },
+          "lib/net5.0-windows7.0/MahApps.Metro.IconPacks.Material.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.11.0.12"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "travel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MahApps.Metro.IconPacks.Material/4.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZCuuxWHvXxl39XBYXk4PCMUVtw1pevT5AE1qsj7VRy2tRtDYbzHWYW0FbnH+Vf0rP7BogZrRlKns3zFEkDEjFQ==",
+      "path": "mahapps.metro.iconpacks.material/4.11.0",
+      "hashPath": "mahapps.metro.iconpacks.material.4.11.0.nupkg.sha512"
+    }
+  }
+}
