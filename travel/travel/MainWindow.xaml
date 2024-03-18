@@ -78,7 +78,7 @@
         <!-- Danh sách phòng còn trống -->
         <StackPanel Grid.Column="1" Margin="10">
             <TextBlock Text="Danh sách phòng còn trống" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
-            <ListBox x:Name="roomListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="431">
+            <ListBox x:Name="roomListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Height="431" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Width="556">
@@ -118,7 +118,7 @@
                                 <TextBlock   FontWeight="Bold" Text="Giá" HorizontalAlignment="Center" Height="16"/>
                                 <TextBlock Text="473.481  VND" HorizontalAlignment="Center"  FontWeight="Bold" Height="48" Padding="0,15,0,0" Foreground="#FFFF5E1F"/>
 
-                                <Button Content="Chọn phòng" Background="#FFFF5E1E" BorderBrush="#FFF7F3F3" Foreground="#FFF7F3F3" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                <Button Content="Chọn phòng" Background="#FFFF5E1E" BorderBrush="#FFF7F3F3" Foreground="#FFF7F3F3" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click">
                                     <Button.Template>
                                         <ControlTemplate TargetType="{x:Type Button}">
                                             <Border Background="{TemplateBinding Background}"

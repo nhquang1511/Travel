@@ -22,3 +22,9 @@ C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\MahApps.Metro
 C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\MahApps.Metro.IconPacks.Material.dll
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\travel.csproj.AssemblyReference.cache
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\travel.csproj.Up2Date
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\login.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\LoginControl .g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\login.baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\LoginControl .baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\travel.sourcelink.json
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

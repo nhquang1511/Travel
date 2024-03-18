@@ -34,7 +34,14 @@ namespace travel
             roomListBox.ItemsSource = availableRooms;
         }
 
+       
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            login detailWindow = new login();
+
+            detailWindow.Show();
+        }
     }
 
 

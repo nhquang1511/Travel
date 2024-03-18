@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\nhqua\source\repos\travel\travel\App.xaml
-11407045341
+41917902751
 
-7667375840
+10914277193
 200311159464
-MainWindow.xaml;
+detail.xaml;login.xaml;LoginControl .xaml;MainWindow.xaml;
 
 True
 
