@@ -28,3 +28,5 @@ C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\login.baml
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\LoginControl .baml
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\travel.sourcelink.json
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\detail.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\detail.baml

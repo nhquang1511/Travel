@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\nhqua\\source\\repos\\travel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\logincontrol .xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\logincontrol .xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\detail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\detail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\detail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\detail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\travel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\travel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\logincontrol .xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\logincontrol .xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\travel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\travel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "LoginControl .xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\LoginControl .xaml",
               "RelativeDocumentMoniker": "travel\\LoginControl .xaml",
@@ -51,6 +55,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-18T09:22:54.305Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\App.xaml",
+              "RelativeDocumentMoniker": "travel\\App.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\App.xaml",
+              "RelativeToolTip": "travel\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T04:16:20.758Z",
               "EditorCaption": ""
             },
             {
@@ -67,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "detail.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\detail.xaml",
               "RelativeDocumentMoniker": "travel\\detail.xaml",
@@ -92,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\MainWindow.xaml",
               "RelativeDocumentMoniker": "travel\\MainWindow.xaml",
@@ -104,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\Room.cs",
               "RelativeDocumentMoniker": "travel\\Room.cs",
@@ -112,12 +128,11 @@
               "RelativeToolTip": "travel\\Room.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAADwvxMAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T04:32:13.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-15T04:32:13.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "travel.csproj",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\travel.csproj",
               "RelativeDocumentMoniker": "travel\\travel.csproj",
@@ -125,8 +140,7 @@
               "RelativeToolTip": "travel\\travel.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-15T04:38:17.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-15T04:38:17.915Z"
             }
           ]
         }
