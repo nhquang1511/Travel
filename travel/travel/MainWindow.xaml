@@ -96,7 +96,7 @@
                             <!-- Cột thứ ba -->
                             <Border Grid.Column="2" BorderBrush="#1903121A" BorderThickness="1,1,1,1"/>
 
-                            <Image Grid.Column="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Width="200" Height="100" Stretch="Uniform" Margin="0" />
+                            <Image Grid.Column="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Width="200" Height="100" Margin="0" />
 
                             <StackPanel Grid.Column="1" Margin="5">
 

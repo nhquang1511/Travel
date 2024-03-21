@@ -21,21 +21,27 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
                 <TextBox Grid.Row="0" FontWeight="Bold" FontSize="16" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}">Davue Hotel Da Nang</TextBox>
-                <TextBox Grid.Row="1" FontWeight="Bold" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">57-59 Đỗ Bí, Mỹ An, Ngũ Hành Sơn, Đà Nẵng, Việt Nam, 550000</TextBox>
+                <WrapPanel Grid.Row="1">
+                    <TextBlock Text="Khách sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
+                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
+
+                </WrapPanel>
+                <TextBox Grid.Row="2" FontWeight="Bold" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">57-59 Đỗ Bí, Mỹ An, Ngũ Hành Sơn, Đà Nẵng, Việt Nam, 550000</TextBox>
             </Grid>
-            <Grid Grid.Column="1">
+            <Grid Grid.Column="1" HorizontalAlignment="Right">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center" BorderBrush="{x:Null}">giá</TextBox>
-                <TextBox Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" BorderBrush="{x:Null}">238.095  VND</TextBox>
-                <Border Grid.Row="2" HorizontalAlignment="Center" BorderBrush="#FF210E06" Background="#FFFF5E1F" CornerRadius="5" Padding="3">
-                    <Button FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" BorderBrush="{x:Null}" Background="#FFFF5E1F">đặt phòng</Button>
-                </Border>
+                <TextBox Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center" >Giá/Phòng</TextBox>
+                <TextBox Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FFE22E2E" >238.095  VND</TextBox>
+                
+                 <Button  Grid.Row="2"  FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" Background="#FFFF5E1F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1" Margin="-105,5,5,4">đặt phòng</Button>
+                
 
             </Grid>
             
@@ -47,7 +53,7 @@
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Border Grid.Column="0" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="Uniform">
+                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="UniformToFill">
 
                 </Image>
             </Border>
@@ -57,21 +63,9 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Border Grid.Row="0" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="Uniform">
-
-                    </Image>
-                </Border>
-                <Border Grid.Row="1" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="Uniform">
-
-                    </Image>
-                </Border>
-                <Border Grid.Row="2" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="Uniform">
-
-                    </Image>
-                </Border>
+                <Image Grid.Row="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh1.webp" Stretch="UniformToFill"></Image>
+                <Image Grid.Row="1" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="UniformToFill"></Image>
+                <Image Grid.Row="2" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="UniformToFill"></Image>
             </Grid>
             <Grid Grid.Column="2">
                 <Grid.RowDefinitions>
@@ -79,30 +73,18 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Border Grid.Row="0" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="Uniform">
-                       
-                    </Image>
-                </Border>
-                <Border Grid.Row="1" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh1.webp" Stretch="Uniform">
-
-                    </Image>
-                </Border>
-                <Border Grid.Row="2" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="Uniform">
-
-                    </Image>
-                </Border>
+                <Image Grid.Row="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="UniformToFill"></Image>
+                <Image Grid.Row="1" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh1.webp" Stretch="UniformToFill"></Image>
+                <Image Grid.Row="2" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="UniformToFill"></Image>
             </Grid>
            
             
         </Grid>
         <Grid Grid.Row="2">
             <TextBox>
-                miêu tả
+                miêu tả đây là một khách sạn đầy dủ tiện nghi và trang thiết bị
             </TextBox>
-          
+        
         </Grid>
 
     </Grid>
