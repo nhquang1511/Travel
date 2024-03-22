@@ -30,3 +30,17 @@ C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\travel.source
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\detail.g.cs
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\detail.baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\quanlyphong.g.cs
+C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nhqua\source\repos\travel\travel\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\quanlyphong.baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\phongcontrol.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\phongcontrol.baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\main.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\main.baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\chitietphongcontroller.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\chitietphongcontroller.baml

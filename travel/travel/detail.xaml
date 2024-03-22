@@ -37,10 +37,10 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBox Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center" >Giá/Phòng</TextBox>
+                <TextBox Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center" BorderBrush="{x:Null}" >Giá/Phòng</TextBox>
                 <TextBox Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FFE22E2E" >238.095  VND</TextBox>
                 
-                 <Button  Grid.Row="2"  FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" Background="#FFFF5E1F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1" Margin="-105,5,5,4">đặt phòng</Button>
+                 <Button  Grid.Row="2"  FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" Background="#FFFF5E1F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1" Margin="-105,5,5,4">chọn phòng</Button>
                 
 
             </Grid>
@@ -81,10 +81,26 @@
             
         </Grid>
         <Grid Grid.Row="2">
-            <TextBox>
-                miêu tả đây là một khách sạn đầy dủ tiện nghi và trang thiết bị
-            </TextBox>
-        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBox FontWeight="Bold" BorderBrush="{x:Null}" >Giới thiệu cơ sở lưu trú</TextBox>
+                <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Lưu trú tại Gold Plaza Hotel Da Nang là một lựa chọn đúng đắn khi quý khách đến thăm Quận Hải Châu.
+Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý khách luôn kết nối với gia đình và bè bạn.</TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBox FontWeight="Bold" BorderBrush="{x:Null}" >Trong khu vực</TextBox>
+                <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Gần khu vui chơi giải trí</TextBox>
+                <TextBox BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <TextBox BorderBrush="{x:Null}" >Han River Bridge</TextBox>
+                <TextBox TextWrapping="Wrap" Margin="0,6,0,0" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}">Gần khu vui chơi giải trí</TextBox>
+                <TextBox BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</TextBox>
+            </StackPanel>
         </Grid>
 
     </Grid>

@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="quanlyphong" Height="450" Width="800">
     <Grid>
-        
+        <DataGrid x:Name="myDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+
     </Grid>
 </Window>
