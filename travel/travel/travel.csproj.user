@@ -10,9 +10,6 @@
     <Compile Update="chitietphongcontroller.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="detail.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,15 +22,9 @@
     <Compile Update="phongcontrol.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="quanlyphong.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="chitietphongcontroller.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="detail.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="login.xaml">
@@ -49,9 +40,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="phongcontrol.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="quanlyphong.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
