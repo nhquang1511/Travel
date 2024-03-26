@@ -7,7 +7,13 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="addkhachsan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="chitietphongcontroller.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="chukhachsan.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="login.xaml.cs">
@@ -24,7 +30,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="addkhachsan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="chitietphongcontroller.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="chukhachsan.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="login.xaml">

@@ -77,7 +77,7 @@ namespace travel {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/travel;V1.0.0.0;component/logincontrol%20.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/travel;component/logincontrol%20.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LoginControl .xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -38,7 +38,7 @@ namespace travel
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            detail detailWindow = new detail();
+            main detailWindow = new main();
 
             detailWindow.Show();
         }
