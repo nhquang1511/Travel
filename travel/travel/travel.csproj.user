@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="addkhachsan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="chitietphongcontroller.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="chukhachsan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginControl .xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="phongcontrol.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="quanlyphong.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="addkhachsan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="chitietphongcontroller.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="chukhachsan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginControl .xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="phongcontrol.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="quanlyphong.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

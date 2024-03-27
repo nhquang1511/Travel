@@ -1,0 +1,41 @@
+﻿<Window x:Class="Dulich.Views.PhongView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dulich.Views"
+        mc:Ignorable="d"
+        Title="Phong" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label>ID Phòng</Label>
+            <TextBox x:Name="idPhongTextBox"></TextBox>
+            <Label>Tên Phòng</Label>
+            <TextBox x:Name="tenPhongTextBox"></TextBox>
+            <Label>ID khách sạn</Label>
+            <TextBox x:Name="idKhachSanTextBox"></TextBox>
+            <Label>Tên loại phòng</Label>
+            <TextBox x:Name="tenLoaiPhongTextBox"></TextBox>
+            <Label>Trạng thái</Label>
+            <TextBox x:Name="trangThaiTextBox"></TextBox>
+            <Button Click="ThemButton_Click">Thêm</Button>
+            <Button Click="XoaButton_Click">Xóa</Button>
+            <Button Click="SuaButton_Click">Sửa</Button>
+
+        </StackPanel>
+        <DataGrid Grid.Column="1" x:Name="myDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding PhongList}" SelectionChanged="myDataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID Phòng" Binding="{Binding PhongID}" />
+                <DataGridTextColumn Header="Tên phòng" Binding="{Binding TenPhong}" />
+                <DataGridTextColumn Header="ID Khách Sạn" Binding="{Binding KhachSanID}" />
+                <DataGridTextColumn Header="Tên loại phòng" Binding="{Binding TenLoaiPhong}" />
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding TrangThai}" />
+                <!-- Thêm các cột khác nếu cần -->
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
