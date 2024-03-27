@@ -28,6 +28,9 @@
     <Compile Update="phongcontrol.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="quanlyphong.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="addkhachsan.xaml">
@@ -52,6 +55,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="phongcontrol.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="quanlyphong.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
