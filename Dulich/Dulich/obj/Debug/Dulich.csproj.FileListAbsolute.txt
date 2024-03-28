@@ -34,3 +34,7 @@ C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.g.cs
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.baml
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\KhachSanView.g.cs
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\KhachSanView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\LoginView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\TrangChuView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\LoginView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\TrangChuView.baml

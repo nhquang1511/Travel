@@ -39,6 +39,27 @@ namespace Dulich.DAO
                                           khachsan.KhachSanID, khachsan.TenKhachSan, khachsan.DiaChi, khachsan.LoaiKhachSan,khachsan.Anh,khachsan.MoTa,khachsan.KhachSanID);
             db.ExecuteSqlCommand(sqlStr);
         }
+        public DataTable TimKiem(string loaiphong,string loaikhachsan,string diachi)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+
+                conn.Open();
+
+                // Sử dụng tham số để truyền tên bảng vào câu SQL
+                string sqlStr = $"SELECT KS.KhachSanID,KS.TenKhachSan, KS.DiaChi, KS.LoaiKhachSan FROM Phong P JOIN KhachSan KS ON P.KhachSanID = KS.KhachSanID WHERE P.TenLoaiPhong = N'{loaiphong}' AND KS.LoaiKhachSan = '{loaikhachsan}' AND KS.DiaChi = N'{diachi}'";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+                adapter.Fill(dt);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
+            }
+            return dt;
+        }
     }
    
 }
