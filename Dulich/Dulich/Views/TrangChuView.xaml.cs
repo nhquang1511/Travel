@@ -91,6 +91,7 @@ namespace Dulich.Views
         {
             // Xử lý logic khi nút được nhấn ở đây
             ChiTietKhachSan ctks = new ChiTietKhachSan();
+
             ctks.Show();
         }
 

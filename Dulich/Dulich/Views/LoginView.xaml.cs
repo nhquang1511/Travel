@@ -37,6 +37,14 @@ namespace Dulich.Views
                 TrangChuView tc = new TrangChuView();
                 tc.Show();
             }
+            else if(username == "2" && password == "2")
+            {
+                lblMessage.Visibility = Visibility.Collapsed;
+                MessageBox.Show("Login successful!");
+                // Add logic to navigate to next page or perform actions after successful login
+                KhachSanView tc = new KhachSanView();
+                tc.Show();
+            }
             else
             {
                 lblMessage.Visibility = Visibility.Visible;

@@ -28,8 +28,6 @@ C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.GenerateResour
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.CoreCompileInputs.cache
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.exe
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.pdb
-C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\test.g.cs
-C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\test.baml
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.g.cs
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.baml
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\KhachSanView.g.cs
