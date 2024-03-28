@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\nhqua\\source\\repos\\Dulich\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\dao\\khachsandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\dao\\khachsandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\trangchuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\trangchuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\trangchuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\chitietphongcontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\chitietphongcontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\khachsanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\khachsanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\chitietkhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\chitietkhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\trangchuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\trangchuview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\trangchuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\trangchuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\dao\\khachsandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\dao\\khachsandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -23,20 +39,16 @@
       "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\dao\\phongdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\test.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\test.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\test.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|c:\\users\\nhqua\\source\\repos\\dulich\\dulich\\views\\khachsanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|solutionrelative:dulich\\views\\khachsanview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C95F1A3-162D-40A1-B3F3-18AE7C15B49A}|Dulich\\Dulich.csproj|C:\\Users\\nhqua\\source\\repos\\Dulich\\dulich\\views\\khachsanview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,45 +105,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "Dulich\\Views\\LoginView.xaml.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "Dulich\\Views\\LoginView.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T04:21:43.1Z",
+              "DocumentIndex": 1,
+              "Title": "chitietphongcontroller.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\chitietphongcontroller.xaml",
+              "RelativeDocumentMoniker": "Dulich\\Views\\chitietphongcontroller.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\chitietphongcontroller.xaml",
+              "RelativeToolTip": "Dulich\\Views\\chitietphongcontroller.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-28T06:30:39.055Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginView.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml",
-              "RelativeDocumentMoniker": "Dulich\\Views\\LoginView.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml",
-              "RelativeToolTip": "Dulich\\Views\\LoginView.xaml",
+              "DocumentIndex": 3,
+              "Title": "ChiTietKhachSan.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\ChiTietKhachSan.xaml",
+              "RelativeDocumentMoniker": "Dulich\\Views\\ChiTietKhachSan.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\ChiTietKhachSan.xaml",
+              "RelativeToolTip": "Dulich\\Views\\ChiTietKhachSan.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-28T04:20:57.259Z",
+              "WhenOpened": "2024-03-28T05:47:53.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "KhachSanDao.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\KhachSanDao.cs",
-              "RelativeDocumentMoniker": "Dulich\\DAO\\KhachSanDao.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\KhachSanDao.cs",
-              "RelativeToolTip": "Dulich\\DAO\\KhachSanDao.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T03:17:47.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "TrangChuView.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\TrangChuView.xaml",
               "RelativeDocumentMoniker": "Dulich\\Views\\TrangChuView.xaml",
@@ -147,59 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TrangChuView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\TrangChuView.xaml.cs",
-              "RelativeDocumentMoniker": "Dulich\\Views\\TrangChuView.xaml.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\TrangChuView.xaml.cs",
-              "RelativeToolTip": "Dulich\\Views\\TrangChuView.xaml.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAqwEwAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T04:28:28.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dbconnection.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Dbconnection.cs",
-              "RelativeDocumentMoniker": "Dulich\\Dbconnection.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Dbconnection.cs",
-              "RelativeToolTip": "Dulich\\Dbconnection.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwDUAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T05:13:01.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PhongDao.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\PhongDao.cs",
-              "RelativeDocumentMoniker": "Dulich\\DAO\\PhongDao.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\PhongDao.cs",
-              "RelativeToolTip": "Dulich\\DAO\\PhongDao.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAYwAkAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T02:59:34.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\App.config",
-              "RelativeDocumentMoniker": "Dulich\\App.config",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\App.config",
-              "RelativeToolTip": "Dulich\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-03-27T15:33:07.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\App.xaml",
               "RelativeDocumentMoniker": "Dulich\\App.xaml",
@@ -211,32 +153,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "test.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml.cs",
-              "RelativeDocumentMoniker": "Dulich\\Views\\test.xaml.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml.cs",
-              "RelativeToolTip": "Dulich\\Views\\test.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwD4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T15:36:45.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "test.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml",
-              "RelativeDocumentMoniker": "Dulich\\Views\\test.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml",
-              "RelativeToolTip": "Dulich\\Views\\test.xaml",
+              "Title": "LoginView.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml",
+              "RelativeDocumentMoniker": "Dulich\\Views\\LoginView.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml",
+              "RelativeToolTip": "Dulich\\Views\\LoginView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-27T15:36:24.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T04:20:57.259Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "Dulich\\Views\\LoginView.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\LoginView.xaml.cs",
+              "RelativeToolTip": "Dulich\\Views\\LoginView.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T04:21:43.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "KhachSanView.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\KhachSanView.xaml",
               "RelativeDocumentMoniker": "Dulich\\Views\\KhachSanView.xaml",
@@ -248,7 +188,90 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
+              "Title": "KhachSanDao.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\KhachSanDao.cs",
+              "RelativeDocumentMoniker": "Dulich\\DAO\\KhachSanDao.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\KhachSanDao.cs",
+              "RelativeToolTip": "Dulich\\DAO\\KhachSanDao.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T03:17:47.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dbconnection.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Dbconnection.cs",
+              "RelativeDocumentMoniker": "Dulich\\Dbconnection.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Dbconnection.cs",
+              "RelativeToolTip": "Dulich\\Dbconnection.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwDUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T05:13:01.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PhongDao.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\PhongDao.cs",
+              "RelativeDocumentMoniker": "Dulich\\DAO\\PhongDao.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\DAO\\PhongDao.cs",
+              "RelativeToolTip": "Dulich\\DAO\\PhongDao.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T02:59:34.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\App.config",
+              "RelativeDocumentMoniker": "Dulich\\App.config",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\App.config",
+              "RelativeToolTip": "Dulich\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-27T15:33:07.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "test.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml.cs",
+              "RelativeDocumentMoniker": "Dulich\\Views\\test.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml.cs",
+              "RelativeToolTip": "Dulich\\Views\\test.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAmwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T15:36:45.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "test.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml",
+              "RelativeDocumentMoniker": "Dulich\\Views\\test.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\test.xaml",
+              "RelativeToolTip": "Dulich\\Views\\test.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-27T15:36:24.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TrangChuView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\TrangChuView.xaml.cs",
+              "RelativeDocumentMoniker": "Dulich\\Views\\TrangChuView.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\TrangChuView.xaml.cs",
+              "RelativeToolTip": "Dulich\\Views\\TrangChuView.xaml.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAmwF0AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T04:28:28.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "list.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\list.xaml",
               "RelativeDocumentMoniker": "Dulich\\Views\\list.xaml",
@@ -259,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "list.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\list.xaml.cs",
               "RelativeDocumentMoniker": "Dulich\\Views\\list.xaml.cs",
@@ -271,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Phong.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Models\\Phong.cs",
               "RelativeDocumentMoniker": "Dulich\\Models\\Phong.cs",
@@ -283,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\3714f74b82eacc6cf8dcf1e32980b0908d4f8b447d25d4eb08ff1424a7b57c02\\ResourcePart.cs",
@@ -295,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "KhachSanView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\KhachSanView.xaml.cs",
               "RelativeDocumentMoniker": "Dulich\\Views\\KhachSanView.xaml.cs",
@@ -307,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "KhachSan.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Models\\KhachSan.cs",
               "RelativeDocumentMoniker": "Dulich\\Models\\KhachSan.cs",
@@ -319,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "PhongView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\PhongView.xaml.cs",
               "RelativeDocumentMoniker": "Dulich\\Views\\PhongView.xaml.cs",
@@ -331,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "PhongView.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Dulich\\Dulich\\Views\\PhongView.xaml",
               "RelativeDocumentMoniker": "Dulich\\Views\\PhongView.xaml",

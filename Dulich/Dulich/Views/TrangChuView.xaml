@@ -83,7 +83,7 @@
                                     <TextBlock   FontWeight="Bold" Text="Loại Khách Sạn" HorizontalAlignment="Center" Height="16"/>
                                     <TextBlock Text="{Binding LoaiKhachSan}" HorizontalAlignment="Center"  FontWeight="Bold" Height="48" Padding="0,15,0,0" Foreground="#FFFF5E1F"/>
 
-                                    <Button Content="Chọn Khách Sạn" Background="#FFFF5E1E" BorderBrush="#FFF7F3F3" Foreground="#FFF7F3F3" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" >
+                                    <Button Content="Chọn Khách Sạn" Background="#FFFF5E1E" BorderBrush="#FFF7F3F3" Foreground="#FFF7F3F3" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click1" >
                                         <Button.Template>
                                             <ControlTemplate TargetType="{x:Type Button}">
                                                 <Border Background="{TemplateBinding Background}"

@@ -38,3 +38,8 @@ C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\LoginView.g.cs
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\TrangChuView.g.cs
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\LoginView.baml
 C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\TrangChuView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\ChiTietKhachSan.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\ChiTietKhachSan.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\chitietphongcontroller.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\chitietphongcontroller.baml

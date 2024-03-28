@@ -87,6 +87,14 @@ namespace Dulich.Views
                 KhachSanList.Add(khachSan);
             }
         }
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            // Xử lý logic khi nút được nhấn ở đây
+            ChiTietKhachSan ctks = new ChiTietKhachSan();
+            ctks.Show();
+        }
+
+
 
     }
 }

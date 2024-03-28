@@ -1,0 +1,235 @@
+﻿<Window x:Class="Dulich.Views.ChiTietKhachSan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dulich.Views"
+        
+        mc:Ignorable="d"
+        Title="ChiTietKhachSan" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Tổng quan" BorderBrush="{x:Null}" FontWeight="Bold">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <TextBox Grid.Row="0" FontWeight="Bold" FontSize="16" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}" >Davue Hotel Da Nang</TextBox>
+                            <WrapPanel Grid.Row="1">
+                                <TextBlock Text="Khách sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
+                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
+
+                            </WrapPanel>
+                            <TextBox Grid.Row="2" FontWeight="Bold" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">57-59 Đỗ Bí, Mỹ An, Ngũ Hành Sơn, Đà Nẵng, Việt Nam, 550000</TextBox>
+                        </Grid>
+                        <Grid Grid.Column="1" HorizontalAlignment="Right">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <TextBox Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center" BorderBrush="{x:Null}" >Giá/Phòng</TextBox>
+                            <TextBox Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FFE22E2E" >238.095  VND</TextBox>
+
+                            <Button  Grid.Row="2"  FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" Background="#FFFF5E1F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1" Margin="-105,5,5,4">chọn phòng</Button>
+
+
+                        </Grid>
+
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
+                            <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="UniformToFill">
+
+                            </Image>
+                        </Border>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh1.webp" Stretch="UniformToFill"></Image>
+                            <Image Grid.Row="1" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="UniformToFill"></Image>
+                            <Image Grid.Row="2" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="UniformToFill"></Image>
+                        </Grid>
+                        <Grid Grid.Column="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Image Grid.Row="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="UniformToFill"></Image>
+                            <Image Grid.Row="1" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh1.webp" Stretch="UniformToFill"></Image>
+                            <Image Grid.Row="2" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="UniformToFill"></Image>
+                        </Grid>
+
+
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBox FontWeight="Bold" BorderBrush="{x:Null}" >Giới thiệu cơ sở lưu trú</TextBox>
+                            <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Lưu trú tại Gold Plaza Hotel Da Nang là một lựa chọn đúng đắn khi quý khách đến thăm Quận Hải Châu.
+Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý khách luôn kết nối với gia đình và bè bạn.</TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBox FontWeight="Bold" BorderBrush="{x:Null}" >Trong khu vực</TextBox>
+                            <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Gần khu vui chơi giải trí</TextBox>
+                            <TextBox BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</TextBox>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBox BorderBrush="{x:Null}" >Han River Bridge</TextBox>
+                            <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Gần khu vui chơi giải trí</TextBox>
+                            <TextBox BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</TextBox>
+                        </StackPanel>
+                    </Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Đánh giá" BorderBrush="{x:Null}" FontWeight="Bold">
+                <StackPanel>
+
+                    <TextBox Text="Xếp hạng và điểm dánh giá chung" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="20" Padding="0,0,0,16" SelectionBrush="{x:Null}"/>
+                    <TextBox BorderBrush="{x:Null}">Từ 424 đánh giá của khách đã ở</TextBox>
+                    <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\danhgia.jpg" Stretch="Uniform"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="0" Height="67">nhập nội dung</TextBox>
+                        <Button Grid.Column="1" BorderBrush="{x:Null}" FontWeight="Bold" FontSize="14" Background="{x:Null}">Đánh giá</Button>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <WrapPanel>
+                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
+                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
+                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
+                        </StackPanel>
+                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                            28 Feb 2024
+                        </TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <WrapPanel>
+                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
+                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
+                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
+                        </StackPanel>
+                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                            28 Feb 2024
+                        </TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <WrapPanel>
+                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
+                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
+                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
+                        </StackPanel>
+                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                            28 Feb 2024
+                        </TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <WrapPanel>
+                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
+                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
+                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
+                        </StackPanel>
+                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                            28 Feb 2024
+                        </TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <WrapPanel>
+                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
+                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
+                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
+                        </StackPanel>
+                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                            28 Feb 2024
+                        </TextBox>
+                    </Grid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Phòng" BorderBrush="{x:Null}" FontWeight="Bold">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <StackPanel>
+                        <local:chitietphongcontroller></local:chitietphongcontroller>
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </TabItem>
+            <!-- Add more TabItems as needed -->
+        </TabControl>
+    </Grid>
+</Window>
