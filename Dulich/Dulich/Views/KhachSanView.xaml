@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dulich.Views"
         mc:Ignorable="d"
-        Title="list" Height="450" Width="800">
+        Title="KhachSanView" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <Label>Tên khách sạn</Label>
             <Label>id khách sạn</Label>
             <TextBox x:Name="idTextBox"></TextBox>
             <Label>tên khách sạn</Label>
@@ -21,9 +21,16 @@
             <TextBox x:Name="diaChiTextBox"></TextBox>
             <Label>loaikhachsan</Label>
             <TextBox x:Name="loaiKhachSanTextBox"></TextBox>
+            <Label>ảnh</Label>
+            <Button Content="Chọn ảnh" Click="SelectImage_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20"/>
+            <Image x:Name="imgPreview" Stretch="Uniform" Margin="20" Height="10px" Width="100px"/>
+            <Label>Mô tả</Label>
+            <TextBox x:Name="moTaTextBox"></TextBox>
+            
             <Button Click="ThemButton_Click">Thêm</Button>
             <Button Click="XoaButton_Click">Xóa</Button>
             <Button Click="SuaButton_Click">Sửa</Button>
+
 
         </StackPanel>
         <DataGrid Grid.Column="1" x:Name="myDataGrid" AutoGenerateColumns="False" ItemsSource="{Binding KhachSanList}" SelectionChanged="myDataGrid_SelectionChanged">
@@ -32,7 +39,16 @@
                 <DataGridTextColumn Header="TenKhachSan" Binding="{Binding TenKhachSan}" />
                 <DataGridTextColumn Header="DiaChi" Binding="{Binding DiaChi}" />
                 <DataGridTextColumn Header="LoaiKhachSan" Binding="{Binding LoaiKhachSan}" />
+                <DataGridTemplateColumn Header="image">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <!-- Binding tới trường chứa URL hoặc đối tượng hình ảnh -->
+                            <Image Source="{Binding Anh}" Width="100" Height="70" Stretch="UniformToFill"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
                 <!-- Thêm các cột khác nếu cần -->
+                <DataGridTextColumn Header="MoTa" Binding="{Binding MoTa}" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

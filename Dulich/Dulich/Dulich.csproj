@@ -62,8 +62,8 @@
     <Compile Include="DAO\KhachSanDao.cs" />
     <Compile Include="DAO\PhongDao.cs" />
     <Compile Include="Dbconnection.cs" />
-    <Compile Include="Views\KháchSanView.xaml.cs">
-      <DependentUpon>KháchSanView.xaml</DependentUpon>
+    <Compile Include="Views\KhachSanView.xaml.cs">
+      <DependentUpon>KhachSanView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PhongView.xaml.cs">
       <DependentUpon>PhongView.xaml</DependentUpon>
@@ -111,7 +111,7 @@
     <Resource Include="image\sao.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Views\KháchSanView.xaml">
+    <Page Include="Views\KhachSanView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

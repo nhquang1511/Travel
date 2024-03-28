@@ -22,8 +22,8 @@ namespace Dulich.DAO
         }
         public void Them(KhachSan khachsan)
         {
-            string sqlStr = string.Format("INSERT INTO KhachSan(KhachSanID ,TenKhachSan,DiaChi,LoaiKhachSan) VALUES ('{0}', '{1}', '{2}', '{3}')",
-                                            khachsan.KhachSanID,khachsan.TenKhachSan,khachsan.DiaChi,khachsan.LoaiKhachSan);
+            string sqlStr = string.Format("INSERT INTO KhachSan(KhachSanID ,TenKhachSan,DiaChi,LoaiKhachSan,Anh,MoTa) VALUES ('{0}', '{1}', '{2}', '{3}','{4}','{5}')",
+                                            khachsan.KhachSanID,khachsan.TenKhachSan,khachsan.DiaChi,khachsan.LoaiKhachSan, khachsan.Anh,khachsan.MoTa);
             db.ExecuteSqlCommand(sqlStr);
         }
 
@@ -35,8 +35,8 @@ namespace Dulich.DAO
 
         public void SuaThongTin(KhachSan khachsan)
         {
-            string sqlStr = string.Format("UPDATE KhachSan SET KhachSanID = '{0}', TenKhachSan = '{1}', DiaChi = '{2}', LoaiKhachSan = '{3}' WHERE KhachSanID = '{4}'",
-                                          khachsan.KhachSanID, khachsan.TenKhachSan, khachsan.DiaChi, khachsan.LoaiKhachSan,khachsan.KhachSanID);
+            string sqlStr = string.Format("UPDATE KhachSan SET KhachSanID = '{0}', TenKhachSan = '{1}', DiaChi = '{2}', LoaiKhachSan = '{3}',Anh = '{4}',MoTA='{5}' WHERE KhachSanID = '{6}'",
+                                          khachsan.KhachSanID, khachsan.TenKhachSan, khachsan.DiaChi, khachsan.LoaiKhachSan,khachsan.Anh,khachsan.MoTa,khachsan.KhachSanID);
             db.ExecuteSqlCommand(sqlStr);
         }
     }

@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 using Dulich.DAO;
 using Dulich.Models;
+using Microsoft.Win32;
 
 namespace Dulich.Views
 {
     public partial class KhachSanView : Window
     {
+        private string imagePath;
         public ObservableCollection<KhachSan> KhachSanList { get; set; }
         private KhachSanDao khachSanDao;
 
@@ -39,7 +43,9 @@ namespace Dulich.Views
                     KhachSanID = Convert.ToInt32(row["KhachSanID"]),
                     TenKhachSan = row["TenKhachSan"].ToString(),
                     DiaChi = row["DiaChi"].ToString(),
-                    LoaiKhachSan = row["LoaiKhachSan"].ToString()
+                    LoaiKhachSan = row["LoaiKhachSan"].ToString(),
+                    Anh = row["Anh"].ToString(),
+                    MoTa = row["MoTa"].ToString()
                     // Thêm các thuộc tính khác nếu cần
                 };
                 KhachSanList.Add(khachSan);
@@ -55,7 +61,9 @@ namespace Dulich.Views
                 KhachSanID = int.Parse(idTextBox.Text),
                 TenKhachSan = tenKhachSanTextBox.Text,
                 DiaChi = diaChiTextBox.Text,
-                LoaiKhachSan = loaiKhachSanTextBox.Text
+                LoaiKhachSan = loaiKhachSanTextBox.Text,
+                Anh = imagePath, // Đường dẫn của hình ảnh đã chọn
+                MoTa = moTaTextBox.Text // Mô tả từ TextBox
             };
 
             // Gọi phương thức Thêm từ đối tượng khachSanDao để thêm vào cơ sở dữ liệu
@@ -113,6 +121,52 @@ namespace Dulich.Views
                 tenKhachSanTextBox.Text = selectedKhachSan.TenKhachSan;
                 diaChiTextBox.Text = selectedKhachSan.DiaChi;
                 loaiKhachSanTextBox.Text = selectedKhachSan.LoaiKhachSan;
+                imgPreview.Source = new BitmapImage(new Uri(selectedKhachSan.Anh)); // Giả sử selectedKhachSan.Anh là đường dẫn đến hình ảnh
+
+                // Hiển thị mô tả
+                moTaTextBox.Text = selectedKhachSan.MoTa;
+            }
+        }
+        private void SelectImage_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.png)|*.jpg; *.jpeg; *.png|All files (*.*)|*.*";
+            if (openFileDialog.ShowDialog() == true)
+            {
+                imagePath = openFileDialog.FileName;
+                imgPreview.Source = new BitmapImage(new Uri(imagePath));
+
+                // Lưu đường dẫn tuyệt đối của ảnh vào cơ sở dữ liệu tại đây
+                // Ví dụ:
+                
+            }
+        }
+        private void SaveImagePathToDatabase(string imagePath)
+        {
+            // Kết nối đến cơ sở dữ liệu
+            string connectionString = "Data Source=localhost;Initial Catalog=DuLich;Integrated Security=True;Encrypt=False";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Mở kết nối
+                connection.Open();
+
+                // Tạo câu lệnh SQL INSERT
+                string insertQuery = "INSERT INTO HinhAnhKhachSan (HinhAnhKhachSanID,KhachSanID, DuongDan) VALUES (@HinhAnhKhachSanID ,@KhachSanID, @DuongDan)";
+
+                // Tạo đối tượng SqlCommand
+                using (SqlCommand command = new SqlCommand(insertQuery, connection))
+                {
+                    // Thêm tham số cho câu lệnh
+                    command.Parameters.AddWithValue("@HinhAnhKhachSanID", '6');
+                    command.Parameters.AddWithValue("@KhachSanID", '6');
+                    command.Parameters.AddWithValue("@DuongDan", imagePath);
+
+                    // Thực thi truy vấn INSERT
+                    command.ExecuteNonQuery();
+                }
+
+                // Đóng kết nối
+                connection.Close();
             }
         }
     }

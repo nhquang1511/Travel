@@ -85,7 +85,7 @@ namespace travel {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/travel;component/addkhachsan.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/travel;V1.0.0.0;component/addkhachsan.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\addkhachsan.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\nhqua\\source\\repos\\travel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|C:\\Users\\nhqua\\source\\repos\\travel\\travel\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\test.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\test.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\test.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\test.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -15,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|c:\\users\\nhqua\\source\\repos\\travel\\travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|C:\\Users\\nhqua\\source\\repos\\travel\\travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|C:\\Users\\nhqua\\source\\repos\\travel\\travel\\chukhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\chukhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|C:\\Users\\nhqua\\source\\repos\\travel\\travel\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|solutionrelative:travel\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B815F200-1AD0-47DA-9A25-B3BAB9023C11}|travel\\travel.csproj|C:\\Users\\nhqua\\source\\repos\\travel\\travel\\khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,44 +106,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "test.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml.cs",
               "RelativeDocumentMoniker": "travel\\test.xaml.cs",
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml.cs",
               "RelativeToolTip": "travel\\test.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA+wCkAAAAJAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAiwCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T16:08:03.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "test.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml",
-              "RelativeDocumentMoniker": "travel\\test.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml",
-              "RelativeToolTip": "travel\\test.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-27T16:07:00.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "chukhachsan.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\chukhachsan.xaml",
               "RelativeDocumentMoniker": "travel\\chukhachsan.xaml",
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\chukhachsan.xaml",
               "RelativeToolTip": "travel\\chukhachsan.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-22T05:03:27.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T05:03:27.414Z"
             },
             {
               "$type": "Document",
@@ -155,24 +146,22 @@
               "RelativeToolTip": "travel\\khachsan.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:35:18.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T04:35:18.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\MainWindow.xaml",
               "RelativeDocumentMoniker": "travel\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\MainWindow.xaml",
               "RelativeToolTip": "travel\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-21T14:23:16.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T14:23:16.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "travel\\MainWindow.xaml.cs",
@@ -180,12 +169,11 @@
               "RelativeToolTip": "travel\\MainWindow.xaml.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAcwCEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T09:33:51.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T09:33:51.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "quanlyphong.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\quanlyphong.xaml.cs",
               "RelativeDocumentMoniker": "travel\\quanlyphong.xaml.cs",
@@ -193,36 +181,22 @@
               "RelativeToolTip": "travel\\quanlyphong.xaml.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:34:22.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T05:34:22.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "quanlyphong.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\quanlyphong.xaml",
               "RelativeDocumentMoniker": "travel\\quanlyphong.xaml",
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\quanlyphong.xaml",
               "RelativeToolTip": "travel\\quanlyphong.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-27T05:33:45.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T05:33:45.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\App.xaml",
-              "RelativeDocumentMoniker": "travel\\App.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\App.xaml",
-              "RelativeToolTip": "travel\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-21T09:53:51.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "main.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\main.xaml",
               "RelativeDocumentMoniker": "travel\\main.xaml",
@@ -230,6 +204,29 @@
               "RelativeToolTip": "travel\\main.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-03-22T04:35:07.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "test.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml",
+              "RelativeDocumentMoniker": "travel\\test.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\test.xaml",
+              "RelativeToolTip": "travel\\test.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-27T16:07:00.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\App.xaml",
+              "RelativeDocumentMoniker": "travel\\App.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\App.xaml",
+              "RelativeToolTip": "travel\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-21T09:53:51.344Z",
               "EditorCaption": ""
             },
             {
@@ -246,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "chukhachsan.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\chukhachsan.xaml.cs",
               "RelativeDocumentMoniker": "travel\\chukhachsan.xaml.cs",
@@ -254,8 +251,7 @@
               "RelativeToolTip": "travel\\chukhachsan.xaml.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAmwBIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:20:32.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T04:20:32.011Z"
             },
             {
               "$type": "Document",
@@ -267,8 +263,7 @@
               "RelativeToolTip": "travel\\Models\\ChuKhachSan.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAIwBMAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:02:59.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T04:02:59.379Z"
             },
             {
               "$type": "Document",
@@ -280,8 +275,7 @@
               "RelativeToolTip": "travel\\Models\\Phong.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:36:37.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T05:36:37.782Z"
             },
             {
               "$type": "Document",
@@ -293,8 +287,7 @@
               "RelativeToolTip": "travel\\main.xaml.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T05:37:31.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-27T05:37:31.419Z"
             },
             {
               "$type": "Document",
@@ -305,8 +298,7 @@
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\login.xaml",
               "RelativeToolTip": "travel\\login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-21T14:42:00.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T14:42:00.88Z"
             },
             {
               "$type": "Document",
@@ -317,8 +309,7 @@
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\LoginControl .xaml",
               "RelativeToolTip": "travel\\LoginControl .xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-21T14:42:01.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-21T14:42:01.398Z"
             },
             {
               "$type": "Document",
@@ -330,8 +321,7 @@
               "RelativeToolTip": "travel\\addkhachsan.xaml.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAAAC0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T05:52:41.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T05:52:41.042Z"
             },
             {
               "$type": "Document",
@@ -343,8 +333,7 @@
               "RelativeToolTip": "travel\\Rooms.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T05:14:04.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T05:14:04.717Z"
             },
             {
               "$type": "Document",
@@ -368,8 +357,7 @@
               "RelativeToolTip": "travel\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:30:54.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T04:30:54.109Z"
             },
             {
               "$type": "Document",
@@ -381,8 +369,7 @@
               "RelativeToolTip": "travel\\obj\\Debug\\net8.0-windows\\chukhachsan.g.cs",
               "ViewState": "AQIAADAAAAAAAAAAAADgvzoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T04:50:01.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T04:50:01.104Z"
             },
             {
               "$type": "Document",
@@ -393,8 +380,7 @@
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\travel\\travel\\addkhachsan.xaml",
               "RelativeToolTip": "travel\\addkhachsan.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-26T05:36:19.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T05:36:19.757Z"
             },
             {
               "$type": "Document",
@@ -406,8 +392,7 @@
               "RelativeToolTip": "travel\\AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T02:51:27.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-22T02:51:27.508Z"
             }
           ]
         }

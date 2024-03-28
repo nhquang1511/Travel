@@ -13,6 +13,7 @@ namespace Dulich.Models
         public int KhachSanID { get; set; }
         public string TenLoaiPhong { get; set; }
         public string TrangThai { get; set; }
+        
     }
 
 }

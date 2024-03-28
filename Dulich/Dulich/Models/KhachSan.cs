@@ -14,6 +14,7 @@ namespace Dulich.Models
 
         public string LoaiKhachSan { get; set; }
 
-       
+        public string Anh {  get; set; }
+        public string MoTa { get; set; }
     }
 }
