@@ -53,7 +53,7 @@ namespace travel {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/travel;V1.0.0.0;component/phongcontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/travel;component/phongcontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\phongcontrol.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

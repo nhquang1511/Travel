@@ -55,27 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Views\list.xaml.cs">
-      <DependentUpon>list.xaml</DependentUpon>
-    </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DAO\KhachSanDao.cs" />
+    <Compile Include="DAO\PhongDao.cs" />
     <Compile Include="Dbconnection.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Views\KháchSanView.xaml.cs">
+      <DependentUpon>KháchSanView.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\list.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="Views\PhongView.xaml.cs">
+      <DependentUpon>PhongView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\test.xaml.cs">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\KhachSan.cs" />
@@ -97,6 +92,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="image\anh.webp" />
+    <None Include="image\anh1.webp" />
+    <None Include="image\anh2.webp" />
+    <None Include="image\anhnguoi.webp" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +104,25 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="image\danhgia.jpg" />
+    <Resource Include="image\OIP.jpg" />
+    <Resource Include="image\R.png" />
+    <Resource Include="image\sao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\KháchSanView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PhongView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

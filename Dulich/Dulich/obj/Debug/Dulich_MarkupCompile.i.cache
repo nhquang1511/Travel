@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\
 Dulich
 none
 false
 DEBUG;TRACE
-D:\ute\lập trình tên window\travel\Dulich\Dulich\App.xaml
-2683263985
+C:\Users\nhqua\source\repos\Dulich\Dulich\App.xaml
+3-790555309
 
-11-1694059889
+13-329701575
 13-1310406943
-MainWindow.xaml;Views\list.xaml;
+Views\KháchSanView.xaml;Views\PhongView.xaml;Views\test.xaml;
 
-True
+False
 

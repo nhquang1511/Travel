@@ -15,3 +15,23 @@ D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.exe
 D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.pdb
 D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Views\list.g.cs
 D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Views\list.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\bin\Debug\Dulich.exe.config
+C:\Users\nhqua\source\repos\Dulich\Dulich\bin\Debug\Dulich.exe
+C:\Users\nhqua\source\repos\Dulich\Dulich\bin\Debug\Dulich.pdb
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.AssemblyReference.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\App.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.lref
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.g.resources
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.Properties.Resources.resources
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.GenerateResource.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.CoreCompileInputs.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.exe
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.pdb
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\list.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\list.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\test.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\test.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\KháchSanView.g.cs

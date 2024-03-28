@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Dulich.Models
 {
-    internal class Phong
+    public class Phong
     {
+        public int PhongID { get; set; }
+        public string TenPhong { get; set; }
+        public int KhachSanID { get; set; }
+        public string TenLoaiPhong { get; set; }
+        public string TrangThai { get; set; }
     }
+
 }

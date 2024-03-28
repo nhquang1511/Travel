@@ -46,3 +46,5 @@ C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\addkhachsan.g
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\addkhachsan.baml
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\quanlyphong.g.cs
 C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\quanlyphong.baml
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\test.g.cs
+C:\Users\nhqua\source\repos\travel\travel\obj\Debug\net8.0-windows\test.baml
