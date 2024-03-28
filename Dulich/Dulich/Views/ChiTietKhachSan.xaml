@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:Dulich.Views"
         
         mc:Ignorable="d"
-        Title="ChiTietKhachSan" Height="450" Width="800">
+        Title="ChiTietKhachSan" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <TabControl>
-            <TabItem Header="Tổng quan" BorderBrush="{x:Null}" FontWeight="Bold">
+        <TabControl x:Name="myTabControl">
+            <TabItem Header="Tổng quan" FontWeight="Bold">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"></RowDefinition>
@@ -18,33 +19,36 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="154*"></ColumnDefinition>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="233*"/>
+                            <ColumnDefinition Width="397*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Grid Grid.Column="0">
+                        <Grid Grid.Column="0" Grid.ColumnSpan="3">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
-                            <TextBox Grid.Row="0" FontWeight="Bold" FontSize="16" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}" >Davue Hotel Da Nang</TextBox>
+                            <Label x:Name="tenkhachsanlabel"  Grid.Row="0" FontWeight="Bold" FontSize="16" ></Label>
                             <WrapPanel Grid.Row="1">
-                                <TextBlock Text="Khách sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
+                                <Label Content="Khách sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
                                 <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
 
                             </WrapPanel>
-                            <TextBox Grid.Row="2" FontWeight="Bold" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}">57-59 Đỗ Bí, Mỹ An, Ngũ Hành Sơn, Đà Nẵng, Việt Nam, 550000</TextBox>
+
+                            <Label x:Name="diachilabel" Grid.Row="2" FontWeight="Bold" ></Label>
                         </Grid>
-                        <Grid Grid.Column="1" HorizontalAlignment="Right">
+                        <Grid Grid.Column="3" HorizontalAlignment="Left" Margin="313,0,0,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
-                            <TextBox Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center" BorderBrush="{x:Null}" >Giá/Phòng</TextBox>
-                            <TextBox Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FFE22E2E" >238.095  VND</TextBox>
+                            <Label Grid.Row="0" FontWeight="Bold" HorizontalAlignment="Center"  >Giá/Phòng</Label>
+                            <Label Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#FFE22E2E" >238.095  VND</Label>
 
-                            <Button  Grid.Row="2"  FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" Background="#FFFF5E1F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1" Margin="-105,5,5,4">chọn phòng</Button>
+                            <Button  Grid.Row="2"  FontWeight="Bold" FontSize="14" Foreground="#FFF2F0EE" Background="#FFFF5E1F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1" Margin="-105,5,5,4" Click="Button_Click">chọn phòng</Button>
 
 
                         </Grid>
@@ -57,7 +61,7 @@
                             <ColumnDefinition Width="1*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" BorderThickness="0.5" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                            <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="UniformToFill">
+                            <Image x:Name="anhimage" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="UniformToFill">
 
                             </Image>
                         </Border>
@@ -91,19 +95,18 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="0">
-                            <TextBox FontWeight="Bold" BorderBrush="{x:Null}" >Giới thiệu cơ sở lưu trú</TextBox>
-                            <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Lưu trú tại Gold Plaza Hotel Da Nang là một lựa chọn đúng đắn khi quý khách đến thăm Quận Hải Châu.
-Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý khách luôn kết nối với gia đình và bè bạn.</TextBox>
+                            <Label FontWeight="Bold" >Giới thiệu cơ sở lưu trú</Label>
+                            <Label x:Name="motalabel"  Margin="0,6,0,0"></Label>
                         </StackPanel>
                         <StackPanel Grid.Column="1">
-                            <TextBox FontWeight="Bold" BorderBrush="{x:Null}" >Trong khu vực</TextBox>
-                            <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Gần khu vui chơi giải trí</TextBox>
-                            <TextBox BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</TextBox>
+                            <Label FontWeight="Bold"  >Trong khu vực</Label>
+                            <Label Margin="0,6,0,0" >Gần khu vui chơi giải trí</Label>
+                            <Label BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</Label>
                         </StackPanel>
                         <StackPanel Grid.Column="2">
-                            <TextBox BorderBrush="{x:Null}" >Han River Bridge</TextBox>
-                            <TextBox TextWrapping="Wrap" Margin="0,6,0,0" BorderBrush="{x:Null}">Gần khu vui chơi giải trí</TextBox>
-                            <TextBox BorderBrush="{x:Null}">Sân bay quốc tế Đà Nẵng (DAD)</TextBox>
+                            <Label >Han River Bridge</Label>
+                            <Label Margin="0,6,0,0" >Gần khu vui chơi giải trí</Label>
+                            <Label >Sân bay quốc tế Đà Nẵng (DAD)</Label>
                         </StackPanel>
                     </Grid>
 
@@ -112,8 +115,8 @@ Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý k
             <TabItem Header="Đánh giá" BorderBrush="{x:Null}" FontWeight="Bold">
                 <StackPanel>
 
-                    <TextBox Text="Xếp hạng và điểm dánh giá chung" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="20" Padding="0,0,0,16" SelectionBrush="{x:Null}"/>
-                    <TextBox BorderBrush="{x:Null}">Từ 424 đánh giá của khách đã ở</TextBox>
+                    <Label Content="Xếp hạng và điểm dánh giá chung" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="20" Padding="0,0,0,16" />
+                    <Label BorderBrush="{x:Null}">Từ 424 đánh giá của khách đã ở</Label>
                     <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\danhgia.jpg" Stretch="Uniform"/>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -138,9 +141,9 @@ Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý k
                         <StackPanel Grid.Column="1" Margin="0,7,0,0">
                             <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
                         </StackPanel>
-                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
                             28 Feb 2024
-                        </TextBox>
+                        </Label>
                     </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -157,9 +160,9 @@ Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý k
                         <StackPanel Grid.Column="1" Margin="0,7,0,0">
                             <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
                         </StackPanel>
-                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
                             28 Feb 2024
-                        </TextBox>
+                        </Label>
                     </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -176,9 +179,28 @@ Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý k
                         <StackPanel Grid.Column="1" Margin="0,7,0,0">
                             <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
                         </StackPanel>
-                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
                             28 Feb 2024
-                        </TextBox>
+                        </Label>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <WrapPanel>
+                                <Image Source="\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
+                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
+                            </WrapPanel>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
+                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
+                        </StackPanel>
+                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                            28 Feb 2024
+                        </Label>
                     </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -195,38 +217,21 @@ Sóng WiFi phủ khắp các khu vực chung của khách sạn cho phép quý k
                         <StackPanel Grid.Column="1" Margin="0,7,0,0">
                             <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
                         </StackPanel>
-                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
+                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
                             28 Feb 2024
-                        </TextBox>
-                    </Grid>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        <StackPanel Grid.Column="0">
-                            <WrapPanel>
-                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37"/>
-                                <TextBox BorderBrush="{x:Null}" Padding="0,7,0,0">Le Thai H. D.</TextBox>
-                            </WrapPanel>
-                        </StackPanel>
-                        <StackPanel Grid.Column="1" Margin="0,7,0,0">
-                            <TextBox TextWrapping="Wrap" BorderBrush="{x:Null}">Phòng rộng, sạch sẽ và đẹp, sẽ quay lại nếu có dịp</TextBox>
-                        </StackPanel>
-                        <TextBox Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
-                            28 Feb 2024
-                        </TextBox>
+                        </Label>
                     </Grid>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Phòng" BorderBrush="{x:Null}" FontWeight="Bold">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
-                    <StackPanel>
-                        <local:chitietphongcontroller></local:chitietphongcontroller>
-                    </StackPanel>
+            <TabItem Header="Phòng"  FontWeight="Bold">
 
-                </ScrollViewer>
+                <StackPanel>
+                    <local:chitietphongcontroller></local:chitietphongcontroller>
+                    <local:chitietphongcontroller></local:chitietphongcontroller>
+                    <local:chitietphongcontroller></local:chitietphongcontroller>
+                    <local:chitietphongcontroller></local:chitietphongcontroller>
+                    <local:chitietphongcontroller></local:chitietphongcontroller>
+                </StackPanel>
 
             </TabItem>
             <!-- Add more TabItems as needed -->

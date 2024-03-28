@@ -47,9 +47,19 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
+                
                 <!-- Thêm các cột khác nếu cần -->
                 <DataGridTextColumn Header="MoTa" Binding="{Binding MoTa}" />
+                <DataGridTemplateColumn Header="Detail">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Detail" Click="DetailButton_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
+            
         </DataGrid>
+        
     </Grid>
 </Window>

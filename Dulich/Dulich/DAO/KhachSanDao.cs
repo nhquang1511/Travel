@@ -60,6 +60,27 @@ namespace Dulich.DAO
             }
             return dt;
         }
+        public DataTable ChiTietKhachSan(int idkhachsan)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+
+                conn.Open();
+
+                // Sử dụng tham số để truyền tên bảng vào câu SQL
+                string sqlStr = $"SELECT * from KhachSan WHERE KhachSanID = {idkhachsan}";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+                adapter.Fill(dt);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
+            }
+            return dt;
+        }
     }
    
 }

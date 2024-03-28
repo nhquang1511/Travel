@@ -101,7 +101,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="image\anh.webp" />
+    <Resource Include="image\anh.webp" />
     <None Include="image\anh1.webp" />
     <None Include="image\anh2.webp" />
     <None Include="image\anhnguoi.webp" />

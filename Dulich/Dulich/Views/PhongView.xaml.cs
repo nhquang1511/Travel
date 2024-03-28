@@ -39,6 +39,7 @@ namespace Dulich.Views
                     KhachSanID = Convert.ToInt32(row["KhachSanID"]),
                     TenLoaiPhong = row["TenLoaiPhong"].ToString(),
                     TrangThai = row["TrangThai"].ToString(),
+                    Gia = Convert.ToSingle(row["Gia"])
                 };
                 PhongList.Add(phong);
             }

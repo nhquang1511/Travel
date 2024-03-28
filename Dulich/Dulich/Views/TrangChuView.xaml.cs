@@ -50,7 +50,8 @@ namespace Dulich.Views
                     KhachSanID = Convert.ToInt32(row["KhachSanID"]),
                     TenKhachSan = row["TenKhachSan"].ToString(),
                     DiaChi = row["DiaChi"].ToString(),
-                    LoaiKhachSan = row["LoaiKhachSan"].ToString()
+                    LoaiKhachSan = row["LoaiKhachSan"].ToString(),
+                    Anh = row["Anh"].ToString()
                     // Thêm các thuộc tính khác nếu cần
                 };
                 KhachSanList.Add(khachSan);
@@ -89,11 +90,30 @@ namespace Dulich.Views
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            // Xử lý logic khi nút được nhấn ở đây
-            ChiTietKhachSan ctks = new ChiTietKhachSan();
+            // Lấy button mà được click
+            Button button = sender as Button;
 
-            ctks.Show();
+            // Tìm đến đối tượng KhachSan được chọn từ Button's DataContext
+            KhachSan selectedKhachSan = button.DataContext as KhachSan;
+
+            // Kiểm tra xem có đối tượng được chọn không
+            if (selectedKhachSan != null)
+            {
+                // Lấy idkhachsan từ đối tượng KhachSan được chọn
+                int idkhachsan = selectedKhachSan.KhachSanID;
+
+                // Tạo một thể hiện mới của form ChiTietKhachSan và chuyển idkhachsan qua constructor
+                ChiTietKhachSan ctks = new ChiTietKhachSan(idkhachsan);
+
+                // Hiển thị form ChiTietKhachSan
+                ctks.Show();
+            }
+            else
+            {
+                MessageBox.Show("Không thể lấy thông tin của khách sạn được chọn.");
+            }
         }
+
 
 
 

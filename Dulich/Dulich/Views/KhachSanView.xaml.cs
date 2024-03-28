@@ -169,5 +169,10 @@ namespace Dulich.Views
                 connection.Close();
             }
         }
+        private void DetailButton_Click(object sender, RoutedEventArgs e)
+        {
+            PhongView pv = new PhongView();
+            pv.Show();
+        }
     }
 }

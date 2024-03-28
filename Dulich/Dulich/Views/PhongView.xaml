@@ -34,6 +34,7 @@
                 <DataGridTextColumn Header="ID Khách Sạn" Binding="{Binding KhachSanID}" />
                 <DataGridTextColumn Header="Tên loại phòng" Binding="{Binding TenLoaiPhong}" />
                 <DataGridTextColumn Header="Trạng thái" Binding="{Binding TrangThai}" />
+                <DataGridTextColumn Header="Giá" Binding="{Binding Gia}" />
                 <!-- Thêm các cột khác nếu cần -->
             </DataGrid.Columns>
         </DataGrid>

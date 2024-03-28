@@ -43,7 +43,7 @@
             <!-- Danh sách phòng còn trống -->
             <StackPanel Grid.Column="1" Margin="10">
                 <TextBlock Text="Danh sách khách sạn" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
-                <ListBox  ItemsSource="{Binding KhachSanList}" Height="431" >
+                <ListBox x:Name="listbox" ItemsSource="{Binding KhachSanList}" Height="431" >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid Width="556">
@@ -61,7 +61,7 @@
                                 <!-- Cột thứ ba -->
                                 <Border Grid.Column="2" BorderBrush="#1903121A" BorderThickness="1,1,1,1"/>
 
-                                <Image Grid.Column="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Width="200" Height="100" Margin="0" />
+                                <Image Grid.Column="0" Source="{Binding Anh}" Width="200" Height="100" Margin="0" />
 
                                 <StackPanel Grid.Column="1" Margin="5">
 

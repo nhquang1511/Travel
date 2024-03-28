@@ -32,7 +32,7 @@ namespace Dulich.Views
             if (username == "1" && password == "1")
             {
                 lblMessage.Visibility = Visibility.Collapsed;
-                MessageBox.Show("Login successful!");
+                
                 // Add logic to navigate to next page or perform actions after successful login
                 TrangChuView tc = new TrangChuView();
                 tc.Show();
@@ -40,7 +40,7 @@ namespace Dulich.Views
             else if(username == "2" && password == "2")
             {
                 lblMessage.Visibility = Visibility.Collapsed;
-                MessageBox.Show("Login successful!");
+               
                 // Add logic to navigate to next page or perform actions after successful login
                 KhachSanView tc = new KhachSanView();
                 tc.Show();
