@@ -82,7 +82,8 @@ namespace Dulich.Views
                     KhachSanID = Convert.ToInt32(row["KhachSanID"]),
                     TenKhachSan = row["TenKhachSan"].ToString(),
                     DiaChi = row["DiaChi"].ToString(),
-                    LoaiKhachSan = row["LoaiKhachSan"].ToString()
+                    LoaiKhachSan = row["LoaiKhachSan"].ToString(),
+                    Anh = row["Anh"].ToString()
                     // Thêm các thuộc tính khác nếu cần
                 };
                 KhachSanList.Add(khachSan);

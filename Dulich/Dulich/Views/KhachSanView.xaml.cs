@@ -99,8 +99,10 @@ namespace Dulich.Views
                 selectedKhachSan.TenKhachSan = tenKhachSanTextBox.Text;
                 selectedKhachSan.DiaChi = diaChiTextBox.Text;
                 selectedKhachSan.LoaiKhachSan = loaiKhachSanTextBox.Text;
+                selectedKhachSan.Anh = imagePath;
+                selectedKhachSan.MoTa = moTaTextBox.Text; // Mô tả từ TextBox
 
-                // Gọi phương thức SuaThongTin từ đối tượng khachSanDao để cập nhật thông tin vào cơ sở dữ liệu
+               
                 khachSanDao.SuaThongTin(selectedKhachSan);
 
                 // Sau khi cập nhật vào cơ sở dữ liệu, cập nhật ObservableCollection và DataGrid
@@ -141,38 +143,13 @@ namespace Dulich.Views
                 
             }
         }
-        private void SaveImagePathToDatabase(string imagePath)
-        {
-            // Kết nối đến cơ sở dữ liệu
-            string connectionString = "Data Source=localhost;Initial Catalog=DuLich;Integrated Security=True;Encrypt=False";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                // Mở kết nối
-                connection.Open();
-
-                // Tạo câu lệnh SQL INSERT
-                string insertQuery = "INSERT INTO HinhAnhKhachSan (HinhAnhKhachSanID,KhachSanID, DuongDan) VALUES (@HinhAnhKhachSanID ,@KhachSanID, @DuongDan)";
-
-                // Tạo đối tượng SqlCommand
-                using (SqlCommand command = new SqlCommand(insertQuery, connection))
-                {
-                    // Thêm tham số cho câu lệnh
-                    command.Parameters.AddWithValue("@HinhAnhKhachSanID", '6');
-                    command.Parameters.AddWithValue("@KhachSanID", '6');
-                    command.Parameters.AddWithValue("@DuongDan", imagePath);
-
-                    // Thực thi truy vấn INSERT
-                    command.ExecuteNonQuery();
-                }
-
-                // Đóng kết nối
-                connection.Close();
-            }
-        }
+        
         private void DetailButton_Click(object sender, RoutedEventArgs e)
         {
             PhongView pv = new PhongView();
             pv.Show();
         }
+
+       
     }
 }

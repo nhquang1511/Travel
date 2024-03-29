@@ -36,8 +36,11 @@
                                 <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
 
                             </WrapPanel>
-
-                            <Label x:Name="diachilabel" Grid.Row="2" FontWeight="Bold" ></Label>
+                            <WrapPanel Grid.Row="2">
+                                <Label FontWeight="Bold">Địa chỉ:</Label>
+                                <Label x:Name="diachilabel"></Label>
+                            </WrapPanel>     
+                            
                         </Grid>
                         <Grid Grid.Column="3" HorizontalAlignment="Left" Margin="313,0,0,0">
                             <Grid.RowDefinitions>
@@ -224,7 +227,7 @@
                 </StackPanel>
             </TabItem>
             <TabItem Header="Phòng"  FontWeight="Bold">
-
+                <ScrollViewer>
                 <StackPanel>
                     <local:chitietphongcontroller></local:chitietphongcontroller>
                     <local:chitietphongcontroller></local:chitietphongcontroller>
@@ -232,7 +235,7 @@
                     <local:chitietphongcontroller></local:chitietphongcontroller>
                     <local:chitietphongcontroller></local:chitietphongcontroller>
                 </StackPanel>
-
+                </ScrollViewer>
             </TabItem>
             <!-- Add more TabItems as needed -->
         </TabControl>

@@ -39,16 +39,24 @@ namespace Dulich.DAO
                                           khachsan.KhachSanID, khachsan.TenKhachSan, khachsan.DiaChi, khachsan.LoaiKhachSan,khachsan.Anh,khachsan.MoTa,khachsan.KhachSanID);
             db.ExecuteSqlCommand(sqlStr);
         }
-        public DataTable TimKiem(string loaiphong,string loaikhachsan,string diachi)
+        public DataTable TimKiem(string loaiphong, string loaikhachsan, string diachi)
         {
             DataTable dt = new DataTable();
             try
             {
-
                 conn.Open();
 
-                // Sử dụng tham số để truyền tên bảng vào câu SQL
-                string sqlStr = $"SELECT KS.KhachSanID,KS.TenKhachSan, KS.DiaChi, KS.LoaiKhachSan FROM Phong P JOIN KhachSan KS ON P.KhachSanID = KS.KhachSanID WHERE P.TenLoaiPhong = N'{loaiphong}' AND KS.LoaiKhachSan = '{loaikhachsan}' AND KS.DiaChi = N'{diachi}'";
+                // Xây dựng câu truy vấn với các điều kiện OR để áp dụng thông tin của các trường khác khi một trường không được tìm thấy
+                string sqlStr = $"SELECT KS.Anh ,KS.KhachSanID, KS.TenKhachSan, KS.DiaChi, KS.LoaiKhachSan FROM Phong P JOIN KhachSan KS ON P.KhachSanID = KS.KhachSanID WHERE 1=1";
+
+                if (!string.IsNullOrEmpty(loaiphong))
+                    sqlStr += $" AND P.TenLoaiPhong = N'{loaiphong}'";
+
+                if (!string.IsNullOrEmpty(loaikhachsan))
+                    sqlStr += $" AND KS.LoaiKhachSan = '{loaikhachsan}'";
+
+                if (!string.IsNullOrEmpty(diachi))
+                    sqlStr += $" AND KS.DiaChi = N'{diachi}'";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
                 adapter.Fill(dt);
@@ -60,6 +68,7 @@ namespace Dulich.DAO
             }
             return dt;
         }
+
         public DataTable ChiTietKhachSan(int idkhachsan)
         {
             DataTable dt = new DataTable();

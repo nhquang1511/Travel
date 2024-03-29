@@ -17,10 +17,10 @@
             <!-- Phần thông tin đặt phòng -->
             <StackPanel Grid.Column="0" Margin="10" >
 
-                <TextBlock Text="Thông tin đặt phòng" FontSize="16" FontWeight="Bold" Margin="10,2,10,10" Foreground="#FF0194F3" FontFamily="Arial"/>
+                <Label Content="Thông tin đặt phòng" FontSize="16" FontWeight="Bold" Margin="10,2,10,10" Foreground="#FF0194F3" FontFamily="Arial"/>
                 <!-- Thêm các điều khiển thông tin đặt phòng tại đây -->
                 
-                <TextBlock Text="Loại Khách Sạn" VerticalAlignment="Center" Foreground="#FF687176" Margin="10"/>
+                <Label Content="Loại Khách Sạn" VerticalAlignment="Center" Foreground="#FF687176" Margin="10"/>
                 <ComboBox x:Name="comboBox" Width="100" Margin="5">
                     <ComboBoxItem>Hotel</ComboBoxItem>
                     <ComboBoxItem>Homestay</ComboBoxItem>
