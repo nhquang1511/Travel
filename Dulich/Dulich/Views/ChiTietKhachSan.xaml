@@ -7,7 +7,7 @@
         
         mc:Ignorable="d"
          WindowStartupLocation="CenterScreen"
- Title="TrangChu" Height="570" Width="1024">
+ Title="ChiTietKhachSan" Height="450" Width="800">
     <Grid>
         <TabControl x:Name="myTabControl">
             <TabItem Header="Tổng quan" FontWeight="Bold">
@@ -229,11 +229,74 @@
             <TabItem Header="Phòng"  FontWeight="Bold">
                 <ScrollViewer>
                 <StackPanel>
-                    <local:chitietphongcontroller></local:chitietphongcontroller>
-                    <local:chitietphongcontroller></local:chitietphongcontroller>
-                    <local:chitietphongcontroller></local:chitietphongcontroller>
-                    <local:chitietphongcontroller></local:chitietphongcontroller>
-                    <local:chitietphongcontroller></local:chitietphongcontroller>
+                        <ListBox x:Name="listbox" ItemsSource="{Binding PhongList}" Height="431" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Width="700">
+                                        <Label FontWeight="Bold" Content="{Binding TenPhong}"></Label>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Grid.Column="0">
+                                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="Uniform"/>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Image Grid.Column="0" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh.webp" Stretch="Uniform"/>
+                                                    <Image Grid.Column="1" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh1.webp" Stretch="Uniform"/>
+                                                    <Image Grid.Column="2" Source="C:\Users\nhqua\source\repos\travel\travel\image\anh2.webp" Stretch="Uniform"/>
+                                                </Grid>
+                                                <Button Foreground="#FF0194F3" Background="#FFF7F9FA">xem chi tiết phòng</Button>
+                                            </StackPanel>
+                                            <StackPanel Grid.Column="1">
+                                                <Label FontWeight="Bold" FontSize="14" Content="{Binding TenPhong}"></Label>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <StackPanel Grid.Column="0">
+                                                        <Label FontWeight="Bold">Giường đơn</Label>
+                                                        <Label Foreground="#FF00875A" FontWeight="Bold">Breakfast included for 2 pax</Label>
+                                                        <Label Foreground="#FF00875A" FontWeight="Bold">WiFi miễn phí</Label>
+                                                        <Label Foreground="#FF00875A" FontWeight="Bold">Không hút thuốc</Label>
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Column="1">
+                                                        <Label FontWeight="Bold">2 khách</Label>
+
+                                                        <Label>Không hoàn tiền</Label>
+                                                        <Label>Không đổi lịch</Label>
+                                                        <Label Foreground="#FF0194F3" FontWeight="Bold">Xem Chính sách huỷ phòng</Label>
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Column="2">
+                                                        <Label Foreground="#FFE7090E">được nhiều người chọn nhất</Label>
+                                                        <WrapPanel>
+                                                            <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16" Content="{Binding Gia}"></Label>
+                                                            <Label> VND</Label>
+                                                        </WrapPanel>
+                                                        
+                                                        <Label>Chưa bao gồm thuế và phí</Label>
+                                                        <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold">Đăt ngay</Button>
+                                                    </StackPanel>
+                                                </Grid>
+
+                                            </StackPanel>
+                                        </Grid>
+
+
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                      
+                    <!--<local:chitietphongcontroller></local:chitietphongcontroller>-->
                 </StackPanel>
                 </ScrollViewer>
             </TabItem>

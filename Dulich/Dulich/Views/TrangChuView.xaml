@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Dulich.Views"
         mc:Ignorable="d"
          WindowStartupLocation="CenterScreen"
- Title="TrangChu" Height="570" Width="1024">
+Title="MainWindow" Height="500" Width="800">
     <Grid>
         <Grid Width="800">
             <Grid.ColumnDefinitions>

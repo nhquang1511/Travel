@@ -42,12 +42,13 @@ namespace Dulich.Views
             // Hiển thị idkhachsan trong một MessageBox
            
             loadData();
-            //PhongList = new ObservableCollection<Phong>();
-            //phongDao = new PhongDAO();
-            //// Gọi hàm loadData khi khởi tạo window
-            
-            //loadData1();
-            //DataContext = this;
+
+            PhongList = new ObservableCollection<Phong>();
+            phongDao = new PhongDAO();
+            // Gọi hàm loadData khi khởi tạo window
+
+            loadData1();
+            DataContext = this;
 
         }
 
