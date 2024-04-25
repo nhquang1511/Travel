@@ -1,0 +1,70 @@
+D:\ute\lập trình tên window\travel\Dulich\Dulich\bin\Debug\Dulich.exe.config
+D:\ute\lập trình tên window\travel\Dulich\Dulich\bin\Debug\Dulich.exe
+D:\ute\lập trình tên window\travel\Dulich\Dulich\bin\Debug\Dulich.pdb
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.csproj.AssemblyReference.cache
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\MainWindow.g.cs
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\App.g.cs
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.cache
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.lref
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\MainWindow.baml
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.g.resources
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.Properties.Resources.resources
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.csproj.GenerateResource.cache
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.csproj.CoreCompileInputs.cache
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.exe
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Dulich.pdb
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Views\list.g.cs
+D:\ute\lập trình tên window\travel\Dulich\Dulich\obj\Debug\Views\list.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\bin\Debug\Dulich.exe.config
+C:\Users\nhqua\source\repos\Dulich\Dulich\bin\Debug\Dulich.exe
+C:\Users\nhqua\source\repos\Dulich\Dulich\bin\Debug\Dulich.pdb
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.AssemblyReference.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\App.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.lref
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.g.resources
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.Properties.Resources.resources
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.GenerateResource.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.csproj.CoreCompileInputs.cache
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.exe
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Dulich.pdb
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\PhongView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\KhachSanView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\KhachSanView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\LoginView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\TrangChuView.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\LoginView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\TrangChuView.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\ChiTietKhachSan.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\ChiTietKhachSan.baml
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\chitietphongcontroller.g.cs
+C:\Users\nhqua\source\repos\Dulich\Dulich\obj\Debug\Views\chitietphongcontroller.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\bin\Debug\Dulich.exe.config
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\bin\Debug\Dulich.exe
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\bin\Debug\Dulich.pdb
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.csproj.AssemblyReference.cache
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.csproj.SuggestedBindingRedirects.cache
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\ChiTietKhachSan.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\chitietphongcontroller.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\KhachSanView.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\LoginView.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\PhongView.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\TrangChuView.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\App.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.cache
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich_MarkupCompile.lref
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\ChiTietKhachSan.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\chitietphongcontroller.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\KhachSanView.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\LoginView.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\PhongView.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Views\TrangChuView.baml
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.g.resources
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.Properties.Resources.resources
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.csproj.GenerateResource.cache
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.csproj.CoreCompileInputs.cache
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.exe
+F:\SinhVienNam1\LapTrinhWinform\Dulich\Dulich\obj\Debug\Dulich.pdb
