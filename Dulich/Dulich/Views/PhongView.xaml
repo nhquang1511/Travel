@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dulich.Views"
-        mc:Ignorable="d"
-        Title="PhongView" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+ Title="TrangChu" Height="570" Width="1024">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -22,6 +22,7 @@
             <TextBox x:Name="tenLoaiPhongTextBox"></TextBox>
             <Label>Trạng thái</Label>
             <TextBox x:Name="trangThaiTextBox"></TextBox>
+
             <Button Click="ThemButton_Click">Thêm</Button>
             <Button Click="XoaButton_Click">Xóa</Button>
             <Button Click="SuaButton_Click">Sửa</Button>

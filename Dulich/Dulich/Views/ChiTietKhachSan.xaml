@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Dulich.Views"
         
         mc:Ignorable="d"
-        Title="ChiTietKhachSan" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen">
+         WindowStartupLocation="CenterScreen"
+ Title="TrangChu" Height="570" Width="1024">
     <Grid>
         <TabControl x:Name="myTabControl">
             <TabItem Header="Tổng quan" FontWeight="Bold">

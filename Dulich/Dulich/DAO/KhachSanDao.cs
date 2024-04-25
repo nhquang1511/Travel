@@ -56,7 +56,7 @@ namespace Dulich.DAO
                     sqlStr += $" AND KS.LoaiKhachSan = '{loaikhachsan}'";
 
                 if (!string.IsNullOrEmpty(diachi))
-                    sqlStr += $" AND KS.DiaChi = N'{diachi}'";
+                    sqlStr   += $"AND (KS.DiaChi LIKE '%' + '{diachi}' + '%' OR '{diachi}' IS NULL)";
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
                 adapter.Fill(dt);

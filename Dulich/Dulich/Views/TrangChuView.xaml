@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dulich.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800" 
-        WindowStartupLocation="CenterScreen">
+         WindowStartupLocation="CenterScreen"
+ Title="TrangChu" Height="570" Width="1024">
     <Grid>
         <Grid Width="800">
             <Grid.ColumnDefinitions>
