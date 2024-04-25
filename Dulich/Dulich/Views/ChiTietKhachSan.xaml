@@ -283,7 +283,7 @@
                                                         </WrapPanel>
                                                         
                                                         <Label>Chưa bao gồm thuế và phí</Label>
-                                                        <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold">Đăt ngay</Button>
+                                                        <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold" Click="Button_Click_1">Đăt ngay</Button>
                                                     </StackPanel>
                                                 </Grid>
 
@@ -299,6 +299,9 @@
                     <!--<local:chitietphongcontroller></local:chitietphongcontroller>-->
                 </StackPanel>
                 </ScrollViewer>
+            </TabItem>
+            <TabItem Header="quản lý đặt" FontWeight="Bold">
+                
             </TabItem>
             <!-- Add more TabItems as needed -->
         </TabControl>

@@ -62,6 +62,7 @@
     <Compile Include="DAO\KhachSanDao.cs" />
     <Compile Include="DAO\PhongDao.cs" />
     <Compile Include="Dbconnection.cs" />
+    <Compile Include="Models\Booking.cs" />
     <Compile Include="Views\ChiTietKhachSan.xaml.cs">
       <DependentUpon>ChiTietKhachSan.xaml</DependentUpon>
     </Compile>
@@ -144,6 +145,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\resort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\location.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

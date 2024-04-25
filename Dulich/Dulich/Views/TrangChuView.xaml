@@ -19,12 +19,12 @@ Title="MainWindow" Height="500" Width="800">
 
                 <Label Content="Thông tin đặt phòng" FontSize="16" FontWeight="Bold" Margin="10,2,10,10" Foreground="#FF0194F3" FontFamily="Arial"/>
                 <!-- Thêm các điều khiển thông tin đặt phòng tại đây -->
-                
+
                 <Label Content="Loại Khách Sạn" VerticalAlignment="Center" Foreground="#FF687176" Margin="10"/>
                 <ComboBox x:Name="comboBox" Width="100" Margin="5">
                     <ComboBoxItem>Hotel</ComboBoxItem>
                     <ComboBoxItem>Homestay</ComboBoxItem>
-                    
+
                 </ComboBox>
 
                 <TextBlock Text="Chọn loại phòng:" Foreground="#FF687176" Margin="10"/>
@@ -34,9 +34,9 @@ Title="MainWindow" Height="500" Width="800">
                     <ListBoxItem Content="Phòng Suite"/>
                     <!-- Thêm các loại phòng khác nếu cần -->
                 </ListBox>
-                <Label>nhập địa chỉ</Label>
-                <TextBox x:Name="diachitxb"></TextBox>
-                <Button Grid.Row="6" Content="Tìm Khách sạn" Width="100" HorizontalAlignment="Center" Margin="0,21,0,0" Click="Button_Click"/>
+                <Label>Nhập địa chỉ</Label>
+                <TextBox x:Name="diachitxb" Text="Nhập địa chỉ" Foreground="Gray" GotFocus="DiachiTextBox_GotFocus" LostFocus="DiachiTextBox_LostFocus" Width="150" Margin="5" FontSize="16"/>
+                <Button Grid.Row="6" Content="Tìm khách sạn" Width="100" HorizontalAlignment="Center" Margin="0,21,0,0" Click="Button_Click"/>
 
             </StackPanel>
 
@@ -61,27 +61,32 @@ Title="MainWindow" Height="500" Width="800">
                                 <!-- Cột thứ ba -->
                                 <Border Grid.Column="2" BorderBrush="#1903121A" BorderThickness="1,1,1,1"/>
 
-                                <Image Grid.Column="0" Source="{Binding Anh}" Width="200" Height="100" Margin="0" />
+                                <Image Grid.Column="0" Source="{Binding Anh}" Stretch="Uniform"  />
 
                                 <StackPanel Grid.Column="1" Margin="5">
 
                                     <TextBlock Text="{Binding TenKhachSan}" FontWeight="Bold"/>
                                     <WrapPanel>
-
+                                        <Image Source="\image\resort.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"></Image>
                                         <TextBlock Text="Khách sạn" FontStyle="Normal" Margin="0,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
-                                        <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
-
+                                        <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="1,10,0,0"/>
+                                        <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="1,10,0,0"/>
+                                        <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="1,10,0,0"/>
+                                        <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="1,10,0,0"/>
+                                        <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="1,10,0,0"/>
                                     </WrapPanel>
 
                                     <WrapPanel>
-                                        <TextBlock Text="Vị trí: " FontSize="10"/>
-                                        <TextBlock Text="{Binding DiaChi}" FontWeight="Bold" FontSize="10"/>
+                                        <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"></Image>
+
+                                        <TextBlock Text="{Binding DiaChi}" FontWeight="Bold" FontSize="10" Margin="5,10,0,0"/>
                                     </WrapPanel>
 
                                 </StackPanel>
                                 <StackPanel Grid.Column="2" Margin="5">
                                     <TextBlock   FontWeight="Bold" Text="Loại Khách Sạn" HorizontalAlignment="Center" Height="16"/>
                                     <TextBlock Text="{Binding LoaiKhachSan}" HorizontalAlignment="Center"  FontWeight="Bold" Height="48" Padding="0,15,0,0" Foreground="#FFFF5E1F"/>
+                                    <TextBlock Text="{Binding Gia}" HorizontalAlignment="Center"  FontWeight="Bold" Height="40" Padding="0,0,0,0" Foreground="#FFFF5E1F"/>
 
                                     <Button Content="Chọn Khách Sạn" Background="#FFFF5E1E" BorderBrush="#FFF7F3F3" Foreground="#FFF7F3F3" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click1" >
                                         <Button.Template>

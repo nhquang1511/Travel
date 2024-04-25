@@ -16,5 +16,6 @@ namespace Dulich.Models
 
         public string Anh {  get; set; }
         public string MoTa { get; set; }
+        public int Gia {  get; set; }
     }
 }

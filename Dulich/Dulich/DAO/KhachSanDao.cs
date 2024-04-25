@@ -46,17 +46,34 @@ namespace Dulich.DAO
             {
                 conn.Open();
 
-                // Xây dựng câu truy vấn với các điều kiện OR để áp dụng thông tin của các trường khác khi một trường không được tìm thấy
-                string sqlStr = $"SELECT KS.Anh ,KS.KhachSanID, KS.TenKhachSan, KS.DiaChi, KS.LoaiKhachSan FROM Phong P JOIN KhachSan KS ON P.KhachSanID = KS.KhachSanID WHERE 1=1";
+                // Xây dựng câu truy vấn với điều kiện OR để áp dụng bất kỳ thông tin nào được cung cấp
+                string sqlStr = "SELECT KS.Anh, KS.KhachSanID, KS.TenKhachSan, KS.DiaChi, KS.LoaiKhachSan, KS.Gia " +
+                                "FROM Phong P JOIN KhachSan KS ON P.KhachSanID = KS.KhachSanID WHERE 1=1";
+
+                bool hasCriteria = false;
 
                 if (!string.IsNullOrEmpty(loaiphong))
+                {
                     sqlStr += $" AND P.TenLoaiPhong = N'{loaiphong}'";
+                    hasCriteria = true;
+                }
 
                 if (!string.IsNullOrEmpty(loaikhachsan))
+                {
                     sqlStr += $" AND KS.LoaiKhachSan = '{loaikhachsan}'";
+                    hasCriteria = true;
+                }
 
                 if (!string.IsNullOrEmpty(diachi))
-                    sqlStr   += $"AND (KS.DiaChi LIKE '%' + '{diachi}' + '%' OR '{diachi}' IS NULL)";
+                {
+                    sqlStr += $" AND (KS.DiaChi LIKE '%' + '{diachi}' + '%')";
+                    hasCriteria = true;
+                }
+
+                if (!hasCriteria)
+                {
+                    sqlStr = "SELECT * FROM KhachSan"; // Nếu không có tiêu chí nào, trả về toàn bộ
+                }
 
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
                 adapter.Fill(dt);

@@ -71,9 +71,9 @@ namespace Dulich.Views
         public void loadData1()
         {
             // Truyền id phòng vào hàm HienThiDanhSach từ DAO
-            int idphong = 1; // Đây là id của phòng, bạn có thể thay đổi theo cách thích của bạn
+            // Đây là id của phòng, bạn có thể thay đổi theo cách thích của bạn
             // Gọi hàm HienThiDanhSach từ DAO để lấy DataTable
-            var dataTable = phongDao.HienThiDanhSach(idphong);
+            var dataTable = phongDao.HienThiDanhSach(idkhachsan);
             // Duyệt qua từng dòng của DataTable và thêm vào ObservableCollection
             foreach (DataRow row in dataTable.Rows)
             {
@@ -98,6 +98,28 @@ namespace Dulich.Views
         {
             // Chuyển đến TabItem thứ hai trong TabControl (ví dụ dựa trên index)
             myTabControl.SelectedIndex = 2;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+
+            // Tìm đến đối tượng KhachSan được chọn từ Button's DataContext
+            Phong selectedPhong = button.DataContext as Phong;
+
+            // Kiểm tra xem có đối tượng được chọn không
+            if (selectedPhong != null)
+            {
+                // Lấy idkhachsan từ đối tượng KhachSan được chọn
+                int idphong = selectedPhong.PhongID;
+
+                phongDao.Datphong(idphong);
+                MessageBox.Show("dat phong thanh cong");
+            }
+            else
+            {
+                MessageBox.Show("Không thể lấy thông tin của khách sạn được chọn.");
+            }
         }
     }
 

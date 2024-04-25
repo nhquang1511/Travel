@@ -51,7 +51,8 @@ namespace Dulich.Views
                     TenKhachSan = row["TenKhachSan"].ToString(),
                     DiaChi = row["DiaChi"].ToString(),
                     LoaiKhachSan = row["LoaiKhachSan"].ToString(),
-                    Anh = row["Anh"].ToString()
+                    Anh = row["Anh"].ToString(),
+                    Gia = Convert.ToInt32(row["Gia"])
                     // Thêm các thuộc tính khác nếu cần
                 };
                 KhachSanList.Add(khachSan);
@@ -62,9 +63,10 @@ namespace Dulich.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string loaiPhong = ((ListBoxItem)listBox.SelectedItem).Content.ToString();
-            string loaiKhachSan = ((ComboBoxItem)comboBox.SelectedItem).Content.ToString();
-            string diaChi = diachitxb.Text;
+            // Kiểm tra và đảm bảo rằng giá trị rỗng hoặc hợp lệ được xử lý đúng
+            string loaiPhong = listBox.SelectedItem != null ? ((ListBoxItem)listBox.SelectedItem).Content.ToString() : string.Empty;
+            string loaiKhachSan = comboBox.SelectedItem != null ? ((ComboBoxItem)comboBox.SelectedItem).Content.ToString() : string.Empty;
+            string diaChi = string.IsNullOrWhiteSpace(diachitxb.Text) || diachitxb.Text == "Nhập địa chỉ" ? string.Empty : diachitxb.Text;
 
             // Gọi hàm TimKiem để tìm kiếm thông tin khách sạn
             DataTable dt = khachSanDao.TimKiem(loaiPhong, loaiKhachSan, diaChi);
@@ -77,14 +79,12 @@ namespace Dulich.Views
             {
                 KhachSan khachSan = new KhachSan
                 {
-                    // Giả sử các cột trong DataTable tương ứng với các thuộc tính của đối tượng KhachSan
-                    // Bạn cần chỉnh sửa phần này tùy thuộc vào cấu trúc của bảng KhachSan trong cơ sở dữ liệu
                     KhachSanID = Convert.ToInt32(row["KhachSanID"]),
                     TenKhachSan = row["TenKhachSan"].ToString(),
                     DiaChi = row["DiaChi"].ToString(),
                     LoaiKhachSan = row["LoaiKhachSan"].ToString(),
-                    Anh = row["Anh"].ToString()
-                    // Thêm các thuộc tính khác nếu cần
+                    Anh = row["Anh"].ToString(),
+                    Gia = Convert.ToInt32(row["Gia"])
                 };
                 KhachSanList.Add(khachSan);
             }
@@ -114,7 +114,25 @@ namespace Dulich.Views
                 MessageBox.Show("Không thể lấy thông tin của khách sạn được chọn.");
             }
         }
+        private void DiachiTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (diachitxb.Text == "Nhập địa chỉ")
+            {
+                // Xóa nội dung mặc định và thay đổi màu chữ
+                diachitxb.Text = string.Empty;
+                diachitxb.Foreground = Brushes.Black; // Màu đen là màu chữ bình thường
+            }
+        }
 
+        private void DiachiTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(diachitxb.Text))
+            {
+                // Đặt lại nội dung mặc định nếu không có gì được nhập
+                diachitxb.Text = "Nhập địa chỉ";
+                diachitxb.Foreground = Brushes.Gray; // Màu xám cho placeholder
+            }
+        }
 
 
 

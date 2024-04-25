@@ -15,9 +15,26 @@ namespace Dulich.DAO
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connStr);
         Dbconnection db = new Dbconnection();
-        public DataTable HienThiDanhSach(int idphong)
+        public DataTable HienThiDanhSach(int idkhachsan)
         {
-            return db.HienThiDanhSach("Phong");
+            DataTable dt = new DataTable();
+            try
+            {
+
+                conn.Open();
+
+                // Sử dụng tham số để truyền tên bảng vào câu SQL
+                string sqlStr = $"SELECT * FROM Phong where KhachSanID = {idkhachsan}";
+
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+                adapter.Fill(dt);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
+            }
+            return dt;
         }
         public void Them(Phong phong)
         {
@@ -38,5 +55,11 @@ namespace Dulich.DAO
                                           phong.PhongID, phong.TenPhong, phong.TenLoaiPhong, phong.TrangThai, phong.PhongID);
             db.ExecuteSqlCommand(sqlStr);
         }
+        public void Datphong(int id)
+        {
+            string sqlStr = string.Format("UPDATE Phong SET TrangThai = 1 WHERE PhongID = '{0}'", id);
+            db.ExecuteSqlCommand(sqlStr);
+        }
+
     }
 }
