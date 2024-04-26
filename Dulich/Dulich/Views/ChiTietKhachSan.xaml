@@ -33,7 +33,7 @@
                             <Label x:Name="tenkhachsanlabel"  Grid.Row="0" FontWeight="Bold" FontSize="16" ></Label>
                             <WrapPanel Grid.Row="1">
                                 <Label Content="Khách sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" FontSize="7" Background="#190264C8"/>
-                                <Image Source="C:\Users\nhqua\source\repos\travel\travel\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
+                                <Image Source="\image\R.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
 
                             </WrapPanel>
                             <WrapPanel Grid.Row="2">

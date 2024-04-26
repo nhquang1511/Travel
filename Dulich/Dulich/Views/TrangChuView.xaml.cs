@@ -52,7 +52,7 @@ namespace Dulich.Views
                     DiaChi = row["DiaChi"].ToString(),
                     LoaiKhachSan = row["LoaiKhachSan"].ToString(),
                     Anh = row["Anh"].ToString(),
-                    Gia = Convert.ToInt32(row["Gia"])
+                    Gia = row["Gia"].ToString()
                     // Thêm các thuộc tính khác nếu cần
                 };
                 KhachSanList.Add(khachSan);
@@ -84,7 +84,7 @@ namespace Dulich.Views
                     DiaChi = row["DiaChi"].ToString(),
                     LoaiKhachSan = row["LoaiKhachSan"].ToString(),
                     Anh = row["Anh"].ToString(),
-                    Gia = Convert.ToInt32(row["Gia"])
+                    Gia = row["Gia"].ToString()
                 };
                 KhachSanList.Add(khachSan);
             }

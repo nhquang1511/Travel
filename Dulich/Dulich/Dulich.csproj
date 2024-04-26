@@ -104,10 +104,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="image\anh.webp" />
-    <None Include="image\anh1.webp" />
-    <None Include="image\anh2.webp" />
-    <None Include="image\anhnguoi.webp" />
+    <Resource Include="image\anh.webp" />
+    <Resource Include="image\anh1.webp" />
+    <Resource Include="image\anh2.webp" />
+    <Resource Include="image\anhnguoi.webp" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
