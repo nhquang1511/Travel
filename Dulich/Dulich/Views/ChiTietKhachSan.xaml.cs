@@ -64,8 +64,8 @@ namespace Dulich.Views
                 tenkhachsanlabel.Content = row["TenKhachSan"].ToString();
                 diachilabel.Content = row["DiaChi"].ToString();
                 string imagePath = row["Anh"].ToString();
-                BitmapImage image = new BitmapImage(new Uri(imagePath));
-                anhimage.Source = image;
+                //BitmapImage image = new BitmapImage(new Uri(imagePath));
+                //anhimage.Source = image;
                 motalabel.Content = row["mota"].ToString();
             }
 
@@ -96,6 +96,8 @@ namespace Dulich.Views
             // Sau khi thêm dữ liệu vào ObservableCollection, gán ObservableCollection này vào ItemsSource của DataGrid
 
         }
+
+        
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // Chuyển đến TabItem thứ hai trong TabControl (ví dụ dựa trên index)
@@ -121,7 +123,8 @@ namespace Dulich.Views
                     KhachHangID = 1,
                     PhongID = idphong,
                     NgayDat = new System.Windows.Controls.DatePicker { SelectedDate = DateTime.Now },
-                    NgayTra = new System.Windows.Controls.DatePicker { SelectedDate = new DateTime(2022, 1, 1) }
+                    NgayTra = new System.Windows.Controls.DatePicker { SelectedDate = new DateTime(2022, 1, 1) },
+                    KhachSanID = idkhachsan
                 };
 
                 bookingdao.Them(booking);

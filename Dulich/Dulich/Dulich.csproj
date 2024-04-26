@@ -60,10 +60,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DAO\BookingDao.cs" />
+    <Compile Include="DAO\DanhGiaDao.cs" />
     <Compile Include="DAO\KhachSanDao.cs" />
     <Compile Include="DAO\PhongDao.cs" />
     <Compile Include="Dbconnection.cs" />
     <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\DanhGia.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Views\ChiTietKhachSan.xaml.cs">
       <DependentUpon>ChiTietKhachSan.xaml</DependentUpon>
@@ -156,6 +158,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\bed.png" />
+    <Resource Include="image\breakfast.png" />
+    <Resource Include="image\no-smoking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\wifi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

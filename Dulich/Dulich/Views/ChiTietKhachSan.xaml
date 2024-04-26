@@ -301,7 +301,82 @@
                 </ScrollViewer>
             </TabItem>
             <TabItem Header="quản lý đặt" FontWeight="Bold">
+                <ScrollViewer>
+                    <StackPanel>
+                        
+                            <ListBox ItemsSource="{Binding PhongList}" Height="431" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                    <Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+
+                                            </Grid.ColumnDefinitions>
+                                            <StackPanel Grid.Column="0">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                </Grid>
+                                            </StackPanel>
+                                            <StackPanel Grid.Column="1">
+                                                <Label FontWeight="Bold" FontSize="14">Superior Twin River View</Label>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+                                                    <StackPanel Grid.Column="0">
+                                                        <WrapPanel>
+                                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
+                                                            <Label FontWeight="Bold">123 Main Street, Anytown</Label>
+                                                        </WrapPanel>
+                                                        <WrapPanel>
+                                                            <Image Source="\image\bed.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
+                                                            <Label FontWeight="Bold">Giường đơn</Label>
+                                                        </WrapPanel>
+                                                        <WrapPanel>
+                                                            <Image Source="\image\breakfast.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
+                                                            <Label Foreground="#FF00875A" FontWeight="Bold">Breakfast included for 2 pax</Label>
+                                                        </WrapPanel>
+                                                        <WrapPanel>
+                                                            <Image Source="\image\wifi.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
+                                                            <Label Foreground="#FF00875A" FontWeight="Bold">WiFi miễn phí</Label>
+                                                        </WrapPanel>
+                                                        <WrapPanel>
+                                                            <Image Source="\image\no-smoking.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
+                                                            <Label Foreground="#FF00875A" FontWeight="Bold">Không hút thuốc</Label>
+                                                        </WrapPanel>
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Column="1">
+                                                        <Label FontWeight="Bold">Tên khách hàng: Tân</Label>
+                                                        <Label FontWeight="Bold">Số phòng: 101</Label>
+                                                        <Label FontWeight="Bold">Ngày đặt: 26/04/2024</Label>
+                                                        <Label FontWeight="Bold">Ngày trả: 27/04/2024</Label>
+
+                                                        <Label Foreground="#FF0194F3" FontWeight="Bold">Xem Chính sách huỷ phòng</Label>
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Column="2">
+                                                        <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">Giá: 2560.482  VND</Label>
+                                                        <Label>Chưa bao gồm thuế và phí</Label>
+                                                        <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold">Hủy đặt</Button>
+                                                    </StackPanel>
+                                                </Grid>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </ScrollViewer>
+                   
                 
+
             </TabItem>
             <!-- Add more TabItems as needed -->
         </TabControl>

@@ -12,7 +12,8 @@ namespace Dulich.Models
         public int BookingID { get; set; }
         public DatePicker NgayDat { get; set; }
         public DatePicker NgayTra { get; set; }
-        public int KhachHangID { get; set; }
-        public int PhongID { get; set; }
+        public string TenKhachHang { get; set; }
+        public string TenPhong { get; set; }
+        public string TenKhachSan { get; set; }
     }
 }

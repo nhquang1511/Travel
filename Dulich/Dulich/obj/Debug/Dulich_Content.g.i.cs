@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/location.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/wifi.png")]
 
 
