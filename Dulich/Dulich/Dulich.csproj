@@ -59,10 +59,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DAO\BookingDao.cs" />
     <Compile Include="DAO\KhachSanDao.cs" />
     <Compile Include="DAO\PhongDao.cs" />
     <Compile Include="Dbconnection.cs" />
     <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Views\ChiTietKhachSan.xaml.cs">
       <DependentUpon>ChiTietKhachSan.xaml</DependentUpon>
     </Compile>

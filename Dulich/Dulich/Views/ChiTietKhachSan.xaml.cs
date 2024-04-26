@@ -28,6 +28,8 @@ namespace Dulich.Views
         KhachSanDao ksdao = new KhachSanDao();
         public ObservableCollection<Phong> PhongList { get; set; }
         private PhongDAO phongDao;
+        public BookingDao bookingdao = new BookingDao();
+        
         public ChiTietKhachSan()
         {
             InitializeComponent();
@@ -46,7 +48,7 @@ namespace Dulich.Views
             PhongList = new ObservableCollection<Phong>();
             phongDao = new PhongDAO();
             // Gọi hàm loadData khi khởi tạo window
-
+            
             loadData1();
             DataContext = this;
 
@@ -114,6 +116,16 @@ namespace Dulich.Views
                 int idphong = selectedPhong.PhongID;
 
                 phongDao.Datphong(idphong);
+                Booking booking = new Booking
+                {
+                    KhachHangID = 1,
+                    PhongID = idphong,
+                    NgayDat = new System.Windows.Controls.DatePicker { SelectedDate = DateTime.Now },
+                    NgayTra = new System.Windows.Controls.DatePicker { SelectedDate = new DateTime(2022, 1, 1) }
+                };
+
+                bookingdao.Them(booking);
+
                 MessageBox.Show("dat phong thanh cong");
             }
             else
