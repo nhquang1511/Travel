@@ -142,8 +142,17 @@
       <DependentUpon>Styles.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\UserModel.cs" />
+    <Compile Include="views\admin\QuanLyKhachSan.xaml.cs">
+      <DependentUpon>QuanLyKhachSan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="views\admin\QuanLyPhong.xaml.cs">
       <DependentUpon>QuanLyPhong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\user\ChiTietKhachSan.xaml.cs">
+      <DependentUpon>ChiTietKhachSan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\user\chitietphongcontroller.xaml.cs">
+      <DependentUpon>chitietphongcontroller.xaml</DependentUpon>
     </Compile>
     <Compile Include="views\user\login.xaml.cs">
       <DependentUpon>login.xaml</DependentUpon>
@@ -174,9 +183,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="views\admin\QuanLyKhachSan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\admin\QuanLyPhong.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\user\ChiTietKhachSan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\user\chitietphongcontroller.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="views\user\login.xaml">
       <SubType>Designer</SubType>
@@ -238,6 +259,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="icons\hotel.png" />
+    <Resource Include="icons\pin.png" />
+    <Resource Include="icons\rating.png" />
+    <Resource Include="icons\Star.png" />
     <Content Include="Models\DuLich.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DuLich.Context.cs</LastGenOutput>

@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="Traveloka.views.user.chitietphongcontroller"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Traveloka.views.user"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="600"
+             Background="#f7f9fa">
+    <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="10">
+        <Grid>
+        <Grid>
+            <Grid Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Background="White" Margin="10,0,10,0">
+                    <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Padding="10">
+                        <StackPanel Orientation="Vertical">
+                            <Label FontWeight="Bold" FontSize="14" Background="White">Superior Double Room</Label>
+
+                            <Border BorderThickness="0" BorderBrush="Black" CornerRadius="10">
+                                <Image Source="\image\anh.webp" Stretch="Uniform" />
+                            </Border>
+
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Border Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="10" Margin="0,2,2,0">
+                                    <Image Source="\image\anh.webp" Stretch="UniformToFill" />
+                                </Border>
+                                <Border Grid.Column="1" BorderThickness="0" BorderBrush="Black" CornerRadius="10" Margin="2,2,2,0" >
+                                    <Image Source="\image\anh1.webp" Stretch="UniformToFill" />
+                                </Border>
+                                <Border Grid.Column="2" BorderThickness="0" BorderBrush="Black" CornerRadius="10" Margin="2,2,2,0">
+                                    <Image Source="\image\anh2.webp" Stretch="UniformToFill" />
+                                </Border>
+                            </Grid>
+
+                            <StackPanel Orientation="Vertical">
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Background="White">
+                    <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Background="White">
+                        <StackPanel>
+                            <Label FontWeight="Bold" FontSize="14" Background="#FFFCFCFC">Superior Double Room</Label>
+
+                                <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Padding="0">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <StackPanel Grid.Column="0">
+                                            <WrapPanel>
+                                                <Image Source="\image\bed.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
+                                                <Label FontWeight="Bold">1 Giường đơn</Label>
+                                            </WrapPanel>
+                                            <WrapPanel>
+                                                <Image Source="\image\breakfast.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
+                                                <Label Foreground="#FF00875A" FontWeight="Bold">Breakfast included for 2 pax</Label>
+                                            </WrapPanel>
+                                            <WrapPanel>
+                                                <Image Source="\image\wifi.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
+                                                <Label Foreground="#FF00875A" FontWeight="Bold">WiFi miễn phí</Label>
+                                            </WrapPanel>
+                                            <WrapPanel>
+                                                <Image Source="\image\no-smoking.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
+                                                <Label Foreground="#FF00875A" FontWeight="Bold">Không hút thuốc</Label>
+                                            </WrapPanel>
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Column="1">
+                                            <WrapPanel>
+                                                <Image Source="\image\people.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
+                                                <Label FontWeight="Bold">2 khách</Label>
+                                            </WrapPanel>
+                                            <WrapPanel>
+                                                <Image Source="\image\signal.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
+                                                <Label>Không hoàn tiền</Label>
+                                            </WrapPanel>
+                                            <WrapPanel>
+                                                <Image Source="\image\signal.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
+                                                <Label>Không đổi lịch</Label>
+                                            </WrapPanel>
+                                            <WrapPanel>
+                                                <Image Source="\image\question.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
+                                                <Label Foreground="#FF0194F3" FontWeight="Bold">Xem Chính sách huỷ phòng</Label>
+                                            </WrapPanel>
+                                        </StackPanel>
+
+                                        <StackPanel Grid.Column="2">
+                                            <Label Foreground="#FFE7090E" HorizontalAlignment="Right">Chỉ còn 1 phòng</Label>
+                                            <Label HorizontalAlignment="Right">
+                                                <TextBlock Text="999.999 VND" TextDecorations="Strikethrough" />
+                                            </Label>
+                                            <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">309.524 VND</Label>
+                                            <Label HorizontalAlignment="Right">Chưa bao gồm thuế và phí</Label>
+
+                                            <Button Content="Đặt ngay" Padding="1,1,1,1" Background="#FFFF5E1F" FontSize="14" Foreground="#FFF9F9F9" FontWeight="Bold" Width="169" HorizontalAlignment="Right">
+                                                <Button.Template>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <Border BorderBrush="#FFF7F3F3" BorderThickness="1" CornerRadius="10" Background="{TemplateBinding Background}">
+                                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Button.Template>
+                                            </Button>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+    </Border>
+
+</UserControl>

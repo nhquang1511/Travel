@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\App.xaml
-7190930508
+8-2140672198
 21517949597
-281525895447
+28-523091381
 127618830831
-MainWindow.xaml;Styles.xaml;UC\UCKhachSan.xaml;views\admin\QuanLyPhong.xaml;views\user\login.xaml;views\user\RegisterForm.xaml;views\user\TrangChu.xaml;
+MainWindow.xaml;Styles.xaml;UC\UCKhachSan.xaml;views\admin\QuanLyKhachSan.xaml;views\admin\QuanLyPhong.xaml;views\user\login.xaml;views\user\RegisterForm.xaml;views\user\TrangChu.xaml;
 
-True
+False
 

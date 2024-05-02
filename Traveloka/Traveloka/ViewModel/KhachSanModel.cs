@@ -101,7 +101,7 @@ namespace Traveloka.ViewModel
                             DiaChi = _selectedRoom.DiaChi,
                             LoaiKhachSan = _selectedRoom.LoaiKhachSan,
                             Gia = _selectedRoom.Gia,
-                            AnhKhachSans = _selectedRoom.AnhKhachSans
+                            //AnhKhachSans = _selectedRoom.AnhKhachSans
                         };
                     }
                 }

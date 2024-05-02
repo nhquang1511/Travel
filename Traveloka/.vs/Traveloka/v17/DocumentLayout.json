@@ -3,7 +3,83 @@
   "WorkspaceRootPath": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\models\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\views\\user\\chitietphongcontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\chitietphongcontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\views\\user\\chitietkhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\chitietkhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\views\\user\\chitietphongcontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\chitietphongcontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\user\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\views\\user\\chitietkhachsan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\chitietkhachsan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\views\\user\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\user\\trangchu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\trangchu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\dulich.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\dulich.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\viewmodel\\khachsanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\khachsanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\viewmodel\\phongmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\phongmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\admin\\quanlykhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\admin\\quanlykhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\admin\\quanlyphong.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\admin\\quanlyphong.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\admin\\quanlyphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\admin\\quanlyphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\admin\\quanlykhachsan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\admin\\quanlykhachsan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\anhkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\anhkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\viewmodel\\nhanxetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\nhanxetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\datphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,48 +87,12 @@
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\datphongmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\viewmodel\\nhanxetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\nhanxetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\viewmodel\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\viewmodel\\phongmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\phongmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\viewmodel\\khachsanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\viewmodel\\khachsanmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|c:\\users\\nhqua\\source\\repos\\traveloka\\traveloka\\views\\user\\trangchu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\trangchu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\admin\\quanlyphong.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\admin\\quanlyphong.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\anhkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\anhkhachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\khachsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\user\\trangchu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\trangchu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\user\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\user\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\uc\\uckhachsan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -63,20 +103,12 @@
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\currentuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\obj\\Debug\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Traveloka\\obj\\Debug\\App.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\views\\admin\\quanlyphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\views\\admin\\quanlyphong.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -114,10 +146,6 @@
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\dulich.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\models\\dulich.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\models\\dulich.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|C:\\Users\\nhqua\\source\\repos\\Traveloka\\traveloka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B87D1C46-F947-4A23-8099-27D72B76E650}|Traveloka\\Traveloka.csproj|solutionrelative:traveloka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -137,7 +165,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -145,16 +173,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatPhong.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DatPhong.cs",
-              "RelativeDocumentMoniker": "Traveloka\\Models\\DatPhong.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DatPhong.cs",
-              "RelativeToolTip": "Traveloka\\Models\\DatPhong.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
+              "DocumentIndex": 2,
+              "Title": "chitietphongcontroller.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\chitietphongcontroller.xaml.cs",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\chitietphongcontroller.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\chitietphongcontroller.xaml.cs",
+              "RelativeToolTip": "Traveloka\\views\\user\\chitietphongcontroller.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T10:55:43.163Z",
+              "WhenOpened": "2024-05-02T15:11:28.064Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "chitietphongcontroller.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\chitietphongcontroller.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\chitietphongcontroller.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\chitietphongcontroller.xaml",
+              "RelativeToolTip": "Traveloka\\views\\user\\chitietphongcontroller.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T15:08:52.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\login.xaml.cs",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\login.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\login.xaml.cs",
+              "RelativeToolTip": "Traveloka\\views\\user\\login.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T15:07:42.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChiTietKhachSan.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\ChiTietKhachSan.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\ChiTietKhachSan.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\ChiTietKhachSan.xaml",
+              "RelativeToolTip": "Traveloka\\views\\user\\ChiTietKhachSan.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T15:07:36.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChiTietKhachSan.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\ChiTietKhachSan.xaml.cs",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\ChiTietKhachSan.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\ChiTietKhachSan.xaml.cs",
+              "RelativeToolTip": "Traveloka\\views\\user\\ChiTietKhachSan.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T15:07:04.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KhachSanModel.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\KhachSanModel.cs",
+              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\KhachSanModel.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\KhachSanModel.cs",
+              "RelativeToolTip": "Traveloka\\ViewModel\\KhachSanModel.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAjwJIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T07:11:22.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DuLich.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DuLich.edmx",
+              "RelativeDocumentMoniker": "Traveloka\\Models\\DuLich.edmx",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DuLich.edmx [Diagram1]",
+              "RelativeToolTip": "Traveloka\\Models\\DuLich.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-04-30T07:08:07.075Z",
+              "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
@@ -170,224 +273,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AnhKhachSan.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\AnhKhachSan.cs",
-              "RelativeDocumentMoniker": "Traveloka\\Models\\AnhKhachSan.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\AnhKhachSan.cs",
-              "RelativeToolTip": "Traveloka\\Models\\AnhKhachSan.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T04:32:20.529Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "QuanLyPhong.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml",
-              "RelativeDocumentMoniker": "Traveloka\\views\\admin\\QuanLyPhong.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml",
-              "RelativeToolTip": "Traveloka\\views\\admin\\QuanLyPhong.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-02T07:19:17.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\UserModel.cs",
-              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\UserModel.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\UserModel.cs",
-              "RelativeToolTip": "Traveloka\\ViewModel\\UserModel.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAswDcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:12:28.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PhongModel.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\PhongModel.cs",
-              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\PhongModel.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\PhongModel.cs",
-              "RelativeToolTip": "Traveloka\\ViewModel\\PhongModel.cs",
-              "ViewState": "AQIAANMAAAAAAAAAAAAQwPoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:10:22.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NhanXetModel.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\NhanXetModel.cs",
-              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\NhanXetModel.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\NhanXetModel.cs",
-              "RelativeToolTip": "Traveloka\\ViewModel\\NhanXetModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:11:40.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatPhongModel.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\DatPhongModel.cs",
-              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\DatPhongModel.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\DatPhongModel.cs",
-              "RelativeToolTip": "Traveloka\\ViewModel\\DatPhongModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:12:04.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "KhachSanModel.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\KhachSanModel.cs",
-              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\KhachSanModel.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\KhachSanModel.cs",
-              "RelativeToolTip": "Traveloka\\ViewModel\\KhachSanModel.cs",
-              "ViewState": "AQIAAKAAAAAAAAAAAAAiwMMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:11:22.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "KhachSan.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\KhachSan.cs",
               "RelativeDocumentMoniker": "Traveloka\\Models\\KhachSan.cs",
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\KhachSan.cs",
               "RelativeToolTip": "Traveloka\\Models\\KhachSan.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAIwB8AAAA8AAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAcwBgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T05:01:00.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TrangChu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\TrangChu.xaml.cs",
-              "RelativeDocumentMoniker": "Traveloka\\views\\user\\TrangChu.xaml.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\TrangChu.xaml.cs",
-              "RelativeToolTip": "Traveloka\\views\\user\\TrangChu.xaml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T09:29:33.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.xaml",
-              "RelativeDocumentMoniker": "Traveloka\\App.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.xaml",
-              "RelativeToolTip": "Traveloka\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-25T13:05:27.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "login.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\login.xaml",
               "RelativeDocumentMoniker": "Traveloka\\views\\user\\login.xaml",
               "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\login.xaml",
               "RelativeToolTip": "Traveloka\\views\\user\\login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-02T08:17:12.903Z"
+              "WhenOpened": "2024-05-02T08:17:12.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PhongModel.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\PhongModel.cs",
+              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\PhongModel.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\PhongModel.cs",
+              "RelativeToolTip": "Traveloka\\ViewModel\\PhongModel.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAIwGUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T07:10:22.45Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "UCKhachSan.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\UC\\UCKhachSan.xaml",
-              "RelativeDocumentMoniker": "Traveloka\\UC\\UCKhachSan.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\UC\\UCKhachSan.xaml",
-              "RelativeToolTip": "Traveloka\\UC\\UCKhachSan.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-02T09:07:22.551Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CurrentUser.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\CurrentUser.cs",
-              "RelativeDocumentMoniker": "Traveloka\\CurrentUser.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\CurrentUser.cs",
-              "RelativeToolTip": "Traveloka\\CurrentUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T09:04:18.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "QuanLyPhong.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
-              "RelativeDocumentMoniker": "Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
-              "RelativeToolTip": "Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T07:20:15.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\Window1.xaml",
-              "RelativeDocumentMoniker": "Traveloka\\views\\user\\Window1.xaml",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\Window1.xaml",
-              "RelativeToolTip": "Traveloka\\views\\user\\Window1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-02T07:28:31.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Traveloka\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\User.cs",
-              "RelativeToolTip": "Traveloka\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T07:34:50.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "App.g.cs",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\obj\\Debug\\App.g.cs",
-              "RelativeDocumentMoniker": "Traveloka\\obj\\Debug\\App.g.cs",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\obj\\Debug\\App.g.cs",
-              "RelativeToolTip": "Traveloka\\obj\\Debug\\App.g.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T08:14:26.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.config",
-              "RelativeDocumentMoniker": "Traveloka\\App.config",
-              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.config",
-              "RelativeToolTip": "Traveloka\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-25T14:26:14.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.xaml.cs",
               "RelativeDocumentMoniker": "Traveloka\\App.xaml.cs",
@@ -399,7 +321,208 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 12,
+              "Title": "QuanLyPhong.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\views\\admin\\QuanLyPhong.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml",
+              "RelativeToolTip": "Traveloka\\views\\admin\\QuanLyPhong.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T07:19:17.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DatPhong.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DatPhong.cs",
+              "RelativeDocumentMoniker": "Traveloka\\Models\\DatPhong.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DatPhong.cs",
+              "RelativeToolTip": "Traveloka\\Models\\DatPhong.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T10:55:43.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\UserModel.cs",
+              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\UserModel.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\UserModel.cs",
+              "RelativeToolTip": "Traveloka\\ViewModel\\UserModel.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAswDcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T07:12:28.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QuanLyKhachSan.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyKhachSan.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\views\\admin\\QuanLyKhachSan.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyKhachSan.xaml",
+              "RelativeToolTip": "Traveloka\\views\\admin\\QuanLyKhachSan.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T11:05:41.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DatPhongModel.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\DatPhongModel.cs",
+              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\DatPhongModel.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\DatPhongModel.cs",
+              "RelativeToolTip": "Traveloka\\ViewModel\\DatPhongModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T07:12:04.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TrangChu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\TrangChu.xaml.cs",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\TrangChu.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\TrangChu.xaml.cs",
+              "RelativeToolTip": "Traveloka\\views\\user\\TrangChu.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:29:33.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\App.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.xaml",
+              "RelativeToolTip": "Traveloka\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-25T13:05:27.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "QuanLyPhong.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
+              "RelativeDocumentMoniker": "Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
+              "RelativeToolTip": "Traveloka\\views\\admin\\QuanLyPhong.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T07:20:15.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NhanXetModel.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\NhanXetModel.cs",
+              "RelativeDocumentMoniker": "Traveloka\\ViewModel\\NhanXetModel.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\ViewModel\\NhanXetModel.cs",
+              "RelativeToolTip": "Traveloka\\ViewModel\\NhanXetModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T07:11:40.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "QuanLyKhachSan.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyKhachSan.xaml.cs",
+              "RelativeDocumentMoniker": "Traveloka\\views\\admin\\QuanLyKhachSan.xaml.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\admin\\QuanLyKhachSan.xaml.cs",
+              "RelativeToolTip": "Traveloka\\views\\admin\\QuanLyKhachSan.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T11:14:00.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnhKhachSan.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\AnhKhachSan.cs",
+              "RelativeDocumentMoniker": "Traveloka\\Models\\AnhKhachSan.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\AnhKhachSan.cs",
+              "RelativeToolTip": "Traveloka\\Models\\AnhKhachSan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T04:32:20.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UCKhachSan.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\UC\\UCKhachSan.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\UC\\UCKhachSan.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\UC\\UCKhachSan.xaml",
+              "RelativeToolTip": "Traveloka\\UC\\UCKhachSan.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T09:07:22.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CurrentUser.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\CurrentUser.cs",
+              "RelativeDocumentMoniker": "Traveloka\\CurrentUser.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\CurrentUser.cs",
+              "RelativeToolTip": "Traveloka\\CurrentUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:04:18.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\Window1.xaml",
+              "RelativeDocumentMoniker": "Traveloka\\views\\user\\Window1.xaml",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\Window1.xaml",
+              "RelativeToolTip": "Traveloka\\views\\user\\Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-02T07:28:31.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Traveloka\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\User.cs",
+              "RelativeToolTip": "Traveloka\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T07:34:50.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.g.cs",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\obj\\Debug\\App.g.cs",
+              "RelativeDocumentMoniker": "Traveloka\\obj\\Debug\\App.g.cs",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\obj\\Debug\\App.g.cs",
+              "RelativeToolTip": "Traveloka\\obj\\Debug\\App.g.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T08:14:26.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.config",
+              "RelativeDocumentMoniker": "Traveloka\\App.config",
+              "ToolTip": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\App.config",
+              "RelativeToolTip": "Traveloka\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-25T14:26:14.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Window1.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\views\\user\\Window1.xaml.cs",
               "RelativeDocumentMoniker": "Traveloka\\views\\user\\Window1.xaml.cs",
@@ -411,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "Styles.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Styles.xaml",
               "RelativeDocumentMoniker": "Traveloka\\Styles.xaml",
@@ -422,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "AnhPhong.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\AnhPhong.cs",
               "RelativeDocumentMoniker": "Traveloka\\Models\\AnhPhong.cs",
@@ -434,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "Phong.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\Phong.cs",
               "RelativeDocumentMoniker": "Traveloka\\Models\\Phong.cs",
@@ -446,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "ItemCollection.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\AppData\\Local\\Temp\\.vsdbgsrc\\e1ca45a7d84bff8cb82aa649f8d0d675c40434bef30bcc2b78d300619c3eaa20\\ItemCollection.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e1ca45a7d84bff8cb82aa649f8d0d675c40434bef30bcc2b78d300619c3eaa20\\ItemCollection.cs",
@@ -458,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "DuLich.Context.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DuLich.Context.cs",
               "RelativeDocumentMoniker": "Traveloka\\Models\\DuLich.Context.cs",
@@ -470,17 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "DuLich.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DuLich.edmx",
-              "RelativeDocumentMoniker": "Traveloka\\Models\\DuLich.edmx",
-              "ToolTip": "D:\\ute\\l\u1EADp tr\u00ECnh t\u00EAn window\\Project\\Traveloka\\Traveloka\\Models\\DuLich.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-04-30T07:08:07.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Traveloka\\MainWindow.xaml",
@@ -491,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "NhanXet.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\NhanXet.cs",
               "RelativeDocumentMoniker": "Traveloka\\Models\\NhanXet.cs",
@@ -503,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "DuLich.Context.tt",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\Models\\DuLich.Context.tt",
               "RelativeDocumentMoniker": "Traveloka\\Models\\DuLich.Context.tt",
@@ -515,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nhqua\\source\\repos\\Traveloka\\Traveloka\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Traveloka\\MainWindow.xaml.cs",
