@@ -1,0 +1,22 @@
+﻿<Window x:Class="Traveloka.views.user.RegisterForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Traveloka.views.user"
+        mc:Ignorable="d"
+        Title="RegisterForm" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <StackPanel>
+                <Label Content="nhập tên người dùng"/>
+                <TextBox Text="{Binding Ten}"/>
+                <Label Content="nhập mật khẩu"/>
+                <TextBox Text="{Binding MatKhau}" />
+                <Label Content="nhập lại mật khẩu"/>
+                <TextBox Text="{Binding NhapLaiMatKhau}" />
+                <Button Content="đăng ký" Command="{Binding RegisterCommand}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\ute\lập trình tên window\Project\Traveloka\Traveloka\obj\Debug\
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\
 Traveloka
 none
 false
 DEBUG;TRACE
-D:\ute\lập trình tên window\Project\Traveloka\Traveloka\App.xaml
-3-930152184
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\App.xaml
+7190930508
 21517949597
-251439212044
-1271575050317
-MainWindow.xaml;Styles.xaml;views\admin\QuanLyPhong.xaml;
+281525895447
+127618830831
+MainWindow.xaml;Styles.xaml;UC\UCKhachSan.xaml;views\admin\QuanLyPhong.xaml;views\user\login.xaml;views\user\RegisterForm.xaml;views\user\TrangChu.xaml;
 
 True
 

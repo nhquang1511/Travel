@@ -93,7 +93,7 @@
                             <Button Content="Xóa" Command="{Binding DeleteRoomCommand}" Margin="5"/>
 
                         </StackPanel>
-                        <Image Source="{Binding SelectedImagePath}" Height="50"></Image>
+                        
                     </StackPanel>
                 </Grid>
             </Grid>

@@ -94,7 +94,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Dbconnection.cs" />
+    <Compile Include="CurrentUser.cs" />
     <Compile Include="Models\AnhKhachSan.cs">
       <DependentUpon>DuLich.tt</DependentUpon>
     </Compile>
@@ -131,6 +131,9 @@
     <Compile Include="Models\User.cs">
       <DependentUpon>DuLich.tt</DependentUpon>
     </Compile>
+    <Compile Include="UC\UCKhachSan.xaml.cs">
+      <DependentUpon>UCKhachSan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\DatPhongModel.cs" />
     <Compile Include="ViewModel\KhachSanModel.cs" />
     <Compile Include="ViewModel\NhanXetModel.cs" />
@@ -138,10 +141,18 @@
     <Compile Include="Styles.xaml.cs">
       <DependentUpon>Styles.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\TestModel.cs" />
     <Compile Include="ViewModel\UserModel.cs" />
     <Compile Include="views\admin\QuanLyPhong.xaml.cs">
       <DependentUpon>QuanLyPhong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\user\login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\user\RegisterForm.xaml.cs">
+      <DependentUpon>RegisterForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="views\user\TrangChu.xaml.cs">
+      <DependentUpon>TrangChu.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -159,7 +170,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UC\UCKhachSan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="views\admin\QuanLyPhong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\user\login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\user\RegisterForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\user\TrangChu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -227,7 +254,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="hinhanh\" />
-    <Folder Include="views\user\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="Traveloka.UC.UCKhachSan"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Traveloka.UC"
+                          mc:Ignorable="d" d:DesignWidth="800">
+    <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="10">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="6*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Background="#ffffff">
+                <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Uniform" />
+                <UniformGrid Columns="3">
+                    <Image Grid.Column="0" Source="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/67757118-3000x2495-FIT_AND_TRIM-42982403ed14c775a205413c940e8dc7.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" Margin="0,2,2,2"  Stretch="UniformToFill" />
+                    <Image Grid.Column="1" Source="https://cdn3.ivivu.com/2014/01/20762698_images1477905_6.jpg" Margin="0,2,2,2" Stretch="UniformToFill"/>
+                    <Image Grid.Column="2" Source="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/67757118-3000x2495-FIT_AND_TRIM-42982403ed14c775a205413c940e8dc7.jpeg?_src=imagekit&amp;tr=c-at_max,h-360,q-40,w-640" Margin="0,2,0,2"  Stretch="UniformToFill"/>
+                </UniformGrid>
+            </StackPanel>
+            <Grid Grid.Column="1" Background="#ffffff" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Label Content="Le House Boutique Hotel
+" FontWeight="Bold" FontSize="16"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <WrapPanel HorizontalAlignment="Right">
+                            <Image Source="/icons/rating.png" Width="20" Height="20"/>
+                            <Label Content="10" FontSize="16"/>
+                            <Label Content="(600 đánh giá)" FontSize="16" Foreground="#8a7d87"/>
+                        </WrapPanel>
+                    </Grid>
+
+                </Grid>
+                <Grid Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"  Background="#ffffff" Margin="5,0,0,0">
+                    <StackPanel>
+                        <WrapPanel>
+                            <Image Source="/icons/Hotel.png" Width="20" Height="20" />
+                            <Label Content="Khách Sạn" Foreground="#59B8F5" Background="#ecf8ff"  FontSize="16" />
+                            <Label Content="5"  FontSize="16" />
+                            <Image Source="/icons/Star.png" Width="20" Height="20"/>
+                        </WrapPanel>
+                        <!--Địa chỉ-->
+                        <WrapPanel>
+                            <Image Source="/icons/pin.png" Width="20" Height="20"/>
+                            <Label Content="Địa chỉ"  FontSize="16" Foreground="#8a7d87"/>
+                        </WrapPanel>
+                        <Label Content="Khách sạn này nằm ở trung tâm thành phố, cung cấp dịch vụ sang trọng và tiện nghi hiện đại, là điểm dừng chân lý tưởng cho du khách.
+n"  FontSize="13" />
+
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="2"  Background="#ffffff" Margin="5,0,0,0">
+                    <Border CornerRadius="10" Background="#FFDC00" Margin="7,10,150,7" Padding="0">
+                        <Label Content="Giảm 500k trong dịp lễ 30/4 và 1/5" 
+                             Background="Transparent" 
+                             VerticalAlignment="Center" 
+                             HorizontalContentAlignment="Stretch"
+                             FontSize="12"
+                             BorderThickness="0"/>
+                    </Border>
+
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="2" Background="#ffffff" Margin="5,0,0,0">
+                <StackPanel>
+                    <Border CornerRadius="10" Background="#baf075" Margin="150,30,7,7">
+                        <Label Content="Ưu Đãi" FontSize="15" Foreground="#4fa767" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <TextBlock Text="1.200.000 VND" FontSize="15" HorizontalAlignment="Right" Foreground="#8a7d87">
+                        <TextBlock.TextDecorations>
+                            <TextDecorationCollection>
+                                <TextDecoration Location="Strikethrough"/>
+                            </TextDecorationCollection>
+                        </TextBlock.TextDecorations>
+                    </TextBlock>
+                    <Label Content="900.000 VND"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
+                    <Label Content="Chưa bao gồm thuế và phí"  FontSize="16" HorizontalAlignment="Right"  Foreground="#ff5f28"/>
+                    <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
+                        <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" />
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>
