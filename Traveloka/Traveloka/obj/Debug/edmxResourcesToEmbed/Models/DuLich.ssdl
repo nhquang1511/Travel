@@ -45,6 +45,7 @@
     <Property Name="NgayNhanXet" Type="date" />
     <Property Name="UserId" Type="int" />
     <Property Name="KhachSanId" Type="int" />
+    <Property Name="Diem" Type="int" />
   </EntityType>
   <EntityType Name="Phong">
     <Key>

@@ -82,3 +82,7 @@ C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\UC\UCKhachSan.baml
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\TrangChu.baml
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\admin\QuanLyKhachSan.g.cs
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\admin\QuanLyKhachSan.baml
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\ChiTietKhachSan.g.cs
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\chitietphongcontroller.g.cs
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\ChiTietKhachSan.baml
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\chitietphongcontroller.baml

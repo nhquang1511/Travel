@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DuLich1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DuLich1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AnhKhachSan">
           <Key>
             <PropertyRef Name="AnhId" />
@@ -50,6 +50,7 @@
           <Property Name="NgayNhanXet" Type="date" />
           <Property Name="UserId" Type="int" />
           <Property Name="KhachSanId" Type="int" />
+          <Property Name="Diem" Type="int" />
         </EntityType>
         <EntityType Name="Phong">
           <Key>
@@ -192,8 +193,7 @@
             <End Role="Phong" EntitySet="Phong" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DuLich1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -251,6 +251,7 @@
           <Property Name="KhachSanId" Type="Int32" />
           <NavigationProperty Name="KhachSan" Relationship="Self.FK_NhanXet_KhachSanId" FromRole="NhanXet" ToRole="KhachSan" />
           <NavigationProperty Name="User" Relationship="Self.FK_NhanXet_UserId" FromRole="NhanXet" ToRole="Users" />
+          <Property Name="Diem" Type="Int32" />
         </EntityType>
         <EntityType Name="Phong">
           <Key>
@@ -447,6 +448,7 @@
           <EntitySetMapping Name="NhanXets">
             <EntityTypeMapping TypeName="DuLich1Model.NhanXet">
               <MappingFragment StoreEntitySet="NhanXet">
+                <ScalarProperty Name="Diem" ColumnName="Diem" />
                 <ScalarProperty Name="NhanXetId" ColumnName="NhanXetId" />
                 <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
                 <ScalarProperty Name="NgayNhanXet" ColumnName="NgayNhanXet" />

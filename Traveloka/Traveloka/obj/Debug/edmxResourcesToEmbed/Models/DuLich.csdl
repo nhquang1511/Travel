@@ -54,6 +54,7 @@
     <Property Name="KhachSanId" Type="Int32" />
     <NavigationProperty Name="KhachSan" Relationship="Self.FK_NhanXet_KhachSanId" FromRole="NhanXet" ToRole="KhachSan" />
     <NavigationProperty Name="User" Relationship="Self.FK_NhanXet_UserId" FromRole="NhanXet" ToRole="Users" />
+    <Property Name="Diem" Type="Int32" />
   </EntityType>
   <EntityType Name="Phong">
     <Key>

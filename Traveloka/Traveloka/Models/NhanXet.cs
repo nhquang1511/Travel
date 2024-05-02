@@ -19,6 +19,7 @@ namespace Traveloka.Models
         public Nullable<System.DateTime> NgayNhanXet { get; set; }
         public Nullable<int> UserId { get; set; }
         public Nullable<int> KhachSanId { get; set; }
+        public Nullable<int> Diem { get; set; }
     
         public virtual KhachSan KhachSan { get; set; }
         public virtual User User { get; set; }

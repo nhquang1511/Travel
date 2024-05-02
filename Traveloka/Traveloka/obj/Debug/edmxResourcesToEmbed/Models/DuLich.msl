@@ -44,6 +44,7 @@
     <EntitySetMapping Name="NhanXets">
       <EntityTypeMapping TypeName="DuLich1Model.NhanXet">
         <MappingFragment StoreEntitySet="NhanXet">
+          <ScalarProperty Name="Diem" ColumnName="Diem" />
           <ScalarProperty Name="NhanXetId" ColumnName="NhanXetId" />
           <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
           <ScalarProperty Name="NgayNhanXet" ColumnName="NgayNhanXet" />
