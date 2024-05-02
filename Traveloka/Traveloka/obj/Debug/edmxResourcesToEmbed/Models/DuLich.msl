@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DuLich1ModelStoreContainer" CdmEntityContainer="DuLichEntities">
+    <EntitySetMapping Name="AnhKhachSans">
+      <EntityTypeMapping TypeName="DuLich1Model.AnhKhachSan">
+        <MappingFragment StoreEntitySet="AnhKhachSan">
+          <ScalarProperty Name="AnhId" ColumnName="AnhId" />
+          <ScalarProperty Name="KhachSanId" ColumnName="KhachSanId" />
+          <ScalarProperty Name="AnhKhachSan1" ColumnName="AnhKhachSan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnhPhongs">
+      <EntityTypeMapping TypeName="DuLich1Model.AnhPhong">
+        <MappingFragment StoreEntitySet="AnhPhong">
+          <ScalarProperty Name="AnhPhongId" ColumnName="AnhPhongId" />
+          <ScalarProperty Name="PhongId" ColumnName="PhongId" />
+          <ScalarProperty Name="AnhPhong1" ColumnName="AnhPhong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DatPhongs">
+      <EntityTypeMapping TypeName="DuLich1Model.DatPhong">
+        <MappingFragment StoreEntitySet="DatPhong">
+          <ScalarProperty Name="DatPhongId" ColumnName="DatPhongId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PhongId" ColumnName="PhongId" />
+          <ScalarProperty Name="NgayNhanPhong" ColumnName="NgayNhanPhong" />
+          <ScalarProperty Name="NgayTraPhong" ColumnName="NgayTraPhong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachSans">
+      <EntityTypeMapping TypeName="DuLich1Model.KhachSan">
+        <MappingFragment StoreEntitySet="KhachSan">
+          <ScalarProperty Name="KhachSanId" ColumnName="KhachSanId" />
+          <ScalarProperty Name="TenKhachSan" ColumnName="TenKhachSan" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="LoaiKhachSan" ColumnName="LoaiKhachSan" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhanXets">
+      <EntityTypeMapping TypeName="DuLich1Model.NhanXet">
+        <MappingFragment StoreEntitySet="NhanXet">
+          <ScalarProperty Name="NhanXetId" ColumnName="NhanXetId" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="NgayNhanXet" ColumnName="NgayNhanXet" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="KhachSanId" ColumnName="KhachSanId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phongs">
+      <EntityTypeMapping TypeName="DuLich1Model.Phong">
+        <MappingFragment StoreEntitySet="Phong">
+          <ScalarProperty Name="PhongId" ColumnName="PhongId" />
+          <ScalarProperty Name="TenPhong" ColumnName="TenPhong" />
+          <ScalarProperty Name="KhachSanId" ColumnName="KhachSanId" />
+          <ScalarProperty Name="TenLoaiPhong" ColumnName="TenLoaiPhong" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DuLich1Model.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

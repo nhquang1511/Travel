@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DuLich1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AnhKhachSan">
+    <Key>
+      <PropertyRef Name="AnhId" />
+    </Key>
+    <Property Name="AnhId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KhachSanId" Type="Int32" />
+    <Property Name="AnhKhachSan1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="KhachSan" Relationship="Self.FK_AnhKhachSan_KhachSanId" FromRole="AnhKhachSan" ToRole="KhachSan" />
+  </EntityType>
+  <EntityType Name="AnhPhong">
+    <Key>
+      <PropertyRef Name="AnhPhongId" />
+    </Key>
+    <Property Name="AnhPhongId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PhongId" Type="Int32" />
+    <Property Name="AnhPhong1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Phong" Relationship="Self.FK_AnhPhong_PhongId" FromRole="AnhPhong" ToRole="Phong" />
+  </EntityType>
+  <EntityType Name="DatPhong">
+    <Key>
+      <PropertyRef Name="DatPhongId" />
+    </Key>
+    <Property Name="DatPhongId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="PhongId" Type="Int32" />
+    <Property Name="NgayNhanPhong" Type="DateTime" Precision="0" />
+    <Property Name="NgayTraPhong" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Phong" Relationship="Self.FK_DatPhong_PhongId" FromRole="DatPhong" ToRole="Phong" />
+    <NavigationProperty Name="User" Relationship="Self.FK_DatPhong_UserId" FromRole="DatPhong" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="KhachSan">
+    <Key>
+      <PropertyRef Name="KhachSanId" />
+    </Key>
+    <Property Name="KhachSanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenKhachSan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LoaiKhachSan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Gia" Type="Int32" />
+    <NavigationProperty Name="AnhKhachSans" Relationship="Self.FK_AnhKhachSan_KhachSanId" FromRole="KhachSan" ToRole="AnhKhachSan" />
+    <NavigationProperty Name="NhanXets" Relationship="Self.FK_NhanXet_KhachSanId" FromRole="KhachSan" ToRole="NhanXet" />
+    <NavigationProperty Name="Phongs" Relationship="Self.FK_Phong_KhachSanId" FromRole="KhachSan" ToRole="Phong" />
+  </EntityType>
+  <EntityType Name="NhanXet">
+    <Key>
+      <PropertyRef Name="NhanXetId" />
+    </Key>
+    <Property Name="NhanXetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoiDung" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="NgayNhanXet" Type="DateTime" Precision="0" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="KhachSanId" Type="Int32" />
+    <NavigationProperty Name="KhachSan" Relationship="Self.FK_NhanXet_KhachSanId" FromRole="NhanXet" ToRole="KhachSan" />
+    <NavigationProperty Name="User" Relationship="Self.FK_NhanXet_UserId" FromRole="NhanXet" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Phong">
+    <Key>
+      <PropertyRef Name="PhongId" />
+    </Key>
+    <Property Name="PhongId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenPhong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="KhachSanId" Type="Int32" />
+    <Property Name="TenLoaiPhong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TrangThai" Type="Int32" />
+    <Property Name="Gia" Type="Int32" />
+    <NavigationProperty Name="AnhPhongs" Relationship="Self.FK_AnhPhong_PhongId" FromRole="Phong" ToRole="AnhPhong" />
+    <NavigationProperty Name="DatPhongs" Relationship="Self.FK_DatPhong_PhongId" FromRole="Phong" ToRole="DatPhong" />
+    <NavigationProperty Name="KhachSan" Relationship="Self.FK_Phong_KhachSanId" FromRole="Phong" ToRole="KhachSan" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ten" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MatKhau" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="Int32" />
+    <NavigationProperty Name="DatPhongs" Relationship="Self.FK_DatPhong_UserId" FromRole="Users" ToRole="DatPhong" />
+    <NavigationProperty Name="NhanXets" Relationship="Self.FK_NhanXet_UserId" FromRole="Users" ToRole="NhanXet" />
+  </EntityType>
+  <Association Name="FK_AnhKhachSan_KhachSanId">
+    <End Role="KhachSan" Type="Self.KhachSan" Multiplicity="0..1" />
+    <End Role="AnhKhachSan" Type="Self.AnhKhachSan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachSan">
+        <PropertyRef Name="KhachSanId" />
+      </Principal>
+      <Dependent Role="AnhKhachSan">
+        <PropertyRef Name="KhachSanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AnhPhong_PhongId">
+    <End Role="Phong" Type="Self.Phong" Multiplicity="0..1" />
+    <End Role="AnhPhong" Type="Self.AnhPhong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phong">
+        <PropertyRef Name="PhongId" />
+      </Principal>
+      <Dependent Role="AnhPhong">
+        <PropertyRef Name="PhongId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DatPhong_PhongId">
+    <End Role="Phong" Type="Self.Phong" Multiplicity="0..1" />
+    <End Role="DatPhong" Type="Self.DatPhong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phong">
+        <PropertyRef Name="PhongId" />
+      </Principal>
+      <Dependent Role="DatPhong">
+        <PropertyRef Name="PhongId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DatPhong_UserId">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="DatPhong" Type="Self.DatPhong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DatPhong">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanXet_KhachSanId">
+    <End Role="KhachSan" Type="Self.KhachSan" Multiplicity="0..1" />
+    <End Role="NhanXet" Type="Self.NhanXet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachSan">
+        <PropertyRef Name="KhachSanId" />
+      </Principal>
+      <Dependent Role="NhanXet">
+        <PropertyRef Name="KhachSanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phong_KhachSanId">
+    <End Role="KhachSan" Type="Self.KhachSan" Multiplicity="0..1" />
+    <End Role="Phong" Type="Self.Phong" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachSan">
+        <PropertyRef Name="KhachSanId" />
+      </Principal>
+      <Dependent Role="Phong">
+        <PropertyRef Name="KhachSanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NhanXet_UserId">
+    <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+    <End Role="NhanXet" Type="Self.NhanXet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="NhanXet">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DuLichEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AnhKhachSans" EntityType="Self.AnhKhachSan" />
+    <EntitySet Name="AnhPhongs" EntityType="Self.AnhPhong" />
+    <EntitySet Name="DatPhongs" EntityType="Self.DatPhong" />
+    <EntitySet Name="KhachSans" EntityType="Self.KhachSan" />
+    <EntitySet Name="NhanXets" EntityType="Self.NhanXet" />
+    <EntitySet Name="Phongs" EntityType="Self.Phong" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_AnhKhachSan_KhachSanId" Association="Self.FK_AnhKhachSan_KhachSanId">
+      <End Role="KhachSan" EntitySet="KhachSans" />
+      <End Role="AnhKhachSan" EntitySet="AnhKhachSans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AnhPhong_PhongId" Association="Self.FK_AnhPhong_PhongId">
+      <End Role="Phong" EntitySet="Phongs" />
+      <End Role="AnhPhong" EntitySet="AnhPhongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DatPhong_PhongId" Association="Self.FK_DatPhong_PhongId">
+      <End Role="Phong" EntitySet="Phongs" />
+      <End Role="DatPhong" EntitySet="DatPhongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DatPhong_UserId" Association="Self.FK_DatPhong_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="DatPhong" EntitySet="DatPhongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanXet_KhachSanId" Association="Self.FK_NhanXet_KhachSanId">
+      <End Role="KhachSan" EntitySet="KhachSans" />
+      <End Role="NhanXet" EntitySet="NhanXets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phong_KhachSanId" Association="Self.FK_Phong_KhachSanId">
+      <End Role="KhachSan" EntitySet="KhachSans" />
+      <End Role="Phong" EntitySet="Phongs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NhanXet_UserId" Association="Self.FK_NhanXet_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="NhanXet" EntitySet="NhanXets" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
