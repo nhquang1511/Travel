@@ -26,4 +26,5 @@ namespace Traveloka.views.admin
             DataContext = new KhachSanModel();
         }
     }
+
 }

@@ -33,7 +33,11 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="1"  >
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <TextBox Text="Dia chi" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
+                    <WrapPanel>
+                        <Image Source="/icons/location.png" Stretch="Uniform" Width="15"></Image>
+                        <TextBox Text="Đà Nẵng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
+                    </WrapPanel>
+                    
                 </Border>
             </Grid>
             <Grid Grid.Column="3">
@@ -233,7 +237,7 @@ n"  FontSize="13" />
                                                     <Label Content="{Binding Gia}"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
                                                     <Label Content="Chưa bao gồm thuế và phí"  FontSize="16" HorizontalAlignment="Right"  Foreground="#ff5f28"/>
                                                     <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
-                                                        <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" />
+                                                        <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Click="Button_Click" />
                                                     </Border>
                                                 </StackPanel>
                                             </Grid>

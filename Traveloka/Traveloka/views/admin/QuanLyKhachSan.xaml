@@ -5,102 +5,101 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Traveloka.views.admin"
         mc:Ignorable="d"
-        Title="QuanLyKhachSan" Height="450" Width="800">
-    <Grid>
+        WindowStartupLocation="CenterScreen"
+        Title="QuanLyKhachSan" Height="600" Width="1270">
+    <Grid Background="#F0F0F0">
         <Grid>
-            <StackPanel Margin="10">
-                <TextBlock Text="Thông tin phòng" FontWeight="Bold" Margin="0,0,0,10"/>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="5*"/>
-                    </Grid.ColumnDefinitions>
-                    <DataGrid ItemsSource="{Binding Hotels}" AutoGenerateColumns="False" Margin="10" Grid.Column="1" SelectionMode="Single"
-        SelectedItem="{Binding SelectedRoom}">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Width="0.5*" Header="ID" Binding="{Binding KhachSanID}"/>
-                            <DataGridTextColumn Width="*" Header="Tên Khách Sạn" Binding="{Binding TenKhachSan}"/>
-                            <DataGridTextColumn Width="*" Header="Địa chỉ" Binding="{Binding DiaChi}"/>
-                            <DataGridTextColumn Width="*" Header="Loại khách sạn" Binding="{Binding LoaiKhachSan}"/>
-                            <DataGridTextColumn Width="*" Header="Giá" Binding="{Binding Gia}"/>
-                            <DataGridTemplateColumn Width="*" Header="danh sách ảnh">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <!-- Sử dụng ListBox để hiển thị danh sách các mục -->
-                                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="10" Background="White">
+                <TextBlock Text="Thông tin Khách sạn" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                <!-- Border và Background cho phần chứa DataGrid -->
+                <Border BorderBrush="#CCCCCC" BorderThickness="1" Background="White">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="5*" />
+                        </Grid.ColumnDefinitions>
+                        <!-- DataGrid hiển thị thông tin khách sạn -->
+                        <DataGrid ItemsSource="{Binding Hotels}" AutoGenerateColumns="False" Margin="10" Grid.Column="1" SelectionMode="Single" SelectedItem="{Binding SelectedRoom}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="0.5*" Header="ID" Binding="{Binding KhachSanID}" />
+                                <DataGridTextColumn Width="*" Header="Tên Khách Sạn" Binding="{Binding TenKhachSan}" />
+                                <DataGridTemplateColumn Width="*" Header="Địa chỉ">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding DiaChi}" TextWrapping="Wrap" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Width="*" Header="Loại khách sạn" Binding="{Binding LoaiKhachSan}" />
+                                <DataGridTextColumn Width="*" Header="Giá" Binding="{Binding Gia}" />
+                                <DataGridTemplateColumn Width="*" Header="Danh sách ảnh">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
                                             <ListBox ItemsSource="{Binding AnhKhachSans}" Height="100">
                                                 <ListBox.ItemTemplate>
                                                     <DataTemplate>
-                                                        <!-- Hiển thị thông tin mỗi mục trong danh sách -->
-                                                        <Image Source="{Binding AnhKhachSan1}" Stretch="Uniform" Height="50" Width="100"></Image>
+                                                        <Image Source="{Binding AnhKhachSan1}" Stretch="Uniform" Height="50" Width="100" />
                                                     </DataTemplate>
                                                 </ListBox.ItemTemplate>
                                             </ListBox>
-                                        </ScrollViewer>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn Width="*" Header="Phòng">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Chi ti" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
 
-                        </DataGrid.Columns>
-                    </DataGrid>
-                    <Grid Grid.Column="0">
-                        <StackPanel>
-                            <TextBlock Text="Tên phòng:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.TenKhachSan, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                        <!-- Phần chứa thông tin chi tiết -->
+                        <Grid Grid.Column="0" Margin="10">
+                            <StackPanel Background="LightGray">
+                                <!-- Các trường thông tin -->
+                                <TextBlock Text="Tên khách sạn:" Margin="0 5" />
+                                <TextBox Text="{Binding NewRoom.TenKhachSan, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
 
-                            <TextBlock Text="Địa chỉ:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.DiaChi, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                                <TextBlock Text="Địa chỉ:" Margin="0 5" />
+                                <TextBox Text="{Binding NewRoom.DiaChi, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
 
-                            <TextBlock Text="Loại khách sạn:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.LoaiKhachSan, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+                                <TextBlock Text="Loại khách sạn:" Margin="0 5" />
+                                <TextBox Text="{Binding NewRoom.LoaiKhachSan, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
 
-                            <TextBlock Text="Giá:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
-                            <TextBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.Gia, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-                            <Grid>
+                                <TextBlock Text="Giá:" Margin="0 5" />
+                                <TextBox Text="{Binding NewRoom.Gia, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" />
 
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*"></RowDefinition>
-                                    <RowDefinition Height="*"></RowDefinition>
-                                </Grid.RowDefinitions>
-                                <!-- ListBox hiển thị danh sách ảnh -->
-                                <!-- ListBox hiển thị danh sách ảnh -->
-                                <ListBox ItemsSource="{Binding SelectedRoom.AnhKhachSans}" Grid.Row="0">
+                                <!-- Danh sách ảnh -->
+                                <TextBlock Text="Danh sách ảnh" FontWeight="Bold" Margin="0 5" />
+                                <ListBox ItemsSource="{Binding SelectedRoom.AnhKhachSans}" Margin="0 5">
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
-                                                <!-- TextBox ràng buộc với thuộc tính AnhPhong1 của mỗi AnhPhong -->
-                                                <Image Source="{Binding AnhKhachSan1}" Stretch="Uniform" Height="30" Width="100"></Image>
-                                                <!-- Nút chỉnh sửa ảnh -->
-                                                <Button Content="Edit" Command="{Binding DataContext.EditAnhKhachSanCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0"/>
-
-                                                <!-- Nút xóa ảnh -->
-                                                <Button Content="Delete" Command="{Binding DataContext.DeleteAnhKhachSanCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0"/>
-
+                                                <Image Source="{Binding AnhKhachSan1}" Stretch="Uniform" Height="30" Width="100" />
+                                                <Button Content="Edit" Command="{Binding DataContext.EditAnhKhachSanCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0" />
+                                                <Button Content="Delete" Command="{Binding DataContext.DeleteAnhKhachSanCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0" />
                                             </StackPanel>
                                         </DataTemplate>
                                     </ListBox.ItemTemplate>
                                 </ListBox>
 
                                 <!-- Nút thêm ảnh -->
-                                <Button Content="Add ảnh" Command="{Binding OpenFileCommand}" Grid.Row="1"/>
+                                <Button Content="Thêm ảnh" Command="{Binding OpenFileCommand}" Margin="0 5" />
 
-                            </Grid>
-
-
-                            <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center">
-
-                                <Button Content="Thêm" Command="{Binding AddKhachSanCommand}" Margin="5"/>
-                                <Button Content="Sửa" Command="{Binding EditKhachSanCommand}" Margin="5"/>
-                                <Button Content="Xóa" Command="{Binding DeleteKhachSanCommand}" Margin="5"/>
-
+                                <!-- Nút chức năng -->
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Content="Thêm" Command="{Binding AddKhachSanCommand}" Margin="5" />
+                                    <Button Content="Sửa" Command="{Binding EditKhachSanCommand}" Margin="5" />
+                                    <Button Content="Xóa" Command="{Binding DeleteKhachSanCommand}" Margin="5" />
+                                </StackPanel>
                             </StackPanel>
-
-                        </StackPanel>
+                        </Grid>
                     </Grid>
-                </Grid>
+                </Border>
             </StackPanel>
-
-
         </Grid>
     </Grid>
 </Window>

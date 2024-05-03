@@ -99,7 +99,7 @@ namespace Traveloka.ViewModel
                             TenLoaiPhong = _selectedRoom.TenLoaiPhong,
                             TrangThai = _selectedRoom.TrangThai,
                             Gia = _selectedRoom.Gia,
-                            //AnhPhongs = _selectedRoom.AnhPhongs
+                            AnhPhongs = _selectedRoom.AnhPhongs
                         };
                     }
                 }
@@ -195,6 +195,7 @@ namespace Traveloka.ViewModel
         private void AddRoom()
         {
             _context.Phongs.Add(NewRoom);
+            
             _context.SaveChanges();
             
             LoadRooms();

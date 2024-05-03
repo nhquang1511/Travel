@@ -101,7 +101,7 @@ namespace Traveloka.ViewModel
                             DiaChi = _selectedRoom.DiaChi,
                             LoaiKhachSan = _selectedRoom.LoaiKhachSan,
                             Gia = _selectedRoom.Gia,
-                            //AnhKhachSans = _selectedRoom.AnhKhachSans
+                            AnhKhachSans = _selectedRoom.AnhKhachSans
                         };
                     }
                 }
@@ -196,7 +196,9 @@ namespace Traveloka.ViewModel
 
         private void AddRoom()
         {
+            
             _context.KhachSans.Add(NewRoom);
+            
             _context.SaveChanges();
 
             LoadHotels();

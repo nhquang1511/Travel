@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Traveloka.views.admin"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="QuanLyPhong" Height="600" Width="1270">
     <Grid>
         <StackPanel Margin="10">

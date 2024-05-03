@@ -263,6 +263,7 @@
     <Resource Include="icons\pin.png" />
     <Resource Include="icons\rating.png" />
     <Resource Include="icons\Star.png" />
+    <Resource Include="icons\location.png" />
     <Content Include="Models\DuLich.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>DuLich.Context.cs</LastGenOutput>
