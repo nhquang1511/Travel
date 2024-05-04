@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Traveloka.Models;
+using Traveloka.views.user;
 
 namespace Traveloka.ViewModel
 {
@@ -16,6 +17,7 @@ namespace Traveloka.ViewModel
     {
         private DuLichEntities _context;
 
+        public RelayCommand LoadKhachSan { get; private set; }
         public RelayCommand AddKhachSanCommand { get; private set; }
         public RelayCommand EditKhachSanCommand { get; private set; }
         public RelayCommand DeleteKhachSanCommand { get; private set; }
@@ -137,7 +139,23 @@ namespace Traveloka.ViewModel
             OpenFileCommand = new RelayCommand(OpenFile);
             DeleteAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(DeleteAnhKhachSan);
             EditAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(EditAnhKhachSan);
+            LoadKhachSan = new RelayCommand(LoadKhachSan1);
 
+        }
+        private void LoadKhachSan1()
+        {
+            if (SelectedRoom != null)
+            {
+                ChiTietKhachSan ctks = new ChiTietKhachSan();
+                // Gắn SelectedRoom làm DataContext cho ChiTietKhachSan
+                ctks.DataContext = SelectedRoom;
+                // Hiển thị cửa sổ ChiTietKhachSan
+                ctks.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một phòng để xem chi tiết.");
+            }
         }
         private void DeleteAnhKhachSan(AnhKhachSan anhKhachSan)
         {

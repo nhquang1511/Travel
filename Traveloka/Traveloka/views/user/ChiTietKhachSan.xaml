@@ -35,7 +35,7 @@
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
-                            <Label Grid.Row="0" FontWeight="Bold" FontSize="16" >Davue Hotel Da Nang</Label>
+                            <Label Grid.Row="0" FontWeight="Bold" FontSize="16" Content="{Binding TenKhachSan}" ></Label>
                             <WrapPanel Grid.Row="1">
                                 <Label Content="Khách Sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" Background="#190264C8"/>
                                 <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
@@ -45,8 +45,8 @@
                             </WrapPanel>
                             <WrapPanel Grid.Row="2">
                                 <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
-                                <Label FontWeight="Bold">Địa chỉ: 57-59 Đỗ Bí, Mỹ An, Ngũ Hành Sơn, Đà Nẵng, Việt Nam</Label>
-                                <Label x:Name="diachilabel"></Label>
+                                <Label FontWeight="Bold" Content="{Binding DiaChi}"></Label>
+                               
                             </WrapPanel>
 
                         </Grid>
@@ -57,7 +57,7 @@
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
                             <Label Grid.Row="0" HorizontalAlignment="Right" FontWeight="Normal" >Giá/Phòng</Label>
-                            <Label HorizontalAlignment="Left" FontWeight="Bold" Foreground="#FFE22E2E" Margin="227,25,0,30" Grid.RowSpan="3" Width="87" RenderTransformOrigin="0.5,0.5" >
+                            <Label Content="{Binding Gia}" HorizontalAlignment="Left" FontWeight="Bold" Foreground="#FFE22E2E" Margin="227,25,0,30" Grid.RowSpan="3" Width="87" RenderTransformOrigin="0.5,0.5" >
                                 <Label.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -65,7 +65,7 @@
                                         <RotateTransform Angle="-0.33"/>
                                         <TranslateTransform/>
                                     </TransformGroup>
-                                </Label.RenderTransform> 238.095  VND
+                                </Label.RenderTransform> 
                             </Label>
 
                             <Button Grid.Row="2" Content="Chọn Phòng" Foreground="White" Padding="1,1,1,1" Background="#FFFF5E1F" Margin="183,5,5,4" FontSize="14">
@@ -88,42 +88,27 @@
                             <ColumnDefinition Width="1*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                            <Image x:Name="anhimage" Source="\image\anh.webp" Stretch="UniformToFill">
-                            </Image>
+                            <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Uniform" />
+                            
                         </Border>
-                        <Grid Grid.Column="1">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"></RowDefinition>
-                                <RowDefinition Height="*"></RowDefinition>
-                                <RowDefinition Height="*"></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Border Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                                <Image Grid.Row="0" Source="\image\anh1.webp" Stretch="UniformToFill"></Image>
-                            </Border>
-                            <Border Grid.Row="1" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                                <Image  Source="\image\anh2.webp" Stretch="UniformToFill"></Image>
-                            </Border>
-                            <Border Grid.Row="2" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                                <Image Source="\image\anh.webp" Stretch="UniformToFill"></Image>
-                            </Border>
-                        </Grid>
-                        <Grid Grid.Column="2">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"></RowDefinition>
-                                <RowDefinition Height="*"></RowDefinition>
-                                <RowDefinition Height="*"></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <Border Grid.Row="0" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                                <Image Source="\image\anh2.webp" Stretch="UniformToFill"></Image>
-                            </Border>
-                            <Border Grid.Row="1" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                                <Image Source="\image\anh1.webp" Stretch="UniformToFill"></Image>
-                            </Border>
-                            <Border Grid.Row="2" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                                <Image Source="\image\anh2.webp" Stretch="UniformToFill"></Image>
-                            </Border>
-                        </Grid>
+                        <StackPanel Grid.Column="1" Background="#ffffff">
+                            <!-- Hiển thị ảnh đầu tiên -->
+                            
 
+                            <!-- Sử dụng ItemsControl để hiển thị các ảnh tiếp theo trong UniformGrid -->
+                            <ItemsControl ItemsSource="{Binding AnhKhachSans}" Margin="0,2,0,0">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <UniformGrid Columns="3"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Image Source="{Binding AnhKhachSan1}" Margin="0,2,2,2" Stretch="UniformToFill"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
 
                     </Grid>
                     <Grid Grid.Row="3" Margin="10,178,10,1161" Grid.ColumnSpan="2">

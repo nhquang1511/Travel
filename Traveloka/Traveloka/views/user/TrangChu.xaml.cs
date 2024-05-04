@@ -27,35 +27,35 @@ namespace Traveloka.views.user
             DataContext = new KhachSanModel();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
 
-            // Lấy button mà được click
-            Button button = sender as Button;
+        //    // Lấy button mà được click
+        //    Button button = sender as Button;
 
-            // Tìm đến đối tượng KhachSan được chọn từ Button's DataContext
-            KhachSan selectedKhachSan = button.DataContext as KhachSan;
+        //    // Tìm đến đối tượng KhachSan được chọn từ Button's DataContext
+        //    KhachSan selectedKhachSan = button.DataContext as KhachSan;
 
-            // Kiểm tra xem có đối tượng được chọn không
-            if (selectedKhachSan != null)
-            {
-                // Lấy idkhachsan từ đối tượng KhachSan được chọn
-                int idkhachsan = selectedKhachSan.KhachSanId;
+        //    // Kiểm tra xem có đối tượng được chọn không
+        //    if (selectedKhachSan != null)
+        //    {
+        //        // Lấy idkhachsan từ đối tượng KhachSan được chọn
+        //        int idkhachsan = selectedKhachSan.KhachSanId;
 
-                // Tạo một thể hiện mới của form ChiTietKhachSan và chuyển idkhachsan qua constructor
-                ChiTietKhachSan ctks = new ChiTietKhachSan(idkhachsan);
+        //        // Tạo một thể hiện mới của form ChiTietKhachSan và chuyển idkhachsan qua constructor
+        //        ChiTietKhachSan ctks = new ChiTietKhachSan(idkhachsan);
 
-                // Hiển thị form ChiTietKhachSan
-                ctks.Show();
+        //        // Hiển thị form ChiTietKhachSan
+        //        ctks.Show();
 
-                ;
-            }
-            else
-            {
-                MessageBox.Show("Không thể lấy thông tin của khách sạn được chọn.");
-            }
+        //        ;
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Không thể lấy thông tin của khách sạn được chọn.");
+        //    }
 
-        }
+        //}
 
         
     }

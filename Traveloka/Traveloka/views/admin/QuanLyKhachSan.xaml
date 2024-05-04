@@ -78,7 +78,7 @@
                                     <ListBox.ItemTemplate>
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
-                                                <Image Source="{Binding AnhKhachSan1}" Stretch="Uniform" Height="30" Width="100" />
+                                                <Image Source="{Binding AnhKhachSans}" Stretch="Uniform" Height="30" Width="100" />
                                                 <Button Content="Edit" Command="{Binding DataContext.EditAnhKhachSanCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0" />
                                                 <Button Content="Delete" Command="{Binding DataContext.DeleteAnhKhachSanCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0" />
                                             </StackPanel>

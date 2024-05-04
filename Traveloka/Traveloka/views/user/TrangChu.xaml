@@ -136,8 +136,8 @@
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" Margin="0,0,0,0">
-               
-                    <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Hotels}">
+
+                <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Hotels}"  SelectionMode="Single" SelectedItem="{Binding SelectedRoom}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                 <Grid  Width="950">
@@ -237,8 +237,9 @@ n"  FontSize="13" />
                                                     <Label Content="{Binding Gia}"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
                                                     <Label Content="Chưa bao gồm thuế và phí"  FontSize="16" HorizontalAlignment="Right"  Foreground="#ff5f28"/>
                                                     <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
-                                                        <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Click="Button_Click" />
+                                                    <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.LoadKhachSan, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
                                                     </Border>
+                                                    
                                                 </StackPanel>
                                             </Grid>
                                         </Grid>
