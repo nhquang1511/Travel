@@ -148,6 +148,7 @@ namespace Traveloka.ViewModel
             {
                 ChiTietKhachSan ctks = new ChiTietKhachSan();
                 // Gắn SelectedRoom làm DataContext cho ChiTietKhachSan
+                
                 ctks.DataContext = SelectedRoom;
                 // Hiển thị cửa sổ ChiTietKhachSan
                 ctks.Show();
