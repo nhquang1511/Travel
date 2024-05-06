@@ -16,7 +16,7 @@ namespace Traveloka.ViewModel
     public class KhachSanModel : ViewModelBase
     {
         private DuLichEntities _context;
-
+       
         public RelayCommand LoadKhachSan { get; private set; }
         public RelayCommand AddKhachSanCommand { get; private set; }
         public RelayCommand EditKhachSanCommand { get; private set; }
@@ -140,8 +140,10 @@ namespace Traveloka.ViewModel
             DeleteAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(DeleteAnhKhachSan);
             EditAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(EditAnhKhachSan);
             LoadKhachSan = new RelayCommand(LoadKhachSan1);
+           
 
         }
+       
         private void LoadKhachSan1()
         {
             if (SelectedRoom != null)
@@ -150,6 +152,7 @@ namespace Traveloka.ViewModel
                 // Gắn SelectedRoom làm DataContext cho ChiTietKhachSan
                 
                 ctks.DataContext = SelectedRoom;
+                KhachSanHienTai.KhachSan = SelectedRoom;
                 // Hiển thị cửa sổ ChiTietKhachSan
                 ctks.Show();
             }

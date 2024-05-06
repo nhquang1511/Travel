@@ -95,6 +95,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="CurrentUser.cs" />
+    <Compile Include="KhachSanHienTai.cs" />
     <Compile Include="Models\AnhKhachSan.cs">
       <DependentUpon>DuLich.tt</DependentUpon>
     </Compile>

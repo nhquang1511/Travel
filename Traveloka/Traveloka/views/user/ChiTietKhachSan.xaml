@@ -252,7 +252,7 @@
                             </Border>
 
                             <Border Grid.Column="2" CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Margin="1055,0,0,0">
-                                <Button FontWeight="Bold" FontSize="14" Background="Transparent">Đánh giá</Button>
+                                <Button   FontWeight="Bold" FontSize="14" Background="Transparent" Click="Button_Click"  >Đánh giá</Button>
                             </Border>
                         </Grid>
                         <ListView ItemsSource="{Binding NhanXets}">

@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Traveloka.Models;
+using Traveloka.ViewModel;
 
 namespace Traveloka.views.user
 {
@@ -27,24 +28,25 @@ namespace Traveloka.views.user
         public ChiTietKhachSan()
         {
             InitializeComponent();
-
-
+            
         }
-        public ChiTietKhachSan(int idkhachsan)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
-            this.idkhachsan = idkhachsan;
+            DuLichEntities _context = new DuLichEntities();
+            NhanXet nx = new NhanXet()
+            {
+                Diem = 5,
+                NoiDung = "xin chao",
+                UserId = 1,
+                NgayNhanXet = DateTime.Now,
+                KhachSanId = KhachSanHienTai.KhachSan.KhachSanId
 
-            // Hiển thị idkhachsan trong một MessageBox
+            };
+            _context.NhanXets.Add(nx);
+            _context.SaveChanges();
+            MessageBox.Show("them thanh cong");
 
-          
-           
-            // Gọi hàm loadData khi khởi tạo window
-
-           
-           
         }
-
-
     }
 }
