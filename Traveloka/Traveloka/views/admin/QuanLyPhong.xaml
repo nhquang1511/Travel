@@ -8,15 +8,26 @@
         WindowStartupLocation="CenterScreen"
         Title="QuanLyPhong" Height="600" Width="1270">
     <Grid>
-        <StackPanel Margin="10">
-            <TextBlock Text="Thông tin phòng" FontWeight="Bold" Margin="0,0,0,10"/>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="5*"/>
-                </Grid.ColumnDefinitions>
-                <DataGrid ItemsSource="{Binding Rooms}" AutoGenerateColumns="False" Margin="10" Grid.Column="1" SelectionMode="Single"
-           SelectedItem="{Binding SelectedRoom}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#f0f2f5">
+            <Border Background="#ffffff" Margin="0,0,0,7" CornerRadius="0" BorderBrush="LightGray" BorderThickness="1" >
+                <Border.Effect>
+                    <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                </Border.Effect>
+                <TextBlock Text="Thông Tin Phòng" Foreground="Black" FontWeight="Bold" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1" Background="#f5dee7">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Height="600">
+                <DataGrid ItemsSource="{Binding Phongs}" AutoGenerateColumns="False" Margin="10" Grid.Column="1" SelectionMode="Single"
+                              SelectedItem="{Binding SelectedPhong}">
                     <DataGrid.Columns>
                         <DataGridTextColumn Width="0.5*" Header="ID" Binding="{Binding PhongId}"/>
                         <DataGridTextColumn Width="*" Header="Tên phòng" Binding="{Binding TenPhong}"/>
@@ -40,66 +51,125 @@
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
-
                     </DataGrid.Columns>
                 </DataGrid>
-                <Grid Grid.Column="0">
-                    <StackPanel>
-                        <TextBlock Text="Tên phòng:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.TenPhong, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-
-                        <TextBlock Text="Tên loại phòng:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.TenLoaiPhong, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-
-                        <TextBlock Text="Trạng thái:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.TrangThai, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-
-                        <TextBlock Text="Giá:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
-                        <TextBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Text="{Binding NewRoom.Gia, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
-                        <Grid>
-
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"></RowDefinition>
-                                <RowDefinition Height="*"></RowDefinition>
-                            </Grid.RowDefinitions>
-                            <!-- ListBox hiển thị danh sách ảnh -->
-                            <!-- ListBox hiển thị danh sách ảnh -->
-                            <ListBox ItemsSource="{Binding SelectedRoom.AnhPhongs}" Grid.Row="0">
-                                <ListBox.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Orientation="Horizontal">
-                                            <!-- TextBox ràng buộc với thuộc tính AnhPhong1 của mỗi AnhPhong -->
-                                            <Image Source="{Binding AnhPhong1}" Stretch="Uniform" Height="30" Width="100"></Image>
-                                            <!-- Nút chỉnh sửa ảnh -->
-                                            <Button Content="Edit" Command="{Binding DataContext.EditAnhPhongCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0"/>
-
-                                            <!-- Nút xóa ảnh -->
-                                            <Button Content="Delete" Command="{Binding DataContext.DeleteAnhPhongCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0"/>
-
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListBox.ItemTemplate>
-                            </ListBox>
-
-                            <!-- Nút thêm ảnh -->
-                            <Button Content="Add ảnh" Command="{Binding OpenFileCommand}" Grid.Row="1"/>
-
-                        </Grid>
-
-
-                        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center">
-
-                            <Button Content="Thêm" Command="{Binding AddRoomCommand}" Margin="5"/>
-                            <Button Content="Sửa" Command="{Binding EditRoomCommand}" Margin="5"/>
-                            <Button Content="Xóa" Command="{Binding DeleteRoomCommand}" Margin="5"/>
-
-                        </StackPanel>
-                        
+            </Grid>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <!-- Tên Phòng -->
+                <Grid Grid.Row="0" >
+                    <StackPanel Grid.Row="0" Background="Transparent">
+                        <TextBlock Text="Tên Phòng" Margin="0 5" FontWeight="Bold" HorizontalAlignment="Center" />
+                        <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1" >
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                            </Border.Effect>
+                            <TextBox Text="{Binding NewRoom.TenPhong, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" TextAlignment="Center" BorderBrush="Transparent" BorderThickness="1" />
+                        </Border>
                     </StackPanel>
                 </Grid>
+                <!-- Phần 2 -->
+                <Grid Grid.Row="1">
+                    <StackPanel Background="Transparent">
+                        <TextBlock Text="Tên loại phòng" Margin="0 5" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                            </Border.Effect>
+                            <TextBox Text="{Binding NewRoom.TenLoaiPhong, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" TextAlignment="Center"  BorderBrush="Transparent" BorderThickness="1" />
+                        </Border>
+                    </StackPanel>
+                </Grid>
+                <!-- Phần 3 -->
+                <Grid Grid.Row="2">
+                    <StackPanel Background="Transparent">
+                        <TextBlock Text="Trạng thái" Margin="0 5" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                            </Border.Effect>
+                            <TextBox Text="{Binding NewRoom.TrangThai, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" TextAlignment="Center"  BorderBrush="Transparent" BorderThickness="1" />
+                        </Border>
+                    </StackPanel>
+                </Grid>
+                <!-- Phần 4 -->
+                <Grid Grid.Row="3">
+                    <StackPanel Background="Transparent">
+                        <TextBlock Text="Giá" Margin="0 5" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                            </Border.Effect>
+                            <TextBox Text="{Binding NewRoom.Gia, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" TextAlignment="Center"  BorderBrush="Transparent" BorderThickness="1" />
+                        </Border>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!-- ListBox hiển thị danh sách ảnh -->
+                    <StackPanel Background="Transparent" >
+                        <ListBox ItemsSource="{Binding SelectedPhong.AnhPhongs}" Grid.Row="0" Height="100" Width="200" >
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                        <StackPanel Orientation="Horizontal">
+                                            <!-- Hiển thị ảnh -->
+                                            <Image Source="{Binding AnhPhong1}" Stretch="Uniform" Height="30" Width="100" />
+                                            <!-- Nút chỉnh sửa ảnh -->
+                                            <Button Content="Edit" Command="{Binding DataContext.EditAnhPhongCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0"/>
+                                            <!-- Nút xóa ảnh -->
+                                            <Button Content="Delete" Command="{Binding DataContext.DeleteAnhPhongCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Margin="5,0"/>
+                                        </StackPanel>
+                                    </ScrollViewer>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                    <!-- Nút thêm ảnh -->
+                    <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="20" Margin="5" Background="#50aff7" Grid.Row="1">
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                        </Border.Effect>
+                        <Button Content="Thêm ảnh" Command="{Binding OpenFileCommand}" Margin="5" FontWeight="Bold"  BorderThickness="0"  Background="#00FFFFFF"  Foreground="White" />
+                    </Border>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Border Background="#f5dee7" Margin="7" CornerRadius="20">
+                        <StackPanel Background="Transparent">
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="20" Background="#50aff7" Margin="5">
+                                    <Border.Effect>
+                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                    </Border.Effect>
+                                    <Button Content="Thêm" Command="{Binding AddRoomCommand}" Margin="5" FontWeight="Bold" Width="40" Height="40" Background="#00FFFFFF"  BorderThickness="0" Foreground="White" />
+                                </Border>
+                                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="20" Margin="5" Background="#50aff7">
+                                    <Border.Effect>
+                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                    </Border.Effect>
+                                    <Button Content="Sửa" Command="{Binding EditRoomCommand}" Margin="5" FontWeight="Bold" Width="40" Height="40" BorderThickness="0"  Background="#00FFFFFF"   Foreground="White" />
+                                </Border>
+                                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="20" Margin="5" Background="#50aff7">
+                                    <Border.Effect>
+                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                    </Border.Effect>
+                                    <Button Content="Xóa" Command="{Binding DeleteRoomCommand}" Margin="5" FontWeight="Bold" Width="40" Height="40" BorderThickness="0"  Background="#00FFFFFF"  Foreground="White" />
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </Grid>
             </Grid>
-        </StackPanel>
-
-
+        </Grid>
     </Grid>
 </Window>

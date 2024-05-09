@@ -24,12 +24,14 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,63">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="154*"></ColumnDefinition>
-                            <ColumnDefinition Width="10*"/>
-                            <ColumnDefinition Width="233*"/>
-                            <ColumnDefinition Width="397*"></ColumnDefinition>
+                            <ColumnDefinition Width="152*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="78*"/>
+                            <ColumnDefinition Width="16*"/>
+                            <ColumnDefinition Width="371*"/>
+                            <ColumnDefinition Width="632*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Grid Grid.Column="0" Grid.ColumnSpan="3">
+                        <Grid Grid.Column="0" Grid.ColumnSpan="5">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
@@ -46,11 +48,11 @@
                             <WrapPanel Grid.Row="2">
                                 <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
                                 <Label FontWeight="Bold" Content="{Binding SelectedRoom.DiaChi}"></Label>
-                               
+
                             </WrapPanel>
 
                         </Grid>
-                        <Grid Grid.Column="3" HorizontalAlignment="Left" Margin="313,0,0,0">
+                        <Grid Grid.Column="5" HorizontalAlignment="Left" Margin="313,0,0,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
@@ -65,7 +67,7 @@
                                         <RotateTransform Angle="-0.33"/>
                                         <TranslateTransform/>
                                     </TransformGroup>
-                                </Label.RenderTransform> 
+                                </Label.RenderTransform>
                             </Label>
 
                             <Button Grid.Row="2" Content="Chọn Phòng" Foreground="White" Padding="1,1,1,1" Background="#FFFF5E1F" Margin="183,5,5,4" FontSize="14">
@@ -85,15 +87,15 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="2*"></ColumnDefinition>
                             <ColumnDefinition Width="1*"></ColumnDefinition>
-                            
+
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
                             <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Fill" />
-                            
+
                         </Border>
                         <StackPanel Grid.Column="1" Background="#ffffff">
                             <!-- Hiển thị ảnh đầu tiên -->
-                            
+
 
                             <!-- Sử dụng ItemsControl để hiển thị các ảnh tiếp theo trong UniformGrid -->
                             <ItemsControl ItemsSource="{Binding SelectedRoom.AnhKhachSans}" Margin="0,2,0,0">
@@ -251,10 +253,10 @@
                                 <TextBox Height="67" Text="{Binding ReviewContent}" BorderBrush="{x:Null}" Background="Transparent" />
                             </Border>
                             <Border Grid.Column="2" CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Margin="1055,0,0,0">
-                                <Button FontWeight="Bold" FontSize="14" Background="Transparent" Command="{Binding AddReviewCommand}" Content="Đánh giá" />
+                                <Button FontWeight="Bold" FontSize="14" Background="Transparent" Command="{Binding DataContext.AddReviewCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Content="Đánh giá" />
                             </Border>
                         </Grid>
-                        <ListView ItemsSource="{Binding SelectedRoom.NhanXets}">
+                        <ListView ItemsSource="{Binding NhanXets}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Background="White" Padding="10">
@@ -298,17 +300,17 @@
                                 </DataTemplate>
                             </ListView.ItemTemplate>
                         </ListView>
-                       
-                        
 
-                       
+
+
+
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
             <TabItem Header="Phòng" FontWeight="Bold">
                 <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#d6f1ff">
                     <StackPanel Orientation="Vertical">
-                        <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding SelectedRoom.Phongs}"  SelectionMode="Single" SelectedItem="{Binding SelectedPhong}">
+                        <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Phongs}"  SelectionMode="Single" SelectedItem="{Binding SelectedPhong}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid>
@@ -412,7 +414,7 @@
                                                                                 <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">309.524 VND</Label>
                                                                                 <Label HorizontalAlignment="Right">Chưa bao gồm thuế và phí</Label>
 
-                                                                               
+
                                                                                 <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
                                                                                     <Button Content="Đặt ngay" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.AddBookingCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
                                                                                 </Border>

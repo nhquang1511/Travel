@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Traveloka.Models;
-
+using Traveloka.views.admin;
 using Traveloka.views.user;
 
 namespace Traveloka.ViewModel
@@ -28,6 +28,8 @@ namespace Traveloka.ViewModel
 
         public RelayCommand<AnhKhachSan> DeleteAnhKhachSanCommand { get; private set; }
         public RelayCommand<AnhKhachSan> EditAnhKhachSanCommand { get; private set; }
+
+        public RelayCommand ChiTietKhachSanCommand { get; private set; }
 
         private AnhKhachSan _selectedAnhKhachSan;
         public AnhKhachSan SelectedAnhKhachSan
@@ -68,6 +70,34 @@ namespace Traveloka.ViewModel
                 {
                     _selectedImagePath = value;
                     RaisePropertyChanged(nameof(SelectedImagePath));
+                }
+            }
+        }
+
+        private bool _isHotel;
+        public bool IsHotel
+        {
+            get { return _isHotel; }
+            set
+            {
+                if (_isHotel != value)
+                {
+                    _isHotel = value;
+                    RaisePropertyChanged(nameof(IsHotel));
+                }
+            }
+        }
+
+        private bool _isResort;
+        public bool IsResort
+        {
+            get { return _isResort; }
+            set
+            {
+                if (_isResort != value)
+                {
+                    _isResort = value;
+                    RaisePropertyChanged(nameof(IsResort));
                 }
             }
         }
@@ -143,8 +173,26 @@ namespace Traveloka.ViewModel
             DeleteAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(DeleteAnhKhachSan);
             EditAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(EditAnhKhachSan);
             LoadKhachSan = new RelayCommand(LoadKhachSan1);
-           
+            ChiTietKhachSanCommand = new RelayCommand(ChiTietKhachSan);
 
+        }
+        private void ChiTietKhachSan()
+        {
+            if (SelectedRoom != null)
+            {
+                QuanLyPhong ctks = new QuanLyPhong();
+                // Gắn SelectedRoom làm DataContext cho ChiTietKhachSan
+
+                KhachSanHienTai._selectedRoom = SelectedRoom;
+                ctks.DataContext = new KhachSanHienTai();
+
+                // Hiển thị cửa sổ ChiTietKhachSan
+                ctks.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một phòng để xem chi tiết.");
+            }
         }
         
         private void LoadKhachSan1()
@@ -210,6 +258,7 @@ namespace Traveloka.ViewModel
                 AnhKhachSan anhKhachSan = new AnhKhachSan { AnhKhachSan1 = openFileDialog.FileName, KhachSanId = SelectedRoom.KhachSanId };
                 _context.AnhKhachSans.Add(anhKhachSan);
                 _context.SaveChanges();
+
                 LoadHotels();
             }
         }
@@ -222,11 +271,10 @@ namespace Traveloka.ViewModel
 
         private void AddRoom()
         {
-            
+            NewRoom.LoaiKhachSan = IsHotel ? "Hotel" : "Resort";
+            NewRoom.AnhKhachSans = null;
             _context.KhachSans.Add(NewRoom);
-            
             _context.SaveChanges();
-
             LoadHotels();
             NewRoom = new KhachSan(); // Reset NewRoom for next entry
         }
@@ -240,7 +288,7 @@ namespace Traveloka.ViewModel
                     // Cập nhật thông tin của phòng được chọn
                     SelectedRoom.TenKhachSan = NewRoom.TenKhachSan;
                     SelectedRoom.DiaChi = NewRoom.DiaChi;
-                    SelectedRoom.LoaiKhachSan = NewRoom.LoaiKhachSan;
+                    SelectedRoom.LoaiKhachSan = IsHotel ? "Hotel" : "Resort";
                     SelectedRoom.Gia = NewRoom.Gia;
                     SelectedRoom.AnhKhachSans = NewRoom.AnhKhachSans;
                     // Lưu thay đổi vào cơ sở dữ liệu

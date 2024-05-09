@@ -32,27 +32,6 @@ namespace Traveloka.views.user
             
         }
         
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    DuLichEntities _context = new DuLichEntities();
-        //    NhanXet nx = new NhanXet()
-        //    {
-        //        Diem = 5,
-        //        NoiDung = danhgia.Text,
-        //        UserId = CurrentUser.LoggedInUser.UserId,
-        //        NgayNhanXet = DateTime.Now,
-        //        KhachSanId = KhachSanHienTai.KhachSan.KhachSanId
-
-        //    };
-        //    _context.NhanXets.Add(nx);
-        //    _context.SaveChanges();
-        //    KhachSanModel khachSanModel = (KhachSanModel)this.DataContext;
-        //    khachSanModel.LoadHotels();
-
-
-
-        //    MessageBox.Show("them thanh cong");
-
-        //}
+       
     }
 }

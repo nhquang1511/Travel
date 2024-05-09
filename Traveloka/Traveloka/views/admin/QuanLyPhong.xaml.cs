@@ -23,7 +23,7 @@ namespace Traveloka.views.admin
         public QuanLyPhong()
         {
             InitializeComponent();
-            DataContext = new PhongViewModel();
+            
         }
     }
 }
