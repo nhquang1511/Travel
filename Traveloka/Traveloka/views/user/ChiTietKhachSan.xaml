@@ -187,25 +187,21 @@
             </TabItem>
 
             <TabItem Header="Đánh giá" BorderBrush="{x:Null}" FontWeight="Bold">
-                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Background="#f7f9fa" >
                     <StackPanel>
-
                         <Label Content="Xếp hạng và điểm đánh giá chung" FontWeight="Bold" BorderBrush="{x:Null}" FontSize="20" Padding="0,0,0,16" />
-                        <Label BorderBrush="{x:Null}">Từ 425 đánh giá của khách đã ở</Label>
-
-                        <Grid>
+                        <Label BorderBrush="{x:Null}">Từ 425 đánh giá của khách đã ở</Label >
+                        <Grid Width="1000" Background="#ffffff">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0">
+                            <StackPanel Grid.Column="0" >
                                 <StackPanel Orientation="Vertical">
-                                    <Grid Width="37" Height="58" HorizontalAlignment="Left">
-                                        <Image Source="\image\full.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center" />
-
-                                        <TextBlock Text="8.5" FontWeight="Bold" FontSize="16" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <Grid Width="100" Height="100" HorizontalAlignment="Left">
+                                        <Image Source="\icons\riview.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" />
+                                        <TextBlock Text="8.5" FontWeight="Bold" FontSize="30" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Grid>
-
                                     <Label BorderBrush="{x:Null}" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="#FF006BFD">Ấn tượng</Label>
                                 </StackPanel>
 
@@ -241,191 +237,188 @@
                                 </WrapPanel>
                             </StackPanel>
                         </Grid>
-
-                        <Grid>
+                        <Grid Width="1000" Background="#ffffff">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="11*" />
-                                <ColumnDefinition Width="50*" />
-                                <ColumnDefinition Width="571*" />
-                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="auto" />
                             </Grid.ColumnDefinitions>
+                            <Border Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="10" BorderBrush="Gray" BorderThickness="0.1" Margin="10">
 
-                            <Border Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
                                 <TextBox Height="67" Text="{Binding ReviewContent}" BorderBrush="{x:Null}" Background="Transparent" />
                             </Border>
-                            <Border Grid.Column="2" CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Margin="1055,0,0,0">
-                                <Button FontWeight="Bold" FontSize="14" Background="Transparent" Command="{Binding DataContext.AddReviewCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Content="Đánh giá" />
+                            <Grid Grid.Column="1">
+                                <Border  CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Margin="10" >
+                                    <Button FontWeight="Bold" FontSize="14" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.AddReviewCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}" Content="Đánh giá" />
+                                </Border>
+                            </Grid>
+                        </Grid>
+                        <Grid Width="1000" Background="#ffffff">
+                            <Border CornerRadius="0" BorderBrush="Gray" BorderThickness="0" Margin="10">
+                                <ListView ItemsSource="{Binding NhanXets}">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate  >
+                                            <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Background="#ffffff" Padding="10" Margin="0,10,0,0" Width="970">
+                                                <Border.Effect>
+                                                    <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                </Border.Effect>
+                                                <Grid Width="900" Height="auto">
+                                                    <Grid.RowDefinitions >
+                                                        <RowDefinition Height="auto"/>
+                                                        <RowDefinition Height="*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Row="0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="*" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid Grid.Column="0">
+                                                            <Label Content="{Binding User.Ten}" BorderBrush="{x:Null}" Padding="0,0,0,0"></Label>
+                                                        </Grid>
+                                                        <Grid Grid.Column="1" Margin="0,0,0,0">
+                                                            <Label>9/10</Label>
+                                                        </Grid>
+                                                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,0,0,0">
+                                                            21 Feb 2023
+                                                        </Label>
+                                                    </Grid>
+                                                    <Grid Grid.Row="1">
+                                                        <Label Content="{Binding NoiDung}"  BorderBrush="{x:Null}" FontWeight="Normal"></Label>
+                                                    </Grid>
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
                             </Border>
                         </Grid>
-                        <ListView ItemsSource="{Binding NhanXets}">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Background="White" Padding="10">
-                                        <Grid>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="*" />
-                                                <ColumnDefinition Width="*" />
-                                                <ColumnDefinition Width="*" />
-                                            </Grid.ColumnDefinitions>
-
-                                            <StackPanel Grid.Column="0">
-                                                <WrapPanel>
-                                                    <Image Source="\image\anhnguoi.webp" Stretch="Uniform" Height="58" Width="37" />
-                                                    <Label Content="{Binding User.Ten}" BorderBrush="{x:Null}" Padding="0,7,0,0"></Label>
-                                                </WrapPanel>
-                                                <WrapPanel>
-                                                    <Image Source="\image\bed.png" Stretch="Uniform" Height="32" Width="18" />
-                                                    <Label>Chuyến đi ngắn ngày</Label>
-                                                </WrapPanel>
-                                            </StackPanel>
-
-                                            <StackPanel Grid.Column="1" Margin="0,7,0,0">
-                                                <WrapPanel>
-                                                    <Image Source="\image\bird.png" Stretch="Uniform" Height="30" Width="18" />
-                                                    <Label>9/10</Label>
-                                                </WrapPanel>
-                                                <Label Content="{Binding NoiDung}"  BorderBrush="{x:Null}"></Label>
-                                                <Image Source="\image\anh.webp" Stretch="Uniform" Height="58" Width="490" HorizontalAlignment="Left" />
-                                                <WrapPanel>
-                                                    <Image Source="\image\like.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0" />
-                                                    <Label>13 lượt thích đánh giá này</Label>
-                                                </WrapPanel>
-                                            </StackPanel>
-
-                                            <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,6,0,0">
-                                                21 Feb 2023
-                                            </Label>
-                                        </Grid>
-                                    </Border>
-
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-
-
-
-
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
+
             <TabItem Header="Phòng" FontWeight="Bold">
                 <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#d6f1ff">
                     <StackPanel Orientation="Vertical">
                         <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Phongs}"  SelectionMode="Single" SelectedItem="{Binding SelectedPhong}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
-                                    <Grid>
+                                    <Grid Width="1200" Height="auto">
                                         <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="10">
+                                            <Border.Effect>
+                                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                            </Border.Effect>
                                             <Grid>
-                                                <Grid>
-                                                    <Grid Margin="0,0,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="6*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <StackPanel Grid.Column="0" Background="#ffffff">
+                                                    <!-- Hiển thị ảnh đầu tiên -->
+                                                    
+                                                    <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Uniform" />
+                                                    
+                                                    <!-- Sử dụng ItemsControl để hiển thị các ảnh tiếp theo trong UniformGrid -->
+                                                    <ItemsControl ItemsSource="{Binding AnhPhongs}" Margin="0,2,0,0">
+                                                        <ItemsControl.ItemsPanel>
+                                                            <ItemsPanelTemplate>
+                                                                <UniformGrid Columns="3"/>
+                                                            </ItemsPanelTemplate>
+                                                        </ItemsControl.ItemsPanel>
+                                                        <ItemsControl.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <Image Source="{Binding AnhPhong1}" Margin="0,2,2,2" Stretch="UniformToFill"/>
+                                                            </DataTemplate>
+                                                        </ItemsControl.ItemTemplate>
+                                                    </ItemsControl>
+                                                </StackPanel>
+                                                <Grid Grid.Column="1" Background="#ffffff" >
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*" />
+                                                        <RowDefinition Height="2*" />
+                                                        <RowDefinition Height="*" />
+                                                    </Grid.RowDefinitions>
+                                                    <Grid Grid.Row="0" >
                                                         <Grid.ColumnDefinitions>
                                                             <ColumnDefinition Width="*"></ColumnDefinition>
-                                                            <ColumnDefinition Width="2*"></ColumnDefinition>
-
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
                                                         </Grid.ColumnDefinitions>
-                                                        <StackPanel Grid.Column="0" Background="White" Margin="10,0,10,0">
-                                                            <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Padding="10">
-                                                                <StackPanel Orientation="Vertical">
-                                                                    <Label Content="{Binding TenPhong}" FontWeight="Bold" FontSize="14" Background="White"></Label>
+                                                        <Grid Grid.Column="0">
+                                                            <Label Content="{Binding TenPhong}" FontWeight="Bold" FontSize="16"/>
+                                                        </Grid>
+                                                        <Grid Grid.Column="1">
+                                                            <WrapPanel HorizontalAlignment="Right">
+                                                                <Image Source="/icons/rating.png" Width="20" Height="20"/>
+                                                                <Label Content="10" FontSize="16"/>
+                                                                <Label Content="(600 đánh giá)" FontSize="16" Foreground="#8a7d87"/>
+                                                            </WrapPanel>
+                                                        </Grid>
 
-                                                                    <Border BorderThickness="0" BorderBrush="Black" CornerRadius="10">
-                                                                        <Image Source="\image\anh.webp" Stretch="Uniform" />
-                                                                    </Border>
-
-                                                                    <Grid>
-                                                                        <Grid.ColumnDefinitions>
-                                                                            <ColumnDefinition Width="*" />
-                                                                            <ColumnDefinition Width="*" />
-                                                                            <ColumnDefinition Width="*" />
-                                                                        </Grid.ColumnDefinitions>
-                                                                        <Border Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="10" Margin="0,2,2,0">
-                                                                            <Image Source="\image\anh.webp" Stretch="UniformToFill" />
-                                                                        </Border>
-                                                                        <Border Grid.Column="1" BorderThickness="0" BorderBrush="Black" CornerRadius="10" Margin="2,2,2,0" >
-                                                                            <Image Source="\image\anh1.webp" Stretch="UniformToFill" />
-                                                                        </Border>
-                                                                        <Border Grid.Column="2" BorderThickness="0" BorderBrush="Black" CornerRadius="10" Margin="2,2,2,0">
-                                                                            <Image Source="\image\anh2.webp" Stretch="UniformToFill" />
-                                                                        </Border>
-                                                                    </Grid>
-
-                                                                    <StackPanel Orientation="Vertical">
-                                                                    </StackPanel>
-                                                                </StackPanel>
-                                                            </Border>
-                                                        </StackPanel>
-
-                                                        <StackPanel Grid.Column="1" Background="White">
-                                                            <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Background="White">
-                                                                <StackPanel>
-                                                                    <Label Content="{Binding TenPhong}" FontWeight="Bold" FontSize="14" Background="#FFFCFCFC"></Label>
-
-                                                                    <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Padding="0">
-                                                                        <Grid>
-                                                                            <Grid.ColumnDefinitions>
-                                                                                <ColumnDefinition Width="*" />
-                                                                                <ColumnDefinition Width="*" />
-                                                                                <ColumnDefinition Width="*" />
-                                                                            </Grid.ColumnDefinitions>
-
-                                                                            <StackPanel Grid.Column="0">
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\bed.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
-                                                                                    <Label FontWeight="Bold">1 Giường đơn</Label>
-                                                                                </WrapPanel>
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\breakfast.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
-                                                                                    <Label Foreground="#FF00875A" FontWeight="Bold">Breakfast included for 2 pax</Label>
-                                                                                </WrapPanel>
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\wifi.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
-                                                                                    <Label Foreground="#FF00875A" FontWeight="Bold">WiFi miễn phí</Label>
-                                                                                </WrapPanel>
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\no-smoking.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
-                                                                                    <Label Foreground="#FF00875A" FontWeight="Bold">Không hút thuốc</Label>
-                                                                                </WrapPanel>
-                                                                            </StackPanel>
-
-                                                                            <StackPanel Grid.Column="1">
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\people.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
-                                                                                    <Label FontWeight="Bold">2 khách</Label>
-                                                                                </WrapPanel>
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\signal.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
-                                                                                    <Label>Không hoàn tiền</Label>
-                                                                                </WrapPanel>
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\signal.png" Stretch="Uniform" Height="10" Width="10" Margin="5,5,0,0"/>
-                                                                                    <Label>Không đổi lịch</Label>
-                                                                                </WrapPanel>
-                                                                                <WrapPanel>
-                                                                                    <Image Source="\image\question.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
-                                                                                    <Label Foreground="#FF0194F3" FontWeight="Bold">Xem Chính sách huỷ phòng</Label>
-                                                                                </WrapPanel>
-                                                                            </StackPanel>
-
-                                                                            <StackPanel Grid.Column="2">
-                                                                                <Label Foreground="#FFE7090E" HorizontalAlignment="Right">Chỉ còn 1 phòng</Label>
-                                                                                <Label HorizontalAlignment="Right">
-                                                                                    <TextBlock Text="999.999 VND" TextDecorations="Strikethrough" />
-                                                                                </Label>
-                                                                                <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">309.524 VND</Label>
-                                                                                <Label HorizontalAlignment="Right">Chưa bao gồm thuế và phí</Label>
-
-
-                                                                                <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
-                                                                                    <Button Content="Đặt ngay" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.AddBookingCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
-                                                                                </Border>
-                                                                            </StackPanel>
-                                                                        </Grid>
-                                                                    </Border>
-                                                                </StackPanel>
-                                                            </Border>
+                                                    </Grid>
+                                                    <Grid Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"  Background="#ffffff" Margin="5,0,0,0">
+                                                        <StackPanel>
+                                                            <WrapPanel>
+                                                                <Image Source="/icons/Hotel.png" Width="20" Height="20" />
+                                                                <Label Content="Khách Sạn" Foreground="#59B8F5" Background="#ecf8ff"  FontSize="16" />
+                                                                <Label Content="5"  FontSize="16" />
+                                                                <Image Source="/icons/Star.png" Width="20" Height="20"/>
+                                                            </WrapPanel>
+                                                            <!--Địa chỉ-->
+                                                            <WrapPanel>
+                                                                <Image Source="/icons/pin.png" Width="20" Height="20"/>
+                                                                <Label Content="cc"  FontSize="16" Foreground="#8a7d87"/>
+                                                            </WrapPanel>
+                                                            <Label Content="Khách sạn này nằm ở trung tâm thành phố, cung cấp dịch vụ sang trọng và tiện nghi hiện đại, là điểm dừng chân lý tưởng cho du khách.n"  FontSize="13" />
                                                         </StackPanel>
                                                     </Grid>
+                                                    <Grid Grid.Row="2"  Background="#ffffff" Margin="5,0,0,0">
+                                                        <Border CornerRadius="10" Background="#FFDC00" Margin="7,10,150,7" Padding="0">
+                                                            <Border.Effect>
+                                                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                            </Border.Effect>
+                                                            <Label Content="Giảm 500k trong dịp lễ 30/4 và 1/5" Background="Transparent" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" FontSize="12" BorderThickness="0"/>
+                                                        </Border>
+                                                    </Grid>
+                                                </Grid>
+                                                <Grid Grid.Column="2" Background="#ffffff" Margin="5,0,0,0">
+                                                    <StackPanel>
+                                                        <Border CornerRadius="10" Background="#baf075" Margin="150,30,7,7">
+                                                            <Border.Effect>
+                                                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                            </Border.Effect>
+                                                            <Label Content="Ưu Đãi" FontSize="15" Foreground="#4fa767" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                        </Border>
+                                                        <TextBlock Text="1.200.000 VND" FontSize="15" HorizontalAlignment="Right" Foreground="#8a7d87">
+                                                            <TextBlock.TextDecorations>
+                                                                <TextDecorationCollection>
+                                                                    <TextDecoration Location="Strikethrough"/>
+                                                                </TextDecorationCollection>
+                                                            </TextBlock.TextDecorations>
+                                                        </TextBlock>
+                                                        <Label Content="{Binding Gia}"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
+                                                        <TextBlock FontSize="15" HorizontalAlignment="Right" Foreground="#ff5f28">
+                                                            <TextBlock.Triggers>
+                                                                <EventTrigger RoutedEvent="Loaded">
+                                                                    <BeginStoryboard>
+                                                                        <Storyboard RepeatBehavior="Forever">
+                                                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Text">
+                                                                                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Chưa bao gồm thuế và phí"/>
+                                                                                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Chưa bao gồm thuế và phí"/>
+                                                                                <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Giảm giá duy nhất ngày hôm nay"/>
+                                                                            </ObjectAnimationUsingKeyFrames>
+                                                                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="4.0" To="0.0" Duration="0:0:2" AutoReverse="True"/>
+                                                                        </Storyboard>
+                                                                    </BeginStoryboard>
+                                                                </EventTrigger>
+                                                            </TextBlock.Triggers>
+                                                        </TextBlock>
+                                                        <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
+                                                            <Border.Effect>
+                                                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                            </Border.Effect>
+                                                            <Button Content="Đặt ngay" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.AddBookingCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
+                                                        </Border>
+                                                    </StackPanel>
                                                 </Grid>
                                             </Grid>
                                         </Border>
@@ -459,7 +452,7 @@
                                                 </Grid>
                                             </StackPanel>
                                             <StackPanel Grid.Column="1">
-                                                <Label FontWeight="Bold" FontSize="14">Superior Twin River View</Label>
+                                                <Label FontWeight="Bold" FontSize="14" Content="{Binding Phong.TenPhong}"></Label>
                                                 <Grid>
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition Width="*"></ColumnDefinition>
@@ -469,7 +462,7 @@
                                                     <StackPanel Grid.Column="0">
                                                         <WrapPanel>
                                                             <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
-                                                            <Label FontWeight="Bold">123 Main Street, Anytown</Label>
+                                                            <Label FontWeight="Bold" Content="{Binding Phong.DiaChi}"></Label>
                                                         </WrapPanel>
                                                         <WrapPanel>
                                                             <Image Source="\image\bed.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
@@ -489,7 +482,7 @@
                                                         </WrapPanel>
                                                     </StackPanel>
                                                     <StackPanel Grid.Column="1">
-                                                        <Label FontWeight="Bold">Tên khách hàng: Tân</Label>
+                                                        <Label FontWeight="Bold" Content="{Binding User.Ten}"></Label>
                                                         <Label FontWeight="Bold">Số phòng: 101</Label>
                                                         <Label FontWeight="Bold">Ngày đặt: 26/04/2024</Label>
                                                         <Label FontWeight="Bold">Ngày trả: 27/04/2024</Label>
@@ -497,7 +490,7 @@
                                                         <Label Foreground="#FF0194F3" FontWeight="Bold">Xem Chính sách huỷ phòng</Label>
                                                     </StackPanel>
                                                     <StackPanel Grid.Column="2">
-                                                        <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">Giá: 2560.482  VND</Label>
+                                                        <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16" Content="{Binding Phong.Gia}"></Label>
                                                         <Label>Chưa bao gồm thuế và phí</Label>
                                                         <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold" Command="{Binding DataContext.DeleteBookingCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}">Hủy đặt</Button>
                                                     </StackPanel>

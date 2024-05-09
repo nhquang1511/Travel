@@ -35,6 +35,7 @@
     <Property Name="DiaChi" Type="varchar" MaxLength="255" />
     <Property Name="LoaiKhachSan" Type="nvarchar" MaxLength="255" />
     <Property Name="Gia" Type="int" />
+    <Property Name="SoSao" Type="int" />
   </EntityType>
   <EntityType Name="NhanXet">
     <Key>

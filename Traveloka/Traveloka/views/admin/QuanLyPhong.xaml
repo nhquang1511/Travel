@@ -78,12 +78,15 @@
                 <!-- Phần 2 -->
                 <Grid Grid.Row="1">
                     <StackPanel Background="Transparent">
-                        <TextBlock Text="Tên loại phòng" Margin="0 5" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Loại khách sạn:" Margin="0 5" FontWeight="Bold" HorizontalAlignment="Center"/>
                         <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1">
                             <Border.Effect>
                                 <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
                             </Border.Effect>
-                            <TextBox Text="{Binding NewRoom.TenLoaiPhong, UpdateSourceTrigger=PropertyChanged}" Margin="0 5" TextAlignment="Center"  BorderBrush="Transparent" BorderThickness="1" />
+                            <StackPanel Orientation="Horizontal" Margin="0 5" HorizontalAlignment="Center">
+                                <RadioButton Content="Phòng Đơn" IsChecked="{Binding IsDon, Mode=TwoWay}" Margin="0 0 10 0"/>
+                                <RadioButton Content="Phòng Đôi" IsChecked="{Binding IsDoi, Mode=TwoWay}" />
+                            </StackPanel>
                         </Border>
                     </StackPanel>
                 </Grid>

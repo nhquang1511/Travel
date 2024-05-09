@@ -33,6 +33,7 @@
     <EntitySetMapping Name="KhachSans">
       <EntityTypeMapping TypeName="DuLich1Model.KhachSan">
         <MappingFragment StoreEntitySet="KhachSan">
+          <ScalarProperty Name="SoSao" ColumnName="SoSao" />
           <ScalarProperty Name="KhachSanId" ColumnName="KhachSanId" />
           <ScalarProperty Name="TenKhachSan" ColumnName="TenKhachSan" />
           <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />

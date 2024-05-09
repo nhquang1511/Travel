@@ -40,6 +40,7 @@
           <Property Name="DiaChi" Type="varchar" MaxLength="255" />
           <Property Name="LoaiKhachSan" Type="nvarchar" MaxLength="255" />
           <Property Name="Gia" Type="int" />
+          <Property Name="SoSao" Type="int" />
         </EntityType>
         <EntityType Name="NhanXet">
           <Key>
@@ -239,6 +240,7 @@
           <NavigationProperty Name="AnhKhachSans" Relationship="Self.FK_AnhKhachSan_KhachSanId" FromRole="KhachSan" ToRole="AnhKhachSan" />
           <NavigationProperty Name="NhanXets" Relationship="Self.FK_NhanXet_KhachSanId" FromRole="KhachSan" ToRole="NhanXet" />
           <NavigationProperty Name="Phongs" Relationship="Self.FK_Phong_KhachSanId" FromRole="KhachSan" ToRole="Phong" />
+          <Property Name="SoSao" Type="Int32" />
         </EntityType>
         <EntityType Name="NhanXet">
           <Key>
@@ -437,6 +439,7 @@
           <EntitySetMapping Name="KhachSans">
             <EntityTypeMapping TypeName="DuLich1Model.KhachSan">
               <MappingFragment StoreEntitySet="KhachSan">
+                <ScalarProperty Name="SoSao" ColumnName="SoSao" />
                 <ScalarProperty Name="KhachSanId" ColumnName="KhachSanId" />
                 <ScalarProperty Name="TenKhachSan" ColumnName="TenKhachSan" />
                 <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />

@@ -42,6 +42,7 @@
     <NavigationProperty Name="AnhKhachSans" Relationship="Self.FK_AnhKhachSan_KhachSanId" FromRole="KhachSan" ToRole="AnhKhachSan" />
     <NavigationProperty Name="NhanXets" Relationship="Self.FK_NhanXet_KhachSanId" FromRole="KhachSan" ToRole="NhanXet" />
     <NavigationProperty Name="Phongs" Relationship="Self.FK_Phong_KhachSanId" FromRole="KhachSan" ToRole="Phong" />
+    <Property Name="SoSao" Type="Int32" />
   </EntityType>
   <EntityType Name="NhanXet">
     <Key>

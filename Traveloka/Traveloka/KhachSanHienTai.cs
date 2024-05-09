@@ -12,6 +12,7 @@ using Microsoft.Win32;
 public class KhachSanHienTai : ViewModelBase
 {
     private DuLichEntities _context = new DuLichEntities();
+    
     public static KhachSan _selectedRoom;
 
     public RelayCommand AddRoomCommand { get; private set; }
@@ -21,6 +22,35 @@ public class KhachSanHienTai : ViewModelBase
 
     public RelayCommand<AnhPhong> DeleteAnhPhongCommand { get; private set; }
     public RelayCommand<AnhPhong> EditAnhPhongCommand { get; private set; }
+
+    private bool _isDon;
+    public bool IsDon
+    {
+        get { return _isDon; }
+        set
+        {
+            if (_isDon != value)
+            {
+                _isDon = value;
+                RaisePropertyChanged(nameof(IsDon));
+            }
+        }
+    }
+
+    private bool _isDoi;
+    public bool IsDoi
+    {
+        get { return _isDoi; }
+        set
+        {
+            if (_isDoi != value)
+            {
+                _isDoi = value;
+                RaisePropertyChanged(nameof(IsDoi));
+            }
+        }
+    }
+
     public KhachSan SelectedRoom
     {
         get { return _selectedRoom; }
@@ -252,6 +282,7 @@ public class KhachSanHienTai : ViewModelBase
 
     private void AddRoom()
     {
+        NewRoom.TenLoaiPhong = IsDon ? "Phòng Đơn" : "Phòng Đôi";
         NewRoom.AnhPhongs = null;
         _context.Phongs.Add(NewRoom);
 
@@ -332,8 +363,8 @@ public class KhachSanHienTai : ViewModelBase
         {
             UserId = CurrentUser.LoggedInUser.UserId,
             PhongId = SelectedPhong.PhongId,
-            NgayNhanPhong = KhachSanModel.FirstDate,
-            NgayTraPhong = KhachSanModel.SecondDate
+            NgayNhanPhong = KhachSanModel._FirstDate,
+            NgayTraPhong = KhachSanModel._SecondDate
         };
         
         _context.Phongs.Find(SelectedPhong.PhongId).TrangThai = 0;
@@ -378,9 +409,9 @@ public class KhachSanHienTai : ViewModelBase
 
     private void LoadReviews()
     {
-        Phongs = new ObservableCollection<Phong>(_context.Phongs.ToList());
+        Phongs = new ObservableCollection<Phong>(_context.Phongs.Where(p=>p.TrangThai==1 && p.KhachSanId == SelectedRoom.KhachSanId).ToList());
         // Xóa các đánh giá cũ trong ObservableCollection để cập nhật dữ liệu mới
-        NhanXets = new ObservableCollection<NhanXet>(_context.NhanXets.ToList());
+        NhanXets = new ObservableCollection<NhanXet>(_context.NhanXets.Where(p=>p.UserId==CurrentUser.LoggedInUser.UserId).ToList());
     }
     private void LoadDatPhong()
     {

@@ -33,48 +33,42 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="1"  >
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <Border.Effect>
-                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
-                    </Border.Effect>
                     <WrapPanel>
                         <Image Source="/icons/location.png" Stretch="Uniform" Width="15"></Image>
-                        <TextBox Text="" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
+                        <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
                     </WrapPanel>
+
                 </Border>
             </Grid>
             <Grid Grid.Column="3">
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <Border.Effect>
-                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
-                    </Border.Effect>
-                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent"/>
+                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent" SelectedDate="{Binding FirstDate}" />
                 </Border>
             </Grid>
             <Grid Grid.Column="5">
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <Border.Effect>
-                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
-                    </Border.Effect>
-                    <DatePicker  VerticalAlignment="Center" BorderThickness="0" Background="Transparent"/>
+                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent" SelectedDate="{Binding SecondDate}" />
                 </Border>
             </Grid>
+            
             <Grid Grid.Column="7">
                 <Border CornerRadius="10" Background="White" Margin="7">
                     <Border.Effect>
                         <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
                     </Border.Effect>
-                    <Button Content="Tìm khách sạn" FontSize="15" Foreground="#59B8F5" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0"/>
+                    <Button Command="{Binding SearchCommand}" Content="Tìm khách sạn" FontSize="15" Foreground="#59B8F5" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0"/>
                 </Border>
             </Grid>
         </Grid>
         <Grid Grid.Row="1" Background="#f7f9fa">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.3*"></ColumnDefinition>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
-                <ColumnDefinition Width="14*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="22*"></ColumnDefinition>
+                <ColumnDefinition Width="147*"></ColumnDefinition>
+                <ColumnDefinition Width="701*"></ColumnDefinition>
+                <ColumnDefinition Width="327*"/>
+                <ColumnDefinition Width="73*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="1"  >
+            <Grid Grid.ColumnSpan="3" Margin="22,0,701,0"  >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" ></RowDefinition>
                     <RowDefinition Height="auto" ></RowDefinition>
@@ -88,9 +82,11 @@
                         </Border.Effect>
                         <StackPanel Margin="10">
                             <Label Content="Loại Hình Lưu Trú" FontWeight="Bold" />
-                            <ListBox  Background="Transparent" BorderThickness="0" >
-                                <ListBoxItem>Hotel</ListBoxItem>
-                                <ListBoxItem>HomeStay</ListBoxItem>
+                            <ListBox Background="Transparent" BorderThickness="0" SelectedItem="{Binding SelectedType, UpdateSourceTrigger=PropertyChanged}">
+                                <ListBox.Items>
+                                    <RadioButton Content="Hotel" IsChecked="{Binding IsHotel, Mode=TwoWay}" Margin="0 0 10 0"/>
+                                    <RadioButton Content="Resort" IsChecked="{Binding IsResort, Mode=TwoWay}" />
+                                </ListBox.Items>
                             </ListBox>
                         </StackPanel>
                     </Border>
@@ -118,29 +114,24 @@
                         <StackPanel>
                             <Label Content="Hạng Sao" FontWeight="Bold" />
                             <WrapPanel>
+                                <RadioButton GroupName="Rating" Content="1" />
                                 <Image Source="/icons/Star.png" Width="20" Height="20" />
                             </WrapPanel>
                             <WrapPanel>
+                                <RadioButton GroupName="Rating" Content="2"  />
                                 <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
                             </WrapPanel>
                             <WrapPanel>
+                                <RadioButton GroupName="Rating" Content="3" />
                                 <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
                             </WrapPanel>
                             <WrapPanel>
+                                <RadioButton GroupName="Rating" Content="4" />
                                 <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
                             </WrapPanel>
                             <WrapPanel>
+                                <RadioButton GroupName="Rating" Content="5"  />
                                 <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
                             </WrapPanel>
                         </StackPanel>
                     </Border>
@@ -153,15 +144,14 @@
                         <StackPanel>
                             <Label Content="Loại Phòng" FontWeight="Bold" />
                             <ListBox  Background="Transparent" BorderThickness="0" >
-                                <ListBoxItem>Phòng Đơn</ListBoxItem>
-                                <ListBoxItem>Phòng Đôi</ListBoxItem>
-                                <ListBoxItem>Phòng Suite</ListBoxItem>
+                                <RadioButton Content="Phòng Đơn" IsChecked="{Binding IsDon, Mode=TwoWay}" Margin="0 0 10 0"/>
+                                <RadioButton Content="Phòng Đôi" IsChecked="{Binding IsDoi, Mode=TwoWay}" />
                             </ListBox>
                         </StackPanel>
                     </Border>
                 </Grid>
             </Grid>
-            <Grid Grid.Column="2" Margin="0,0,0,0">
+            <Grid Grid.Column="2" Margin="0,0,73,0" Grid.ColumnSpan="3">
                 <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Hotels}"  SelectionMode="Single" SelectedItem="{Binding SelectedRoom}">
                     <ListView.ItemTemplate>
                         <DataTemplate>

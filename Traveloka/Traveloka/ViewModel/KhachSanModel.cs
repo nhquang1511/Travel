@@ -18,8 +18,79 @@ namespace Traveloka.ViewModel
     public class KhachSanModel : ViewModelBase
     {
         private DuLichEntities _context;
-        public static DateTime FirstDate { get; set; }
-        public static DateTime SecondDate { get; set; }
+
+        private bool _isDon;
+        public bool IsDon
+        {
+            get { return _isDon; }
+            set
+            {
+                if (_isDon != value)
+                {
+                    _isDon = value;
+                    RaisePropertyChanged(nameof(IsDon));
+                }
+            }
+        }
+
+        private bool _isDoi;
+        public bool IsDoi
+        {
+            get { return _isDoi; }
+            set
+            {
+                if (_isDoi != value)
+                {
+                    _isDoi = value;
+                    RaisePropertyChanged(nameof(IsDoi));
+                }
+            }
+        }
+
+        public static DateTime _FirstDate { get; set; }
+        public DateTime FirstDate
+        {
+            get { return _FirstDate; }
+            set
+            {
+                if (_FirstDate != value)
+                {
+                    _FirstDate = value;
+                    RaisePropertyChanged(nameof(FirstDate));
+                }
+            }
+        }
+        public static DateTime _SecondDate { get; set; }
+        
+        public DateTime SecondDate
+        {
+            get { return _SecondDate; }
+            set
+            {
+                if (_SecondDate != value)
+                {
+                    _SecondDate = value;
+                    RaisePropertyChanged(nameof(SecondDate));
+                }
+            }
+        }
+
+        private string _searchText;
+        public string SearchText
+        {
+            get { return _searchText; }
+            set
+            {
+                if (_searchText != value)
+                {
+                    _searchText = value;
+                    RaisePropertyChanged(nameof(SearchText));
+                }
+            }
+        }
+
+       
+        public RelayCommand SearchCommand {  get; private set; }
         public RelayCommand LoadKhachSan { get; private set; }
         public RelayCommand AddKhachSanCommand { get; private set; }
         public RelayCommand EditKhachSanCommand { get; private set; }
@@ -174,6 +245,18 @@ namespace Traveloka.ViewModel
             EditAnhKhachSanCommand = new RelayCommand<AnhKhachSan>(EditAnhKhachSan);
             LoadKhachSan = new RelayCommand(LoadKhachSan1);
             ChiTietKhachSanCommand = new RelayCommand(ChiTietKhachSan);
+            SearchCommand = new RelayCommand(Search);
+
+        }
+        private void Search()
+        {
+            string s = IsHotel ? "Hotel" : "Resort";
+            string a = IsDoi ? "Phòng Đơn" : "Phòng Đôi";
+            // Sử dụng SelectedType ở đây nếu nó không null
+            Hotels = new ObservableCollection<KhachSan>(_context.KhachSans.Where(p => p.DiaChi.Contains(SearchText) || p.LoaiKhachSan == s).ToList());
+
+           
+
 
         }
         private void ChiTietKhachSan()
