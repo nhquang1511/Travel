@@ -24,14 +24,12 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,63">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="152*"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="78*"/>
-                            <ColumnDefinition Width="16*"/>
-                            <ColumnDefinition Width="371*"/>
-                            <ColumnDefinition Width="632*"></ColumnDefinition>
+                            <ColumnDefinition Width="154*"></ColumnDefinition>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition Width="233*"/>
+                            <ColumnDefinition Width="397*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
-                        <Grid Grid.Column="0" Grid.ColumnSpan="5">
+                        <Grid Grid.Column="0" Grid.ColumnSpan="3">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
@@ -48,11 +46,9 @@
                             <WrapPanel Grid.Row="2">
                                 <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
                                 <Label FontWeight="Bold" Content="{Binding SelectedRoom.DiaChi}"></Label>
-
                             </WrapPanel>
-
                         </Grid>
-                        <Grid Grid.Column="5" HorizontalAlignment="Left" Margin="313,0,0,0">
+                        <Grid Grid.Column="3" HorizontalAlignment="Left" Margin="313,0,0,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
@@ -69,7 +65,6 @@
                                     </TransformGroup>
                                 </Label.RenderTransform>
                             </Label>
-
                             <Button Grid.Row="2" Content="Chọn Phòng" Foreground="White" Padding="1,1,1,1" Background="#FFFF5E1F" Margin="183,5,5,4" FontSize="14">
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
@@ -79,24 +74,18 @@
                                     </ControlTemplate>
                                 </Button.Template>
                             </Button>
-
                         </Grid>
-
                     </Grid>
                     <Grid Grid.ColumnSpan="2" Margin="0,83,0,1197" Grid.RowSpan="4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="2*"></ColumnDefinition>
                             <ColumnDefinition Width="1*"></ColumnDefinition>
-
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" BorderThickness="0" BorderBrush="Black" CornerRadius="2" Margin="1" ClipToBounds="True">
-                            <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Fill" />
-
+                            <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Fill" Margin="10,10,6,48" />
                         </Border>
-                        <StackPanel Grid.Column="1" Background="#ffffff">
+                        <StackPanel Grid.Column="1" Background="#ffffff" Margin="2,10,2,51">
                             <!-- Hiển thị ảnh đầu tiên -->
-
-
                             <!-- Sử dụng ItemsControl để hiển thị các ảnh tiếp theo trong UniformGrid -->
                             <ItemsControl ItemsSource="{Binding SelectedRoom.AnhKhachSans}" Margin="0,2,0,0">
                                 <ItemsControl.ItemsPanel>
@@ -111,10 +100,12 @@
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
                         </StackPanel>
-
                     </Grid>
-                    <Grid Grid.Row="3" Margin="10,178,10,1161" Grid.ColumnSpan="2">
+                    <Grid Grid.Row="3" Margin="10,178,10,1200" Grid.ColumnSpan="2">
                         <Border CornerRadius="10" Background="#d6f1ff" Padding="0">
+                            <Border.Effect>
+                                <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                            </Border.Effect>
                             <WrapPanel>
                                 <Image Source="\image\like2.png" Width="20"></Image>
                                 <Label Foreground="#1a75ce">Hiếm khi còn phòng!</Label>
@@ -125,66 +116,76 @@
                     <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="0,214,0,1027">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="2*"></ColumnDefinition>
+                            <ColumnDefinition Width="4*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <Grid Grid.Column="0">
                             <Border Background="#ffffff" CornerRadius="10" Margin="7">
                                 <Grid>
                                     <StackPanel>
                                         <Label Content="Loại Hình Lưu Trú" FontWeight="Bold" />
-                                        <TextBlock Text="Davue Hotel Da Nang là một khách sạn nằm trong khu vực an ninh, toạ lạc tại Mỹ An. Quầy tiếp tân 24 giờ luôn sẵn sàng phục vụ quý khách từ thủ tục nhận phòng đến trả phòng hay bất kỳ yêu cầu nào." FontWeight="Normal" TextWrapping="Wrap"/>
+                                        <TextBlock Text="Mô tả" FontWeight="Normal" TextWrapping="Wrap"/>
                                     </StackPanel>
                                 </Grid>
                             </Border>
                         </Grid>
-                        <Grid Grid.Column="1">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                                <ColumnDefinition Width="*"></ColumnDefinition>
-                            </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0">
-                                <Border  Background="#ffffff" CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Margin="7">
-                                    <StackPanel Orientation="Vertical">
-                                        <Label Content="Trong Khu Vục" FontWeight="Bold" />
-                                        <WrapPanel>
-                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0" />
-                                            <Label FontWeight="Normal" >dit me thang tan</Label>
-                                        </WrapPanel>
-                                        <WrapPanel>
-                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0" />
-                                            <Label Margin="0,6,0,0" FontWeight="Normal">Gần khu vui chơi giải trí</Label>
-                                        </WrapPanel>
-                                        <WrapPanel>
-                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0" />
-                                            <Label FontWeight="Normal">Sân bay quốc tế Đà Nẵng (DAD)</Label>
-                                        </WrapPanel>
-                                    </StackPanel>
-                                </Border>
-                            </StackPanel>
-                            <StackPanel Grid.Column="1">
-                                <Border  Background="#ffffff" CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Margin="7">
-                                    <StackPanel Orientation="Vertical">
-                                        <Label Content="" FontWeight="Bold" />
-                                        <WrapPanel>
-                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0" />
-                                            <Label FontWeight="Normal">Han River Bridge</Label>
-                                        </WrapPanel>
-                                        <WrapPanel>
-                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0" />
-                                            <Label Margin="0,6,0,0" FontWeight="Normal">Danang Cathedral</Label>
-                                        </WrapPanel>
-                                        <WrapPanel>
-                                            <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0" />
-                                            <Label FontWeight="Normal">Số 294 Trưng Nữ Vương</Label>
-                                        </WrapPanel>
-                                    </StackPanel>
-                                </Border>
-                            </StackPanel>
+                        <Grid Grid.Column="1" Background="#ffffff">
+                            <Border Background="#ffffff" CornerRadius="10" Margin="7">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition  Height="auto" ></RowDefinition>
+                                        <RowDefinition  Height="*" ></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid Grid.Row="0">
+                                        <Label Content="Khách nói gì về kỳ nghỉ của họ" FontWeight="Bold" />
+                                    </Grid>
+                                    <Grid Grid.Row="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0">
+                                            <Border  Background="#ffffff" CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Margin="7">
+                                                <Border.Effect>
+                                                    <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                </Border.Effect>
+                                                <StackPanel>
+                                                    <DockPanel LastChildFill="True">
+                                                        <!-- Số điểm -->
+                                                        <Label Content="Số điểm: 10" HorizontalAlignment="Left" DockPanel.Dock="Left" Margin="0,0,10,0"/>
+                                                        <!-- Tên người đánh giá -->
+                                                        <Label Content="John Doe" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
+                                                        <!-- Nhãn đánh giá -->
+                                                    </DockPanel>
+                                                    <Label Content="Positive" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
+                                                </StackPanel>
+                                            </Border>
+                                        </Grid>
+                                        <Grid Grid.Column="1"  >
+                                            <Border  Background="#ffffff" CornerRadius="10" BorderBrush="Gray" BorderThickness="0" Margin="7">
+                                                <Border.Effect>
+                                                    <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                </Border.Effect>
+                                                <StackPanel>
+                                                    <DockPanel LastChildFill="True">
+                                                        <!-- Số điểm -->
+                                                        <Label Content="Số điểm: 10" HorizontalAlignment="Left" DockPanel.Dock="Left" Margin="0,0,10,0"/>
+                                                        <!-- Tên người đánh giá -->
+                                                        <Label Content="John Doe" HorizontalAlignment="Right" DockPanel.Dock="Right"/>
+                                                        <!-- Nhãn đánh giá -->
+                                                    </DockPanel>
+                                                    <Label Content="Positive" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10"/>
+                                                </StackPanel>
+                                            </Border>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                            </Border>
                         </Grid>
                     </Grid>
-
                 </Grid>
             </TabItem>
+
             <TabItem Header="Đánh giá" BorderBrush="{x:Null}" FontWeight="Bold">
                 <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
                     <StackPanel>

@@ -33,116 +33,143 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="1"  >
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                    </Border.Effect>
                     <WrapPanel>
                         <Image Source="/icons/location.png" Stretch="Uniform" Width="15"></Image>
-                        <TextBox Text="Đà Nẵng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
+                        <TextBox Text="" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
                     </WrapPanel>
-
                 </Border>
             </Grid>
             <Grid Grid.Column="3">
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent" SelectedDate="{Binding FirstDate}" />
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                    </Border.Effect>
+                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent"/>
                 </Border>
             </Grid>
             <Grid Grid.Column="5">
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent" SelectedDate="{Binding SecondDate}" />
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                    </Border.Effect>
+                    <DatePicker  VerticalAlignment="Center" BorderThickness="0" Background="Transparent"/>
                 </Border>
             </Grid>
             <Grid Grid.Column="7">
                 <Border CornerRadius="10" Background="White" Margin="7">
-                    <Button Content="Tìm khách sạn" FontSize="15" Foreground="#59B8F5" FontWeight="Bold" Background="Transparent" BorderThickness="0" Margin="0,0,0,1" Click="Button_Click" />
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                    </Border.Effect>
+                    <Button Content="Tìm khách sạn" FontSize="15" Foreground="#59B8F5" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0"/>
                 </Border>
             </Grid>
         </Grid>
-
         <Grid Grid.Row="1" Background="#f7f9fa">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
                 <ColumnDefinition Width="2*"></ColumnDefinition>
                 <ColumnDefinition Width="14*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-
             <Grid Grid.Column="1"  >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="0.7*" ></RowDefinition>
-                    <RowDefinition Height="0.7*" ></RowDefinition>
-                    <RowDefinition Height="1*" ></RowDefinition>
-                    <RowDefinition Height="0.7*" ></RowDefinition>
+                    <RowDefinition Height="auto" ></RowDefinition>
+                    <RowDefinition Height="auto" ></RowDefinition>
+                    <RowDefinition Height="auto" ></RowDefinition>
+                    <RowDefinition Height="auto" ></RowDefinition>
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0" Background="#ffffff" Margin="0,10,0,0">
-                    <StackPanel Margin="10">
-                        <Label Content="Loại Hình Lưu Trú" FontWeight="Bold" />
-                        <ListBox  Background="Transparent" BorderThickness="0" >
-                            <ListBoxItem>Hotel</ListBoxItem>
-                            <ListBoxItem>HomeStay</ListBoxItem>
-                        </ListBox>
-                    </StackPanel>
+                <Grid Grid.Row="0" Margin="0,10,0,0">
+                    <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1" >
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                        </Border.Effect>
+                        <StackPanel Margin="10">
+                            <Label Content="Loại Hình Lưu Trú" FontWeight="Bold" />
+                            <ListBox  Background="Transparent" BorderThickness="0" >
+                                <ListBoxItem>Hotel</ListBoxItem>
+                                <ListBoxItem>HomeStay</ListBoxItem>
+                            </ListBox>
+                        </StackPanel>
+                    </Border>
                 </Grid>
-                <Grid Grid.Row="1" Background="#ffffff" Margin="0,10,0,0">
-                    <StackPanel>
-                        <Label Content="Phạm Vi Giá" FontWeight="Bold" />
-                        <ListBox  Background="Transparent" BorderThickness="0" >
-                            <ListBoxItem>Dưới 1.000.000</ListBoxItem>
-                            <ListBoxItem>1.000.000 - 5.000.000</ListBoxItem>
-                            <ListBoxItem>Trên 5.000.000</ListBoxItem>
-                        </ListBox>
-                    </StackPanel>
-
+                <Grid Grid.Row="1" Margin="0,10,0,0">
+                    <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1" >
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <Label Content="Phạm Vi Giá" FontWeight="Bold" />
+                            <ListBox  Background="Transparent" BorderThickness="0" >
+                                <ListBoxItem>Dưới 1.000.000</ListBoxItem>
+                                <ListBoxItem>1.000.000 - 5.000.000</ListBoxItem>
+                                <ListBoxItem>Trên 5.000.000</ListBoxItem>
+                            </ListBox>
+                        </StackPanel>
+                    </Border>
                 </Grid>
-
-                <Grid Grid.Row="2" Background="#ffffff" Margin="0,10,0,0">
-                    <StackPanel>
-                        <Label Content="Hạng Sao" FontWeight="Bold" />
-                        <WrapPanel>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" />
-                        </WrapPanel>
-                        <WrapPanel>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                        </WrapPanel>
-                        <WrapPanel>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                        </WrapPanel>
-                        <WrapPanel>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                        </WrapPanel>
-                        <WrapPanel>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                            <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
-                        </WrapPanel>
-                    </StackPanel>
+                <Grid Grid.Row="2"  Margin="0,10,0,0">
+                    <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1" >
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <Label Content="Hạng Sao" FontWeight="Bold" />
+                            <WrapPanel>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" />
+                            </WrapPanel>
+                            <WrapPanel>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                            </WrapPanel>
+                            <WrapPanel>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                            </WrapPanel>
+                            <WrapPanel>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                            </WrapPanel>
+                            <WrapPanel>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="0,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                                <Image Source="/icons/Star.png" Width="20" Height="20" Margin="3,3,0,0"/>
+                            </WrapPanel>
+                        </StackPanel>
+                    </Border>
                 </Grid>
-
                 <Grid Grid.Row="3" Background="#ffffff" Margin="0,10,0,10">
-                    <StackPanel>
-                        <Label Content="Loại Phòng" FontWeight="Bold" />
-                        <ListBox  Background="Transparent" BorderThickness="0" >
-                            <ListBoxItem>Phòng Đơn</ListBoxItem>
-                            <ListBoxItem>Phòng Đôi</ListBoxItem>
-                            <ListBoxItem>Phòng Suite</ListBoxItem>
-                        </ListBox>
-                    </StackPanel>
+                    <Border Background="#ffffff" Margin="7" CornerRadius="10" BorderBrush="LightGray" BorderThickness="1" >
+                        <Border.Effect>
+                            <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                        </Border.Effect>
+                        <StackPanel>
+                            <Label Content="Loại Phòng" FontWeight="Bold" />
+                            <ListBox  Background="Transparent" BorderThickness="0" >
+                                <ListBoxItem>Phòng Đơn</ListBoxItem>
+                                <ListBoxItem>Phòng Đôi</ListBoxItem>
+                                <ListBoxItem>Phòng Suite</ListBoxItem>
+                            </ListBox>
+                        </StackPanel>
+                    </Border>
                 </Grid>
             </Grid>
             <Grid Grid.Column="2" Margin="0,0,0,0">
-
                 <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Hotels}"  SelectionMode="Single" SelectedItem="{Binding SelectedRoom}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Grid  Width="950">
+                            <Grid  Width="1000">
                                 <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="10">
-
+                                    <Border.Effect>
+                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                    </Border.Effect>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="3*"></ColumnDefinition>
@@ -167,8 +194,6 @@
                                                 </ItemsControl.ItemTemplate>
                                             </ItemsControl>
                                         </StackPanel>
-
-
                                         <Grid Grid.Column="1" Background="#ffffff" >
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="*" />
@@ -207,11 +232,13 @@
                                                     </WrapPanel>
                                                     <Label Content="Khách sạn này nằm ở trung tâm thành phố, cung cấp dịch vụ sang trọng và tiện nghi hiện đại, là điểm dừng chân lý tưởng cho du khách.
 n"  FontSize="13" />
-
                                                 </StackPanel>
                                             </Grid>
                                             <Grid Grid.Row="2"  Background="#ffffff" Margin="5,0,0,0">
                                                 <Border CornerRadius="10" Background="#FFDC00" Margin="7,10,150,7" Padding="0">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                    </Border.Effect>
                                                     <Label Content="Giảm 500k trong dịp lễ 30/4 và 1/5" 
                              Background="Transparent" 
                              VerticalAlignment="Center" 
@@ -219,12 +246,14 @@ n"  FontSize="13" />
                              FontSize="12"
                              BorderThickness="0"/>
                                                 </Border>
-
                                             </Grid>
                                         </Grid>
                                         <Grid Grid.Column="2" Background="#ffffff" Margin="5,0,0,0">
                                             <StackPanel>
                                                 <Border CornerRadius="10" Background="#baf075" Margin="150,30,7,7">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                    </Border.Effect>
                                                     <Label Content="Ưu Đãi" FontSize="15" Foreground="#4fa767" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                                 </Border>
                                                 <TextBlock Text="1.200.000 VND" FontSize="15" HorizontalAlignment="Right" Foreground="#8a7d87">
@@ -235,11 +264,28 @@ n"  FontSize="13" />
                                                     </TextBlock.TextDecorations>
                                                 </TextBlock>
                                                 <Label Content="{Binding Gia}"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
-                                                <Label Content="Chưa bao gồm thuế và phí"  FontSize="16" HorizontalAlignment="Right"  Foreground="#ff5f28"/>
+                                                <TextBlock FontSize="15" HorizontalAlignment="Right" Foreground="#ff5f28">
+                                                    <TextBlock.Triggers>
+                                                        <EventTrigger RoutedEvent="Loaded">
+                                                            <BeginStoryboard>
+                                                                <Storyboard RepeatBehavior="Forever">
+                                                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Text">
+                                                                        <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Chưa bao gồm thuế và phí"/>
+                                                                        <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Chưa bao gồm thuế và phí"/>
+                                                                        <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Giảm giá duy nhất ngày hôm nay"/>
+                                                                    </ObjectAnimationUsingKeyFrames>
+                                                                    <DoubleAnimation Storyboard.TargetProperty="Opacity" From="4.0" To="0.0" Duration="0:0:2" AutoReverse="True"/>
+                                                                </Storyboard>
+                                                            </BeginStoryboard>
+                                                        </EventTrigger>
+                                                    </TextBlock.Triggers>
+                                                </TextBlock>
                                                 <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="5" BlurRadius="10" Color="Gray" Opacity="0.3"/>
+                                                    </Border.Effect>
                                                     <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.LoadKhachSan, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
                                                 </Border>
-
                                             </StackPanel>
                                         </Grid>
                                     </Grid>
@@ -248,8 +294,6 @@ n"  FontSize="13" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
-
             </Grid>
         </Grid>
     </Grid>
