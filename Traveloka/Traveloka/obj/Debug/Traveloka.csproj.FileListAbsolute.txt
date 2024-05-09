@@ -86,3 +86,16 @@ C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\ChiTietKhac
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\chitietphongcontroller.g.cs
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\ChiTietKhachSan.baml
 C:\Users\nhqua\source\repos\Traveloka\Traveloka\obj\Debug\views\user\chitietphongcontroller.baml
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Prism.dll
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Prism.Forms.dll
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Prism.pdb
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Prism.xml
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Prism.Forms.pdb
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Prism.Forms.xml
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\nhqua\source\repos\Traveloka\Traveloka\bin\Debug\Xamarin.Forms.Xaml.xml

@@ -27,6 +27,13 @@ namespace Traveloka.views.user
             DataContext = new KhachSanModel();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(KhachSanModel.FirstDate.ToString());
+        }
+
+
+
         //private void Button_Click(object sender, RoutedEventArgs e)
         //{
 
@@ -57,6 +64,6 @@ namespace Traveloka.views.user
 
         //}
 
-        
+
     }
 }

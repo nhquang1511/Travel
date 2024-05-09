@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Traveloka.views.user"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="login" Height="450" Width="800">
+        Title="Login" Height="450" Width="800">
     <Grid>
         <Grid Background="#FF2C3E50">
             <Border BorderBrush="White" BorderThickness="2" CornerRadius="8" Margin="50">
@@ -15,16 +15,16 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <TextBlock Text="Login" HorizontalAlignment="Center" FontSize="24" Foreground="#FF090909" Margin="0,20,0,20" FontWeight="Bold"/>
                     <StackPanel Grid.Row="1" Margin="20">
-                        <TextBox x:Name="txtUsername" Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF080707" Width="363" SelectionBrush="#FF010B12"/>
-                        <PasswordBox x:Name="txtPassword"  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361"/>
+                        <TextBox  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF080707" Width="363" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" />
                         <WrapPanel  HorizontalAlignment="Center">
                             <Button Content="Login" HorizontalAlignment="Center" Margin="0 20" Padding="10" FontSize="16" Background="#FFFF5E1F" Foreground="White" Command="{Binding LoginCommand}"/>
                             <Button Content="Register" HorizontalAlignment="Center" Margin="20 20" Padding="10" FontSize="16" Background="#FFFF5E1F" Foreground="White" Command="{Binding RegisterCommand}"/>
                         </WrapPanel>
-                        
                     </StackPanel>
                     <TextBlock x:Name="lblMessage" Grid.Row="2" Foreground="Red" HorizontalAlignment="Center" Margin="0 10" Visibility="Collapsed"/>
                 </Grid>

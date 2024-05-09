@@ -10,5 +10,7 @@ namespace Traveloka
     public static class CurrentUser
     {
         public static User LoggedInUser { get; set; }
+        public static DateTime FirstDatePickerDate { get; set; }
+        public static DateTime SecondDatePickerDate { get; set; }
     }
 }

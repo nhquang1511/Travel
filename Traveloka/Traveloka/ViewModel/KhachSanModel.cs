@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Microsoft.Win32;
+using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Traveloka.Models;
+
 using Traveloka.views.user;
 
 namespace Traveloka.ViewModel
@@ -16,7 +18,8 @@ namespace Traveloka.ViewModel
     public class KhachSanModel : ViewModelBase
     {
         private DuLichEntities _context;
-       
+        public static DateTime FirstDate { get; set; }
+        public static DateTime SecondDate { get; set; }
         public RelayCommand LoadKhachSan { get; private set; }
         public RelayCommand AddKhachSanCommand { get; private set; }
         public RelayCommand EditKhachSanCommand { get; private set; }
@@ -143,16 +146,17 @@ namespace Traveloka.ViewModel
            
 
         }
-       
+        
         private void LoadKhachSan1()
         {
             if (SelectedRoom != null)
             {
                 ChiTietKhachSan ctks = new ChiTietKhachSan();
                 // Gắn SelectedRoom làm DataContext cho ChiTietKhachSan
-                
-                ctks.DataContext = SelectedRoom;
-                KhachSanHienTai.KhachSan = SelectedRoom;
+
+                KhachSanHienTai._selectedRoom = SelectedRoom;
+                ctks.DataContext = new KhachSanHienTai();
+
                 // Hiển thị cửa sổ ChiTietKhachSan
                 ctks.Show();
             }
@@ -211,7 +215,7 @@ namespace Traveloka.ViewModel
         }
 
 
-        private void LoadHotels()
+        public void LoadHotels()
         {
             Hotels = new ObservableCollection<KhachSan>(_context.KhachSans.ToList());
         }

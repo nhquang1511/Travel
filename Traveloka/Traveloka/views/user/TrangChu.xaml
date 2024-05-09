@@ -37,22 +37,22 @@
                         <Image Source="/icons/location.png" Stretch="Uniform" Width="15"></Image>
                         <TextBox Text="Đà Nẵng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent"  VerticalAlignment="Center" BorderThickness="0"/>
                     </WrapPanel>
-                    
+
                 </Border>
             </Grid>
             <Grid Grid.Column="3">
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent"/>
+                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent" SelectedDate="{Binding FirstDate}" />
                 </Border>
             </Grid>
             <Grid Grid.Column="5">
                 <Border CornerRadius="10" Background="#3a73ba" Margin="7">
-                    <DatePicker  VerticalAlignment="Center" BorderThickness="0" Background="Transparent"/>
+                    <DatePicker VerticalAlignment="Center" BorderThickness="0" Background="Transparent" SelectedDate="{Binding SecondDate}" />
                 </Border>
             </Grid>
             <Grid Grid.Column="7">
                 <Border CornerRadius="10" Background="White" Margin="7">
-                    <Button Content="Tìm khách sạn" FontSize="15" Foreground="#59B8F5" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0"/>
+                    <Button Content="Tìm khách sạn" FontSize="15" Foreground="#59B8F5" FontWeight="Bold" Background="Transparent" BorderThickness="0" Margin="0,0,0,1" Click="Button_Click" />
                 </Border>
             </Grid>
         </Grid>
@@ -138,17 +138,17 @@
             <Grid Grid.Column="2" Margin="0,0,0,0">
 
                 <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Hotels}"  SelectionMode="Single" SelectedItem="{Binding SelectedRoom}">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                <Grid  Width="950">
-                                   <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="10">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid  Width="950">
+                                <Border BorderThickness="1" BorderBrush="#CCCCCC" CornerRadius="10">
 
-                                        <Grid>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="3*"></ColumnDefinition>
-                                                <ColumnDefinition Width="6*"></ColumnDefinition>
-                                                <ColumnDefinition Width="3*"></ColumnDefinition>
-                                            </Grid.ColumnDefinitions>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                                            <ColumnDefinition Width="6*"></ColumnDefinition>
+                                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                                        </Grid.ColumnDefinitions>
                                         <StackPanel Grid.Column="0" Background="#ffffff">
                                             <!-- Hiển thị ảnh đầu tiên -->
                                             <Image Source="https://images.squarespace-cdn.com/content/v1/5aadf482aa49a1d810879b88/1626698419120-J7CH9BPMB2YI728SLFPN/1.jpg?format=1500w" Stretch="Uniform" />
@@ -170,86 +170,86 @@
 
 
                                         <Grid Grid.Column="1" Background="#ffffff" >
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="*" />
-                                                    <RowDefinition Height="2*" />
-                                                    <RowDefinition Height="*" />
-                                                </Grid.RowDefinitions>
-                                                <Grid Grid.Row="0" >
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="*"></ColumnDefinition>
-                                                        <ColumnDefinition Width="*"></ColumnDefinition>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Grid Grid.Column="0">
-                                                        <Label Content="{Binding TenKhachSan}" FontWeight="Bold" FontSize="16"/>
-                                                    </Grid>
-                                                    <Grid Grid.Column="1">
-                                                        <WrapPanel HorizontalAlignment="Right">
-                                                            <Image Source="/icons/rating.png" Width="20" Height="20"/>
-                                                            <Label Content="10" FontSize="16"/>
-                                                            <Label Content="(600 đánh giá)" FontSize="16" Foreground="#8a7d87"/>
-                                                        </WrapPanel>
-                                                    </Grid>
-
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="2*" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+                                            <Grid Grid.Row="0" >
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid Grid.Column="0">
+                                                    <Label Content="{Binding TenKhachSan}" FontWeight="Bold" FontSize="16"/>
                                                 </Grid>
-                                                <Grid Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"  Background="#ffffff" Margin="5,0,0,0">
-                                                    <StackPanel>
-                                                        <WrapPanel>
-                                                            <Image Source="/icons/Hotel.png" Width="20" Height="20" />
-                                                            <Label Content="Khách Sạn" Foreground="#59B8F5" Background="#ecf8ff"  FontSize="16" />
-                                                            <Label Content="5"  FontSize="16" />
-                                                            <Image Source="/icons/Star.png" Width="20" Height="20"/>
-                                                        </WrapPanel>
-                                                        <!--Địa chỉ-->
-                                                        <WrapPanel>
-                                                            <Image Source="/icons/pin.png" Width="20" Height="20"/>
-                                                            <Label Content="{Binding DiaChi}"  FontSize="16" Foreground="#8a7d87"/>
-                                                        </WrapPanel>
-                                                        <Label Content="Khách sạn này nằm ở trung tâm thành phố, cung cấp dịch vụ sang trọng và tiện nghi hiện đại, là điểm dừng chân lý tưởng cho du khách.
+                                                <Grid Grid.Column="1">
+                                                    <WrapPanel HorizontalAlignment="Right">
+                                                        <Image Source="/icons/rating.png" Width="20" Height="20"/>
+                                                        <Label Content="10" FontSize="16"/>
+                                                        <Label Content="(600 đánh giá)" FontSize="16" Foreground="#8a7d87"/>
+                                                    </WrapPanel>
+                                                </Grid>
+
+                                            </Grid>
+                                            <Grid Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"  Background="#ffffff" Margin="5,0,0,0">
+                                                <StackPanel>
+                                                    <WrapPanel>
+                                                        <Image Source="/icons/Hotel.png" Width="20" Height="20" />
+                                                        <Label Content="Khách Sạn" Foreground="#59B8F5" Background="#ecf8ff"  FontSize="16" />
+                                                        <Label Content="5"  FontSize="16" />
+                                                        <Image Source="/icons/Star.png" Width="20" Height="20"/>
+                                                    </WrapPanel>
+                                                    <!--Địa chỉ-->
+                                                    <WrapPanel>
+                                                        <Image Source="/icons/pin.png" Width="20" Height="20"/>
+                                                        <Label Content="{Binding DiaChi}"  FontSize="16" Foreground="#8a7d87"/>
+                                                    </WrapPanel>
+                                                    <Label Content="Khách sạn này nằm ở trung tâm thành phố, cung cấp dịch vụ sang trọng và tiện nghi hiện đại, là điểm dừng chân lý tưởng cho du khách.
 n"  FontSize="13" />
 
-                                                    </StackPanel>
-                                                </Grid>
-                                                <Grid Grid.Row="2"  Background="#ffffff" Margin="5,0,0,0">
-                                                    <Border CornerRadius="10" Background="#FFDC00" Margin="7,10,150,7" Padding="0">
-                                                        <Label Content="Giảm 500k trong dịp lễ 30/4 và 1/5" 
+                                                </StackPanel>
+                                            </Grid>
+                                            <Grid Grid.Row="2"  Background="#ffffff" Margin="5,0,0,0">
+                                                <Border CornerRadius="10" Background="#FFDC00" Margin="7,10,150,7" Padding="0">
+                                                    <Label Content="Giảm 500k trong dịp lễ 30/4 và 1/5" 
                              Background="Transparent" 
                              VerticalAlignment="Center" 
                              HorizontalContentAlignment="Stretch"
                              FontSize="12"
                              BorderThickness="0"/>
-                                                    </Border>
+                                                </Border>
 
-                                                </Grid>
-                                            </Grid>
-                                            <Grid Grid.Column="2" Background="#ffffff" Margin="5,0,0,0">
-                                                <StackPanel>
-                                                    <Border CornerRadius="10" Background="#baf075" Margin="150,30,7,7">
-                                                        <Label Content="Ưu Đãi" FontSize="15" Foreground="#4fa767" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                    </Border>
-                                                    <TextBlock Text="1.200.000 VND" FontSize="15" HorizontalAlignment="Right" Foreground="#8a7d87">
-                                                        <TextBlock.TextDecorations>
-                                                            <TextDecorationCollection>
-                                                                <TextDecoration Location="Strikethrough"/>
-                                                            </TextDecorationCollection>
-                                                        </TextBlock.TextDecorations>
-                                                    </TextBlock>
-                                                    <Label Content="{Binding Gia}"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
-                                                    <Label Content="Chưa bao gồm thuế và phí"  FontSize="16" HorizontalAlignment="Right"  Foreground="#ff5f28"/>
-                                                    <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
-                                                    <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.LoadKhachSan, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
-                                                    </Border>
-                                                    
-                                                </StackPanel>
                                             </Grid>
                                         </Grid>
-                                    </Border>
+                                        <Grid Grid.Column="2" Background="#ffffff" Margin="5,0,0,0">
+                                            <StackPanel>
+                                                <Border CornerRadius="10" Background="#baf075" Margin="150,30,7,7">
+                                                    <Label Content="Ưu Đãi" FontSize="15" Foreground="#4fa767" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                                <TextBlock Text="1.200.000 VND" FontSize="15" HorizontalAlignment="Right" Foreground="#8a7d87">
+                                                    <TextBlock.TextDecorations>
+                                                        <TextDecorationCollection>
+                                                            <TextDecoration Location="Strikethrough"/>
+                                                        </TextDecorationCollection>
+                                                    </TextBlock.TextDecorations>
+                                                </TextBlock>
+                                                <Label Content="{Binding Gia}"  FontSize="20" HorizontalAlignment="Right" Foreground="#ff5f28"  FontWeight="Bold"/>
+                                                <Label Content="Chưa bao gồm thuế và phí"  FontSize="16" HorizontalAlignment="Right"  Foreground="#ff5f28"/>
+                                                <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
+                                                    <Button Content="Chọn Phòng" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.LoadKhachSan, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
+                                                </Border>
+
+                                            </StackPanel>
+                                        </Grid>
                                     </Grid>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                   
-               
+                                </Border>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
             </Grid>
         </Grid>
     </Grid>

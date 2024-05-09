@@ -23,5 +23,7 @@ namespace Traveloka.Models
     
         public virtual KhachSan KhachSan { get; set; }
         public virtual User User { get; set; }
+
+        
     }
 }

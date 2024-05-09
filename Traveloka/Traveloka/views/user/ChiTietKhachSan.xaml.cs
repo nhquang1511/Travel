@@ -24,29 +24,35 @@ namespace Traveloka.views.user
     public partial class ChiTietKhachSan : Window
     {
 
-        private int idkhachsan;
+        
         public ChiTietKhachSan()
         {
             InitializeComponent();
+           
             
         }
+        
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    DuLichEntities _context = new DuLichEntities();
+        //    NhanXet nx = new NhanXet()
+        //    {
+        //        Diem = 5,
+        //        NoiDung = danhgia.Text,
+        //        UserId = CurrentUser.LoggedInUser.UserId,
+        //        NgayNhanXet = DateTime.Now,
+        //        KhachSanId = KhachSanHienTai.KhachSan.KhachSanId
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DuLichEntities _context = new DuLichEntities();
-            NhanXet nx = new NhanXet()
-            {
-                Diem = 5,
-                NoiDung = "xin chao",
-                UserId = 1,
-                NgayNhanXet = DateTime.Now,
-                KhachSanId = KhachSanHienTai.KhachSan.KhachSanId
+        //    };
+        //    _context.NhanXets.Add(nx);
+        //    _context.SaveChanges();
+        //    KhachSanModel khachSanModel = (KhachSanModel)this.DataContext;
+        //    khachSanModel.LoadHotels();
 
-            };
-            _context.NhanXets.Add(nx);
-            _context.SaveChanges();
-            MessageBox.Show("them thanh cong");
 
-        }
+
+        //    MessageBox.Show("them thanh cong");
+
+        //}
     }
 }

@@ -35,7 +35,7 @@
                                 <RowDefinition Height="*"></RowDefinition>
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
-                            <Label Grid.Row="0" FontWeight="Bold" FontSize="16" Content="{Binding TenKhachSan}" ></Label>
+                            <Label Grid.Row="0" FontWeight="Bold" FontSize="16" Content="{Binding SelectedRoom.TenKhachSan}" ></Label>
                             <WrapPanel Grid.Row="1">
                                 <Label Content="Khách Sạn" FontStyle="Normal" Margin="5,10,0,0" FontWeight="Bold" Padding="0" Foreground="#FF0264C8" Background="#190264C8"/>
                                 <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,10,0,0"/>
@@ -45,7 +45,7 @@
                             </WrapPanel>
                             <WrapPanel Grid.Row="2">
                                 <Image Source="\image\location.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"/>
-                                <Label FontWeight="Bold" Content="{Binding DiaChi}"></Label>
+                                <Label FontWeight="Bold" Content="{Binding SelectedRoom.DiaChi}"></Label>
                                
                             </WrapPanel>
 
@@ -57,7 +57,7 @@
                                 <RowDefinition Height="*"></RowDefinition>
                             </Grid.RowDefinitions>
                             <Label Grid.Row="0" HorizontalAlignment="Right" FontWeight="Normal" >Giá/Phòng</Label>
-                            <Label Content="{Binding Gia}" HorizontalAlignment="Left" FontWeight="Bold" Foreground="#FFE22E2E" Margin="227,25,0,30" Grid.RowSpan="3" Width="87" RenderTransformOrigin="0.5,0.5" >
+                            <Label Content="{Binding SelectedRoom.Gia}" HorizontalAlignment="Left" FontWeight="Bold" Foreground="#FFE22E2E" Margin="227,25,0,30" Grid.RowSpan="3" Width="87" RenderTransformOrigin="0.5,0.5" >
                                 <Label.RenderTransform>
                                     <TransformGroup>
                                         <ScaleTransform/>
@@ -96,7 +96,7 @@
                             
 
                             <!-- Sử dụng ItemsControl để hiển thị các ảnh tiếp theo trong UniformGrid -->
-                            <ItemsControl ItemsSource="{Binding AnhKhachSans}" Margin="0,2,0,0">
+                            <ItemsControl ItemsSource="{Binding SelectedRoom.AnhKhachSans}" Margin="0,2,0,0">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
                                         <UniformGrid Rows="3"/>
@@ -248,14 +248,13 @@
                             </Grid.ColumnDefinitions>
 
                             <Border Grid.Column="0" Grid.ColumnSpan="3" CornerRadius="10" BorderBrush="Gray" BorderThickness="1">
-                                <TextBox Height="67" Text="Nhập nội dung" BorderBrush="{x:Null}" Background="Transparent" />
+                                <TextBox Height="67" Text="{Binding ReviewContent}" BorderBrush="{x:Null}" Background="Transparent" />
                             </Border>
-
                             <Border Grid.Column="2" CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Margin="1055,0,0,0">
-                                <Button   FontWeight="Bold" FontSize="14" Background="Transparent" Click="Button_Click"  >Đánh giá</Button>
+                                <Button FontWeight="Bold" FontSize="14" Background="Transparent" Command="{Binding AddReviewCommand}" Content="Đánh giá" />
                             </Border>
                         </Grid>
-                        <ListView ItemsSource="{Binding NhanXets}">
+                        <ListView ItemsSource="{Binding SelectedRoom.NhanXets}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="1" Background="White" Padding="10">
@@ -309,7 +308,7 @@
             <TabItem Header="Phòng" FontWeight="Bold">
                 <ScrollViewer VerticalScrollBarVisibility="Auto" Background="#d6f1ff">
                     <StackPanel Orientation="Vertical">
-                        <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding Phongs}"  SelectionMode="Single" SelectedItem="{Binding SelectedRoom}">
+                        <ListView ScrollViewer.VerticalScrollBarVisibility="Hidden" ItemsSource="{Binding SelectedRoom.Phongs}"  SelectionMode="Single" SelectedItem="{Binding SelectedPhong}">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid>
@@ -413,15 +412,10 @@
                                                                                 <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">309.524 VND</Label>
                                                                                 <Label HorizontalAlignment="Right">Chưa bao gồm thuế và phí</Label>
 
-                                                                                <Button Content="Đặt ngay" Padding="1,1,1,1" Background="#FFFF5E1F" FontSize="14" Foreground="#FFF9F9F9" FontWeight="Bold" Width="169" HorizontalAlignment="Right">
-                                                                                    <Button.Template>
-                                                                                        <ControlTemplate TargetType="Button">
-                                                                                            <Border BorderBrush="#FFF7F3F3" BorderThickness="1" CornerRadius="10" Background="{TemplateBinding Background}">
-                                                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                                                            </Border>
-                                                                                        </ControlTemplate>
-                                                                                    </Button.Template>
-                                                                                </Button>
+                                                                               
+                                                                                <Border CornerRadius="10" Background="#FF5E1F" Margin="130,30,7,7">
+                                                                                    <Button Content="Đặt ngay" FontSize="15" Foreground="White" FontWeight="Bold" Background="Transparent" VerticalAlignment="Center" BorderThickness="0" Command="{Binding DataContext.AddBookingCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
+                                                                                </Border>
                                                                             </StackPanel>
                                                                         </Grid>
                                                                     </Border>
@@ -443,8 +437,7 @@
             <TabItem Header="Lịch sử book" FontWeight="Bold">
                 <ScrollViewer>
                     <StackPanel>
-
-                        <ListBox ItemsSource="{Binding PhongList}" Height="431" >
+                        <ListBox ItemsSource="{Binding DatPhongs}" Height="431" SelectionMode="Single" SelectedItem="{Binding SelectedDatPhong}">
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <Grid>
@@ -503,7 +496,7 @@
                                                     <StackPanel Grid.Column="2">
                                                         <Label Foreground="#FFFF5E1F" HorizontalAlignment="Right" FontSize="16">Giá: 2560.482  VND</Label>
                                                         <Label>Chưa bao gồm thuế và phí</Label>
-                                                        <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold">Hủy đặt</Button>
+                                                        <Button Foreground="#FFFAF7F7" Background="#FFFF5E1F" FontWeight="Bold" Command="{Binding DataContext.DeleteBookingCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}">Hủy đặt</Button>
                                                     </StackPanel>
                                                 </Grid>
                                             </StackPanel>
