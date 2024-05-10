@@ -131,6 +131,9 @@ namespace Traveloka.ViewModel
                 }
             }
         }
+
+        
+
         private string _selectedImagePath;
         public string SelectedImagePath
         {
@@ -210,10 +213,14 @@ namespace Traveloka.ViewModel
                             AnhKhachSans = _selectedRoom.AnhKhachSans
                         };
                     }
+                    else
+                    {
+                        // Nếu không có mục nào được chọn, reset NewRoom
+                        NewRoom = new KhachSan();
+                    }
                 }
             }
         }
-
 
         private KhachSan _newRoom;
         public KhachSan NewRoom
@@ -253,9 +260,22 @@ namespace Traveloka.ViewModel
             string s = IsHotel ? "Hotel" : "Resort";
             string a = IsDoi ? "Phòng Đơn" : "Phòng Đôi";
             // Sử dụng SelectedType ở đây nếu nó không null
-            Hotels = new ObservableCollection<KhachSan>(_context.KhachSans.Where(p => p.DiaChi.Contains(SearchText) || p.LoaiKhachSan == s).ToList());
+            var query = _context.KhachSans.AsQueryable();
 
-           
+            if (!string.IsNullOrEmpty(SearchText))
+            {
+                query = query.Where(p => p.DiaChi.Contains(SearchText));
+            }
+
+            if (!string.IsNullOrEmpty(s))
+            {
+                query = query.Where(p => p.LoaiKhachSan == s);
+            }
+
+            Hotels = new ObservableCollection<KhachSan>(query.ToList());
+
+
+
 
 
         }
@@ -350,46 +370,93 @@ namespace Traveloka.ViewModel
         public void LoadHotels()
         {
             Hotels = new ObservableCollection<KhachSan>(_context.KhachSans.ToList());
+            
         }
 
         private void AddRoom()
         {
-            NewRoom.LoaiKhachSan = IsHotel ? "Hotel" : "Resort";
-            NewRoom.AnhKhachSans = null;
+            if (string.IsNullOrWhiteSpace(NewRoom.TenKhachSan))
+            {
+                MessageBox.Show("Vui lòng nhập tên khách sạn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(NewRoom.DiaChi))
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (NewRoom.Gia == null || NewRoom.Gia <= 0)
+            {
+                MessageBox.Show("Giá phải là số dương và không được bỏ trống.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            NewRoom.LoaiKhachSan = IsHotel ? "Hotel" : (IsResort ? "Resort" : string.Empty);
+            if (string.IsNullOrWhiteSpace(NewRoom.LoaiKhachSan))
+            {
+                MessageBox.Show("Vui lòng chọn loại khách sạn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             _context.KhachSans.Add(NewRoom);
             _context.SaveChanges();
             LoadHotels();
-            NewRoom = new KhachSan(); // Reset NewRoom for next entry
+            NewRoom = new KhachSan(); // Reset để thêm khách sạn mới
         }
 
         private void EditRoom()
         {
+            if (SelectedRoom == null)
+            {
+                MessageBox.Show("Vui lòng chọn một khách sạn để chỉnh sửa.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(NewRoom.TenKhachSan))
+            {
+                MessageBox.Show("Vui lòng nhập tên khách sạn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(NewRoom.DiaChi))
+            {
+                MessageBox.Show("Vui lòng nhập địa chỉ.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (NewRoom.Gia == null || NewRoom.Gia <= 0)
+            {
+                MessageBox.Show("Giá phải là số dương và không được bỏ trống.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            NewRoom.LoaiKhachSan = IsHotel ? "Hotel" : (IsResort ? "Resort" : string.Empty);
+            if (string.IsNullOrWhiteSpace(NewRoom.LoaiKhachSan))
+            {
+                MessageBox.Show("Vui lòng chọn loại khách sạn.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
             try
             {
-                if (SelectedRoom != null)
-                {
-                    // Cập nhật thông tin của phòng được chọn
-                    SelectedRoom.TenKhachSan = NewRoom.TenKhachSan;
-                    SelectedRoom.DiaChi = NewRoom.DiaChi;
-                    SelectedRoom.LoaiKhachSan = IsHotel ? "Hotel" : "Resort";
-                    SelectedRoom.Gia = NewRoom.Gia;
-                    SelectedRoom.AnhKhachSans = NewRoom.AnhKhachSans;
-                    // Lưu thay đổi vào cơ sở dữ liệu
-                    _context.SaveChanges();
-                    // Cập nhật lại danh sách phòng
-                    LoadHotels();
-                    // Reset NewRoom cho lần nhập tiếp theo
-                    NewRoom = new KhachSan();
-                    MessageBox.Show("Chỉnh sửa phòng thành công!");
-                }
-                else
-                {
-                    MessageBox.Show("Vui lòng chọn một phòng để chỉnh sửa.");
-                }
+                // Áp dụng thay đổi vào khách sạn đã chọn
+                SelectedRoom.TenKhachSan = NewRoom.TenKhachSan;
+                SelectedRoom.DiaChi = NewRoom.DiaChi;
+                SelectedRoom.LoaiKhachSan = NewRoom.LoaiKhachSan;
+                SelectedRoom.Gia = NewRoom.Gia;
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
+
+                // Cập nhật danh sách sau khi sửa
+                LoadHotels();
+
+                MessageBox.Show("Chỉnh sửa thành công!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi chỉnh sửa phòng: " + ex.Message);
+                MessageBox.Show($"Lỗi khi chỉnh sửa: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

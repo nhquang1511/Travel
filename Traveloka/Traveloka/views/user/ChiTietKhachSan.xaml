@@ -123,7 +123,10 @@
                                 <Grid>
                                     <StackPanel>
                                         <Label Content="Loại Hình Lưu Trú" FontWeight="Bold" />
-                                        <TextBlock Text="Mô tả" FontWeight="Normal" TextWrapping="Wrap"/>
+                                        <TextBlock TextWrapping="Wrap">
+                                             Khách sạn này nằm ở trung tâm thành phố,
+                                             cung cấp dịch vụ sang trọng.
+                                        </TextBlock>
                                     </StackPanel>
                                 </Grid>
                             </Border>
@@ -209,31 +212,31 @@
                             <StackPanel Grid.Column="1" Margin="0,7,0,0">
                                 <WrapPanel>
                                     <Label BorderBrush="{x:Null}">Sạch sẽ</Label>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
                                 </WrapPanel>
                                 <WrapPanel>
                                     <Label BorderBrush="{x:Null}">Thoải mái</Label>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
                                 </WrapPanel>
                                 <WrapPanel>
                                     <Label BorderBrush="{x:Null}">Đồ ăn</Label>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
                                 </WrapPanel>
                                 <WrapPanel>
                                     <Label BorderBrush="{x:Null}">Dịch vụ</Label>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
-                                    <Image Source="\image\star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
+                                    <Image Source="\icons\Star.png" Stretch="Uniform" Height="10" Width="10" Margin="5,0,0,0"/>
                                 </WrapPanel>
                             </StackPanel>
                         </Grid>
@@ -278,8 +281,8 @@
                                                         <Grid Grid.Column="1" Margin="0,0,0,0">
                                                             <Label>9/10</Label>
                                                         </Grid>
-                                                        <Label Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,0,0,0">
-                                                            21 Feb 2023
+                                                        <Label Content="{Binding NgayNhanXet}" Grid.Column="2" HorizontalAlignment="Right" BorderBrush="{x:Null}" Margin="0,0,0,0">
+                                                           
                                                         </Label>
                                                     </Grid>
                                                     <Grid Grid.Row="1">
@@ -466,7 +469,7 @@
                                                         </WrapPanel>
                                                         <WrapPanel>
                                                             <Image Source="\image\bed.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
-                                                            <Label FontWeight="Bold">Giường đơn</Label>
+                                                            <Label FontWeight="Bold" Content="{Binding TenLoaiPhong}"></Label>
                                                         </WrapPanel>
                                                         <WrapPanel>
                                                             <Image Source="\image\breakfast.png" Stretch="Uniform" Height="10" Width="10" Margin="5,3,0,0"></Image>
@@ -484,8 +487,8 @@
                                                     <StackPanel Grid.Column="1">
                                                         <Label FontWeight="Bold" Content="{Binding User.Ten}"></Label>
                                                         <Label FontWeight="Bold">Số phòng: 101</Label>
-                                                        <Label FontWeight="Bold">Ngày đặt: 26/04/2024</Label>
-                                                        <Label FontWeight="Bold">Ngày trả: 27/04/2024</Label>
+                                                        <Label FontWeight="Bold" Content="{Binding NgayNhanPhong}"></Label>
+                                                        <Label FontWeight="Bold" Content="{Binding NgayTraPhong}"></Label>
 
                                                         <Label Foreground="#FF0194F3" FontWeight="Bold">Xem Chính sách huỷ phòng</Label>
                                                     </StackPanel>

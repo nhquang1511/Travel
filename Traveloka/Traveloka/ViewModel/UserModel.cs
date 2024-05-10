@@ -28,13 +28,21 @@ namespace Traveloka.ViewModel
             set { Set(ref _password, value); }
         }
 
+        private string _confirmPassword;
+        public string ConfirmPassword
+        {
+            get { return _confirmPassword; }
+            set { Set(ref _confirmPassword, value); }
+        }
         public RelayCommand RegisterCommand { get; private set; }
+        public RelayCommand RegisterCommand1 { get; }
         public RelayCommand LoginCommand { get; private set; }
 
         public UserModel()
         {
             
             RegisterCommand = new RelayCommand(Register1);
+            RegisterCommand1 = new RelayCommand(Register);
             LoginCommand = new RelayCommand(Login);
         }
         private void Register1()
@@ -42,7 +50,8 @@ namespace Traveloka.ViewModel
             // Navigate to the registration form
             RegisterForm rg = new RegisterForm();
             rg.ShowDialog();
-             
+           
+
         }
         private void Login()
         {
@@ -76,6 +85,41 @@ namespace Traveloka.ViewModel
             }
         }
 
+        private void Register()
+        {
+            
+            using (var context = new DuLichEntities())
+            {
+                // Check if username already exists
+                var existingUser = context.Users.FirstOrDefault(u => u.Ten == Username);
+                if (existingUser != null)
+                {
+                    MessageBox.Show("Username already exists. Please choose a different one.");
+                    return;
+                }
+
+                // Create a new user
+                var newUser = new User
+                {
+                    Ten = Username,
+                    MatKhau = Password,
+                    Role = 0
+                    // Set default role here if needed
+                };
+
+                // Add user to database
+                context.Users.Add(newUser);
+                context.SaveChanges();
+
+                MessageBox.Show("Registration successful. You can now log in.");
+            }
+            if (Password != ConfirmPassword)
+            {
+                MessageBox.Show("Passwords do not match.");
+                return;
+            }
+
+        }
 
 
 

@@ -107,7 +107,6 @@ public class KhachSanHienTai : ViewModelBase
         }
     }
 
-
     private Phong _SelectedPhong;
     public Phong SelectedPhong
     {
@@ -131,12 +130,18 @@ public class KhachSanHienTai : ViewModelBase
                         Gia = _SelectedPhong.Gia,
                         AnhPhongs = _SelectedPhong.AnhPhongs,
                         KhachSanId = _SelectedPhong.KhachSanId
-                        
+
                     };
+                }
+                else
+                {
+                    // Nếu không có mục nào được chọn, reset NewRoom
+                    NewRoom = new Phong();
                 }
             }
         }
     }
+
     private string _selectedImagePath;
     public string SelectedImagePath
     {
@@ -277,49 +282,93 @@ public class KhachSanHienTai : ViewModelBase
         }
     }
 
-
-    
-
     private void AddRoom()
     {
-        NewRoom.TenLoaiPhong = IsDon ? "Phòng Đơn" : "Phòng Đôi";
-        NewRoom.AnhPhongs = null;
-        _context.Phongs.Add(NewRoom);
+        if (string.IsNullOrWhiteSpace(NewRoom.TenPhong))
+        {
+            MessageBox.Show("Vui lòng nhập tên phòng.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
 
+        if (string.IsNullOrWhiteSpace(NewRoom.TenLoaiPhong))
+        {
+            MessageBox.Show("Vui lòng nhập tên loại phòng.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        if (NewRoom.Gia == null || NewRoom.Gia <= 0)
+        {
+            MessageBox.Show("Giá phải là số dương và không được bỏ trống.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        if (NewRoom.TrangThai != 0 && NewRoom.TrangThai != 1)
+        {
+            MessageBox.Show("Trạng thái phải là 0 hoặc 1.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            return;
+        }
+
+        // Thêm phòng vào cơ sở dữ liệu
+        _context.Phongs.Add(NewRoom);
         _context.SaveChanges();
 
+        // Cập nhật danh sách sau khi thêm
         LoadReviews();
-        NewRoom = new Phong(); // Reset NewRoom for next entry
+
+        // Reset NewRoom sau khi thêm thành công
+        NewRoom = new Phong();
     }
 
     private void EditRoom()
     {
         try
         {
-            if (SelectedPhong != null)
+            if (SelectedPhong == null)
             {
-                // Cập nhật thông tin của phòng được chọn
-                SelectedPhong.TenPhong = NewRoom.TenPhong;
-                SelectedPhong.TenLoaiPhong = NewRoom.TenLoaiPhong;
-                SelectedPhong.TrangThai = NewRoom.TrangThai;
-                SelectedPhong.Gia = NewRoom.Gia;
-                SelectedPhong.AnhPhongs = NewRoom.AnhPhongs;
-                // Lưu thay đổi vào cơ sở dữ liệu
-                _context.SaveChanges();
-                // Cập nhật lại danh sách phòng
-                LoadReviews();
-                // Reset NewRoom cho lần nhập tiếp theo
-                NewRoom = new Phong();
-                MessageBox.Show("Chỉnh sửa phòng thành công!");
+                MessageBox.Show("Vui lòng chọn một phòng để chỉnh sửa.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
-            else
+
+            if (string.IsNullOrWhiteSpace(NewRoom.TenPhong))
             {
-                MessageBox.Show("Vui lòng chọn một phòng để chỉnh sửa.");
+                MessageBox.Show("Vui lòng nhập tên phòng.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
             }
+
+            if (string.IsNullOrWhiteSpace(NewRoom.TenLoaiPhong))
+            {
+                MessageBox.Show("Vui lòng nhập tên loại phòng.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (NewRoom.Gia == null || NewRoom.Gia <= 0)
+            {
+                MessageBox.Show("Giá phải là số dương và không được bỏ trống.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (NewRoom.TrangThai != 0 && NewRoom.TrangThai != 1)
+            {
+                MessageBox.Show("Trạng thái phải là 0 hoặc 1.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            // Thực hiện sửa phòng
+            SelectedPhong.TenPhong = NewRoom.TenPhong;
+            SelectedPhong.TenLoaiPhong = NewRoom.TenLoaiPhong;
+            SelectedPhong.TrangThai = NewRoom.TrangThai;
+            SelectedPhong.Gia = NewRoom.Gia;
+
+            _context.SaveChanges();
+
+            // Cập nhật danh sách phòng sau khi sửa
+            LoadReviews();
+
+            MessageBox.Show("Chỉnh sửa phòng thành công!");
         }
         catch (Exception ex)
         {
-            MessageBox.Show("Lỗi khi chỉnh sửa phòng: " + ex.Message);
+            MessageBox.Show($"Lỗi khi chỉnh sửa phòng: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 

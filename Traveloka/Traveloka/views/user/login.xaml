@@ -19,8 +19,8 @@
                     </Grid.RowDefinitions>
                     <TextBlock Text="Login" HorizontalAlignment="Center" FontSize="24" Foreground="#FF090909" Margin="0,20,0,20" FontWeight="Bold"/>
                     <StackPanel Grid.Row="1" Margin="20">
-                        <TextBox  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF080707" Width="363" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
-                        <TextBox Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox  Margin="5" Height="30" FontSize="13" Padding="5" BorderThickness="2" BorderBrush="#FF080707" Width="363" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBox Margin="5" Height="30" FontSize="13" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}" />
                         <WrapPanel  HorizontalAlignment="Center">
                             <Button Content="Login" HorizontalAlignment="Center" Margin="0 20" Padding="10" FontSize="16" Background="#FFFF5E1F" Foreground="White" Command="{Binding LoginCommand}"/>
                             <Button Content="Register" HorizontalAlignment="Center" Margin="20 20" Padding="10" FontSize="16" Background="#FFFF5E1F" Foreground="White" Command="{Binding RegisterCommand}"/>

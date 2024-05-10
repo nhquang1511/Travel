@@ -211,7 +211,7 @@
                                                 <StackPanel>
                                                     <WrapPanel>
                                                         <Image Source="/icons/Hotel.png" Width="20" Height="20" />
-                                                        <Label Content="Khách Sạn" Foreground="#59B8F5" Background="#ecf8ff"  FontSize="16" />
+                                                        <Label Content="{Binding LoaiKhachSan}" Foreground="#59B8F5" Background="#ecf8ff"  FontSize="16" />
                                                         <Label Content="5"  FontSize="16" />
                                                         <Image Source="/icons/Star.png" Width="20" Height="20"/>
                                                     </WrapPanel>

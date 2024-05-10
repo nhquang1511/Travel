@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Traveloka.views.user"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="RegisterForm" Height="500" Width="800">
     <Grid>
         
@@ -20,12 +21,12 @@
                         <TextBlock Grid.Row="0" Text="Đăng Ký" HorizontalAlignment="Center" FontSize="24" Foreground="#FF090909" Margin="0,20,0,20" FontWeight="Bold"/>
                         <StackPanel Grid.Row="1" Margin="20">
                             <Label Content="nhập tên người dùng" FontWeight="Bold" HorizontalAlignment="Center"/>
-                            <TextBox Text="{Binding Ten}" Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF080707" Width="363" SelectionBrush="#FF010B12"/>
+                            <TextBox Text="{Binding Username}" Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF080707" Width="363" SelectionBrush="#FF010B12"/>
                             <Label Content="nhập mật khẩu" HorizontalAlignment="Center" FontWeight="Bold"/>
-                            <TextBox Text="{Binding MatKhau}"  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361"/>
+                            <TextBox Text="{Binding Password}"  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361"/>
                             <Label Content="nhập lại mật khẩu" HorizontalAlignment="Center" FontWeight="Bold"/>
-                            <TextBox Text="{Binding NhapLaiMatKhau}"  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361"/>
-                            <Button Command="{Binding RegisterCommand}" Content="đăng ký" HorizontalAlignment="Center" Margin="0,20,0,10" Padding="10,10,10,10" FontSize="16" Background="#FFFF5E1F" Foreground="White"/>
+                            <TextBox Text="{Binding ConfirmPassword}"  Margin="0 5" Height="30" FontSize="16" Padding="5" BorderThickness="2" BorderBrush="#FF090101" Width="361"/>
+                            <Button Command="{Binding RegisterCommand1}" Content="đăng ký" HorizontalAlignment="Center" Margin="0,20,0,10" Padding="10,10,10,10" FontSize="16" Background="#FFFF5E1F" Foreground="White"/>
                             
                         </StackPanel>
                         
